@@ -1,0 +1,192 @@
+1️⃣ Project Overview
+
+This project is a centralized sales and partner management platform designed to manage city-wise advertising, data partnerships, and government announcements through a role-controlled dashboard.
+
+The system supports:
+
+Core team–driven sales
+
+Remote sales team–driven onboarding
+
+Direct partner logins for content submission
+
+Strict role-based access control (RBAC)
+
+Transparent billing and invoice generation
+
+The platform is built to be audit-ready, scalable, and enterprise-grade, suitable for private advertisers, data partners, and government entities.
+
+2️⃣ Key User Types & Roles
+🔐 User Categories (Authentication Level)
+User Type	Description
+Core	Internal team (Admin, Analyst)
+Sales	Remote sales executives
+Partner	External organizations
+🧩 Role Hierarchy (RBAC)
+
+Roles are assigned via a database-driven RBAC system, not hardcoded logic.
+
+Core Roles
+
+Admin – Full system control
+
+Analyst – Read-only analytics & reporting
+
+Sales Roles
+
+Sales Executive – Partner onboarding & booking support
+
+Partner Roles
+
+Owner – Full partner-level control
+
+Manager – Content + team management
+
+Content Uploader – Limited content upload only
+
+3️⃣ Partner Model (Business Entity)
+
+Partners are treated as independent business entities, not users.
+
+Each partner:
+
+Can be onboarded by Admin or Sales
+
+Can have multiple partner types
+
+Can have multiple login users
+
+Has separate billing identity
+
+Partner Types (Multi-select)
+
+Ad Partner – City-wise ads
+
+Data Partner – Data uploads & access
+
+Government Partner – Public announcements
+
+4️⃣ City-Based Operations
+
+The platform operates on a city-centric model.
+
+Each city:
+
+Has its own metadata (language, analytics ID, content ID)
+
+Can be linked to one or more websites
+
+Acts as a unit for booking, ads, and reporting
+
+5️⃣ Content & Advertising Flow
+
+Partners can log in to:
+
+Upload ads, data, or government announcements
+
+Select cities and dates (as per permissions)
+
+Track approval and publishing status
+
+Content lifecycle:
+
+Pending → Approved → Live → Expired
+
+
+Permissions are enforced by:
+
+Partner type
+
+Partner role (owner/manager/uploader)
+
+6️⃣ Sales & Partner Onboarding Flow
+Core Team Flow
+
+Create partner
+
+Assign partner types
+
+Manage bookings
+
+Generate invoices
+
+Track revenue
+
+Sales Team Flow
+
+Onboard partners
+
+Assist in bookings
+
+Collect payments (online/offline)
+
+Submit payment records
+
+Sales cannot generate invoices — this remains an Admin-only function.
+
+7️⃣ Booking & Billing Model
+Booking Types
+
+Daily (date-wise ads)
+
+Contract (monthly / fixed duration)
+
+Billing
+
+Auto-calculated for daily bookings
+
+Contract-based lump sum billing
+
+Online & offline payments supported
+
+Invoices
+
+Generated only by Admin
+
+Partner invoices supported
+
+Fully audit-compliant
+
+8️⃣ Role-Based Access Control (RBAC)
+
+The system uses a permissions table + role mapping, allowing:
+
+Fine-grained access (e.g. can_upload_ad, can_view_city)
+
+No hardcoded checks
+
+Easy permission updates without code changes
+
+RBAC applies to:
+
+Core users
+
+Sales users
+
+Partner users
+
+9️⃣ Security & Governance
+
+Clear separation of user identity vs business entity
+
+Partner users restricted to their own data
+
+Billing and invoices protected from partner access
+
+Government partners handled with limited content permissions
+
+Audit-friendly data structure
+
+🔟 Technology & Architecture (Suggested)
+
+Backend: Laravel / FastAPI
+
+Database: MySQL / PostgreSQL
+
+Auth: JWT / Session-based
+
+RBAC: DB-driven permissions
+
+Hosting: AWS / VPS
+
+Scalability: City-based sharding possible

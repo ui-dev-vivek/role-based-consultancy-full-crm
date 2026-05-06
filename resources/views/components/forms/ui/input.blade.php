@@ -1,0 +1,43 @@
+@props([
+    'label' => null,
+    'name' => null,
+    'type' => 'text',
+    'value' => '',
+    'required' => false,
+    'placeholder' => '',
+    'autocomplete' => 'off',
+])
+
+@php
+    $name = $name ?? $attributes->wire('model')->value();
+@endphp
+
+<div>
+    @if ($label)
+        <label for="{{ $name }}" class="block text-sm font-semibold leading-6 text-slate-900 mb-2">
+            {{ $label }}
+            @if ($required)
+                <span class="text-red-500">*</span>
+            @endif
+        </label>
+    @endif
+    <div class="relative">
+        <input id="{{ $name }}" name="{{ $name }}" type="{{ $type }}"
+            autocomplete="{{ $autocomplete }}" value="{{ old($name, $value) }}"
+            placeholder="{{ $placeholder !== '' ? $placeholder : 'Enter ' . $label }}"
+            {{ $attributes->merge([
+                'class' =>
+                    'p-2 block w-full
+                                                                                                                                rounded-md border-0
+                                                                                                                                py-2.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2
+                                                                                                                                focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6 transition-all' .
+                    ($errors->has($name)
+                        ? '
+                                                                                                                                ring-red-500'
+                        : ''),
+            ]) }}>
+    </div>
+    @error($name)
+        <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
+    @enderror
+</div>

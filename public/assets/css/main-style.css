@@ -1,0 +1,144 @@
+/* Text center */
+main .grid .text-center{
+ border-top-left-radius:10px;
+ border-top-right-radius:10px;
+ border-bottom-left-radius:10px;
+ border-bottom-right-radius:10px;
+ margin-top:53px;
+ background-color:rgba(214,228,244,0.66);
+ min-height:160px;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+}
+
+/* Justify center */
+main .relative .grid .justify-center{
+ margin-bottom:0px;
+ top:39px;
+}
+
+@media (max-width:992px){
+
+ /* Relative */
+ .mx-auto .relative .grid > .relative{
+  height:199px;
+ }
+
+ /* Text center */
+ main .grid .text-center{
+  margin-top:15px;
+ }
+
+ /* Grid */
+ main .overflow-hidden .mx-auto .grid{
+  grid-template-columns:auto auto !important;
+  margin-bottom:6px;
+
+ }
+
+ /* Auto */
+ main > .overflow-hidden > .mx-auto{
+  padding-bottom:13px;
+ }
+
+ /* Division */
+ #apply .py-12{
+  padding-right:20px;
+  padding-left:20px;
+ }
+
+ /* Grid */
+ main .py-20 .mx-auto .grid{
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr !important;
+ }
+
+}
+/* Span Tag */
+.overflow-hidden .justify-center .items-center .font-semibold span{
+ font-size:16px;
+}
+
+/* Font Icon */
+main .items-center .fa-users{
+ font-size:15px;
+}
+
+/* Division */
+
+
+/* Font extrabold */
+.sm\:justify-between .items-center .font-extrabold{
+ font-size:18px;
+}
+
+/* BackUnknown blur */
+.sm\:justify-between .items-center .backdrop-blur-sm{
+ font-size:18px;
+}
+
+@media (max-width:992px){
+
+ /* Grid */
+ main .py-20 .mx-auto .grid{
+  grid-template-rows:1fr 1fr !important;
+  grid-template-columns:1fr 1fr !important;
+ }
+
+ /* Auto */
+ main .py-20 > .mx-auto{
+  transform:translatex(0px) translatey(0px);
+ }
+
+ /* Text center */
+ main .py-20 .mx-auto .text-center{
+  margin-bottom:21px;
+ }
+
+ /* Section */
+ main .py-20{
+  padding-bottom:20px !important;
+ }
+
+ /* Text center */
+ main .overflow-hidden .mx-auto .text-center{
+  margin-bottom:36px;
+ }
+
+ /* Text */
+ main .overflow-hidden .mx-auto .text-center .text-xl{
+  margin-bottom:7px;
+ }
+
+ /* Dark */
+ main .overflow-hidden .mx-auto .dark\:text-white{
+  font-size:40px;
+ }
+
+ /* Overflow hidden */
+ main > .overflow-hidden:nth-child(2){
+  padding-top:26px;
+ }
+
+ /* Items center */
+ .sm\:justify-between > .items-center{
+  justify-content:center;
+ }
+
+ /* Font extrabold */
+ .sm\:justify-between .items-center .font-extrabold{
+  font-size:18px;
+ }
+
+ /* BackUnknown blur */
+ .sm\:justify-between .items-center .backdrop-blur-sm{
+  font-size:18px;
+ }
+
+ /* Items center */
+ main .overflow-hidden .overflow-hidden .justify-center > .items-center{
+  font-size:18px;
+ }
+
+}

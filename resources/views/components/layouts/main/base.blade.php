@@ -39,55 +39,85 @@
                 'title' => 'Admissions',
                 'icon' => 'fas fa-university',
                 'url' => '/admissions',
-                'lable' => 'Get Admissions Faster',
-                'text' => 'Admissions open for 2024-25',
-                'cta' => 'Get Consultation',
+                'lable' => 'Choose the Right College & Career Path',
+                'text' =>
+                    'Confused about courses, colleges, or entrance exams? Get expert guidance for B.Tech, BCA, MBA, BBA, Diploma, and other professional programs.',
+                'cta' => 'Get Free Counseling',
             ],
+
             [
                 'title' => 'Training & Placements',
                 'icon' => 'fas fa-briefcase',
-                'lable' => 'Internship to PPO',
-                'text' => 'Stuck in college? Get trained and placed in top companies.',
-                'cta' => 'Get Free Training',
                 'url' => '/training-and-placements',
-                // 'dropdown' => [
-                //     ['title' => 'Free Courses', 'url' => '#'],
-                //     ['title' => 'Internships', 'url' => '#'],
-                //     ['title' => 'Jobs', 'url' => '#'],
-                //     ['title' => 'Resume Templates', 'url' => '#'],
-                // ],
+                'lable' => 'Learn Skills That Companies Actually Hire For',
+                'text' =>
+                    'Industry-focused training, internships, resume preparation, interview support, and placement assistance to help students become job-ready.',
+                'cta' => 'Explore Training',
             ],
+
+            [
+                'title' => 'Research Support',
+                'icon' => 'fas fa-microscope',
+                'url' => '/research',
+                'lable' => 'Professional Support for Research & Publications',
+                'text' =>
+                    'Guidance for thesis writing, dissertations, journal publications, research formatting, white papers, and academic documentation.',
+                'cta' => 'Explore Research',
+                'dropdown' => [
+                    [
+                        'title' => 'Conference Paper Support',
+                        'url' => '/research#conference-papers',
+                    ],
+                    [
+                        'title' => 'Journal Publication Guidance',
+                        'url' => '/research#journal-papers',
+                    ],
+                    [
+                        'title' => 'Dissertation Assistance',
+                        'url' => '/research#dissertations',
+                    ],
+                    [
+                        'title' => 'Thesis Writing & Formatting',
+                        'url' => '/research#thesis',
+                    ],
+                    [
+                        'title' => 'Research Data Analysis',
+                        'url' => '/research#data-analysis',
+                    ],
+                    [
+                        'title' => 'Others Academic Supports',
+                        'url' => '/research#academic',
+                    ],
+                ],
+            ],
+
             [
                 'title' => 'IP & Legal',
                 'icon' => 'fas fa-balance-scale',
-                'lable' => 'Protect Your Intellectual Property',
-                'text' => 'Trademark, Patent, MSME & ISO registration services.',
-                'cta' => 'view More',
                 'url' => '/intellectual-property',
-                // 'dropdown' => [
-                //     ['title' => 'Trademark', 'url' => '#'],
-                //     ['title' => 'Patent', 'url' => '#'],
-                //     ['title' => 'MSME', 'url' => '#'],
-                //     ['title' => 'ISO', 'url' => '#'],
-                // ],
+                'lable' => 'Protect Your Ideas, Brand & Innovation',
+                'text' =>
+                    'Trademark registration, patents, copyrights, MSME registration, startup documentation, and legal consultancy services.',
+                'cta' => 'View Services',
+                'dropdown' => [
+                    ['title' => 'Design Patents', 'url' => '/intellectual-property#design-patents'],
+                    ['title' => 'Utility Patents', 'url' => '/intellectual-property#utility-patents'],
+                    ['title' => 'Copyrights', 'url' => '/intellectual-property#copyrights'],
+                    ['title' => 'Trademark', 'url' => '/intellectual-property#trademark'],
+                    ['title' => 'MSME/ ISO Registration', 'url' => '/intellectual-property#msme-registration'],
+                ],
             ],
-            [
-                'title' => 'Research & Academic',
-                'icon' => 'fas fa-microscope',
-                'url' => '/research',
-                'lable' => 'Empowering Research Excellence',
-                'text' => 'Comprehensive support for research projects, publications, and academic growth.',
-                'cta' => 'Explore Services',
-            ],
+
             [
                 'title' => 'About Us',
                 'icon' => 'fas fa-info-circle',
-                'url' => '#',
+                'url' => '/about',
             ],
+
             [
                 'title' => 'Contact Us',
                 'icon' => 'fas fa-envelope',
-                'url' => '#',
+                'url' => '/contact',
             ],
         ];
     @endphp
@@ -458,7 +488,8 @@
             <div class="grid gap-10 lg:grid-cols-3">
                 <div class="space-y-4">
                     <a href="/" class="inline-flex items-center gap-3">
-                        <div class="flex items-center justify-center w-11 h-11 rounded-2xl bg-primary-600 text-white shadow-lg">
+                        <div
+                            class="flex items-center justify-center w-11 h-11 rounded-2xl bg-primary-600 text-white shadow-lg">
                             <i class="fas fa-ad text-lg"></i>
                         </div>
                         <span class="text-2xl font-extrabold tracking-tight">AdacNext</span>
@@ -468,13 +499,15 @@
                         internships, and intellectual property services.
                     </p>
                     <div class="flex items-center gap-3">
-                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800 text-primary-400">
+                        <span
+                            class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800 text-primary-400">
                             <i class="fas fa-phone-alt"></i>
                         </span>
                         <div>
                             <p class="text-sm text-slate-400">Need help now?</p>
-                            <a href="https://wa.me/{{env('WA_NUMBER')}}?text=Hello%20AdacNext%2C%20I%20would%20like%20to%20chat%20about%20your%20services." target="_blank" rel="noopener"
-                                class="text-sm font-semibold text-white hover:text-primary-300">{{env('WA_NUMBER')}}</a>
+                            <a href="https://wa.me/{{ env('WA_NUMBER') }}?text=Hello%20AdacNext%2C%20I%20would%20like%20to%20chat%20about%20your%20services."
+                                target="_blank" rel="noopener"
+                                class="text-sm font-semibold text-white hover:text-primary-300">{{ env('WA_NUMBER') }}</a>
                         </div>
                     </div>
                 </div>
@@ -484,9 +517,12 @@
                         <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-4">Explore</h3>
                         <ul class="space-y-3 text-sm text-slate-300">
                             <li><a href="/admissions" class="hover:text-white transition-colors">Admissions</a></li>
-                            <li><a href="/training-and-placements" class="hover:text-white transition-colors">Training & Placements</a></li>
-                            <li><a href="/intellectual-property" class="hover:text-white transition-colors">IP & Legal</a></li>
-                            <li><a href="/research" class="hover:text-white transition-colors">Research & Academic</a></li>
+                            <li><a href="/training-and-placements" class="hover:text-white transition-colors">Training
+                                    & Placements</a></li>
+                            <li><a href="/intellectual-property" class="hover:text-white transition-colors">IP &
+                                    Legal</a></li>
+                            <li><a href="/research" class="hover:text-white transition-colors">Research & Academic</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -495,15 +531,20 @@
                         <ul class="space-y-3 text-sm text-slate-300">
                             <li><a href="/about" class="hover:text-white transition-colors">About Us</a></li>
                             <li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
-                            <li><a href="/privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                            <li><a href="/terms-of-service" class="hover:text-white transition-colors">Terms of Service</a></li>
+                            <li><a href="/privacy-policy" class="hover:text-white transition-colors">Privacy
+                                    Policy</a></li>
+                            <li><a href="/terms-of-service" class="hover:text-white transition-colors">Terms of
+                                    Service</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-4">Chat with us</h3>
-                        <p class="text-sm text-slate-400 mb-4">Get instant support on WhatsApp for admissions, training, and IP services.</p>
-                        <a href="https://wa.me/{{env('WA_NUMBER')}}?text=Hello%20AdacNext%2C%20I%20need%20help%20with%20your%20services" target="_blank" rel="noopener"
+                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-4">Chat with us
+                        </h3>
+                        <p class="text-sm text-slate-400 mb-4">Get instant support on WhatsApp for admissions,
+                            training, and IP services.</p>
+                        <a href="https://wa.me/{{ env('WA_NUMBER') }}?text=Hello%20AdacNext%2C%20I%20need%20help%20with%20your%20services"
+                            target="_blank" rel="noopener"
                             class="inline-flex items-center justify-center gap-2 rounded-3xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#25D366]/30 transition-all hover:-translate-y-0.5 hover:bg-[#1ebd5a]">
                             <i class="fab fa-whatsapp text-lg"></i>
                             WhatsApp Chat
@@ -512,7 +553,8 @@
                 </div>
             </div>
 
-            <div class="mt-10 border-t border-slate-800 pt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-slate-500">
+            <div
+                class="mt-10 border-t border-slate-800 pt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-slate-500">
                 <p>© {{ date('Y') }} AdacNext. All rights reserved.</p>
                 <div class="flex flex-wrap items-center justify-center gap-4">
                     <a href="/privacy-policy" class="hover:text-white">Privacy Policy</a>

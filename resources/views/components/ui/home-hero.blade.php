@@ -17,64 +17,32 @@
                 </div>
                 <span
                     class="text-sm font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-indigo-600 dark:from-primary-400 dark:to-indigo-400">
-                    Join 5000+ Successful Students
+                     5000+ Successful cases.
                 </span>
             </div>
 
             <!-- Main Headline -->
             <h1
-                class="text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black text-slate-900 dark:text-white leading-[1.1] tracking-tight mb-6">
-                Confused About <br class="hidden lg:block" />
+                class="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-black text-slate-900 dark:text-white leading-[1.1] tracking-tight mb-6">
+                Build Your Career,Research & Ideas With  <br class="hidden lg:block" />
                 <span class="relative inline-block mt-2">
                     <span
                         class="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-indigo-600 to-cyan-500 dark:from-primary-400 dark:via-indigo-400 dark:to-cyan-400">Your
-                        Career?</span>
+                         Expert Guidance !</span>
                     <span
                         class="absolute -bottom-2 left-0 w-full h-4 bg-primary-200 dark:bg-primary-900/50 -z-10 transform -rotate-1 rounded-sm"></span>
                 </span>
             </h1>
 
-            <p class="text-lg lg:text-xl text-slate-600 dark:text-slate-300 mb-8 font-medium leading-relaxed">
+            <p class="text-lg lg:text-xl text-slate-600 dark:text-slate-300 mb-5 font-medium leading-relaxed">
                 From <span
-                    class="text-slate-900 dark:text-white font-bold px-1 bg-slate-200 dark:bg-slate-800 rounded">BBA,
-                    BCA, B.Tech</span> to <span
-                    class="text-slate-900 dark:text-white font-bold px-1 bg-slate-200 dark:bg-slate-800 rounded">MBA</span>.
-                Discover your true potential with expert counseling, top colleges, and guaranteed placement support.
+                    class="text-slate-900 dark:text-white font-bold px-1 bg-slate-200 dark:bg-slate-800 rounded">admissions and skill training to placements,
+                    research support, patents, trademarks,</span> and <span
+                    class="text-slate-900 dark:text-white font-bold px-1 bg-slate-200 dark:bg-slate-800 rounded"> startup registrations</span>.
+                    we help students, professionals, researchers, and startups grow with confidence.
             </p>
 
-            <!-- Modern Feature Grid -->
-            <div class="grid grid-cols-2 gap-4 mb-10">
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-12 h-12 rounded-2xl bg-white dark:bg-slate-800 shadow-lg shadow-slate-200/50 dark:shadow-none flex items-center justify-center text-primary-600 dark:text-primary-400">
-                        <i class="fas fa-compass text-xl"></i>
-                    </div>
-                    <span class="font-extrabold text-slate-700 dark:text-slate-200 text-[15px]">Free
-                        Counseling</span>
-                </div>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-12 h-12 rounded-2xl bg-white dark:bg-slate-800 shadow-lg shadow-slate-200/50 dark:shadow-none flex items-center justify-center text-indigo-600 dark:text-indigo-400">
-                        <i class="fas fa-university text-xl"></i>
-                    </div>
-                    <span class="font-extrabold text-slate-700 dark:text-slate-200 text-[15px]">100+ Colleges</span>
-                </div>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-12 h-12 rounded-2xl bg-white dark:bg-slate-800 shadow-lg shadow-slate-200/50 dark:shadow-none flex items-center justify-center text-cyan-600 dark:text-cyan-400">
-                        <i class="fas fa-briefcase text-xl"></i>
-                    </div>
-                    <span class="font-extrabold text-slate-700 dark:text-slate-200 text-[15px]">Internships</span>
-                </div>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-12 h-12 rounded-2xl bg-white dark:bg-slate-800 shadow-lg shadow-slate-200/50 dark:shadow-none flex items-center justify-center text-emerald-500 dark:text-emerald-400">
-                        <i class="fas fa-scale-balanced text-xl"></i>
-                    </div>
-                    <span class="font-extrabold text-slate-700 dark:text-slate-200 text-[15px]">Legal &
-                        Research</span>
-                </div>
-            </div>
+            <p class="mb-4 font-bold">5000+ Students & Professionals Assisted Across India</p>
 
             <!-- Glowing Advanced Buttons -->
             <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -83,17 +51,17 @@
                     <div
                         class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 dark:via-slate-900/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]">
                     </div>
-                    <span class="text-lg">Apply Now</span>
+                    <span class="text-lg">Get Started</span>
                     <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                 </a>
 
-                <a href="https://wa.me/917619876249" target="_blank"
+                <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
                     class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/80 dark:bg-slate-800/80 backdrop-blur-lg border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white font-extrabold rounded-2xl transition-all hover:scale-105 hover:bg-white dark:hover:bg-slate-800 shadow-xl shadow-slate-200/20 dark:shadow-black/20 group">
                     <div
                         class="w-8 h-8 rounded-full bg-[#25D366]/10 flex items-center justify-center group-hover:bg-[#25D366] transition-colors">
                         <i class="fab fa-whatsapp text-[#25D366] group-hover:text-white text-xl transition-colors"></i>
                     </div>
-                    <span class="text-lg">Chat with Vivek</span>
+                    <span class="text-lg">Chat with Us</span>
                 </a>
             </div>
         </div>
@@ -130,7 +98,7 @@
                 </div>
                 <div>
                     <p class="text-[11px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">
-                        Placement Rate</p>
+                        Success Rate</p>
                     <p class="text-2xl font-black text-slate-900 dark:text-white leading-tight">100%</p>
                 </div>
             </div>

@@ -99,47 +99,68 @@
     </section>
 
     <!-- STATS COUNTER SECTION -->
-    <section class="py-16 bg-gradient-to-r from-slate-900 to-slate-800 relative overflow-hidden">
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div class="absolute top-0 right-10 w-96 h-96 bg-primary-600/10 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl"></div>
-        </div>
+   <section class="py-16 bg-gradient-to-r from-slate-900 to-slate-800 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 right-10 w-96 h-96 bg-primary-600/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl"></div>
+    </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
-                <div class="text-center">
-                    <div
-                        class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 mb-2">
-                        5000+</div>
-                    <p class="text-white/80 text-sm md:text-base font-semibold">Students Guided</p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+
+            <div class="text-center">
+                <div
+                    class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 mb-2">
+                    1000+
                 </div>
-                <div class="text-center">
-                    <div
-                        class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-2">
-                        100+</div>
-                    <p class="text-white/80 text-sm md:text-base font-semibold">Partner Colleges</p>
-                </div>
-                <div class="text-center">
-                    <div
-                        class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-400 mb-2">
-                        100%</div>
-                    <p class="text-white/80 text-sm md:text-base font-semibold">Placement Rate</p>
-                </div>
-                <div class="text-center">
-                    <div
-                        class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-400 mb-2">
-                        500+</div>
-                    <p class="text-white/80 text-sm md:text-base font-semibold">Scholarships Awarded</p>
-                </div>
-                <div class="text-center">
-                    <div
-                        class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 mb-2">
-                        ₹15+</div>
-                    <p class="text-white/80 text-sm md:text-base font-semibold">Avg. Package (LPA)</p>
-                </div>
+                <p class="text-white/80 text-sm md:text-base font-semibold">
+                    Students & Professionals Guided
+                </p>
             </div>
+
+            <div class="text-center">
+                <div
+                    class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-2">
+                    50+
+                </div>
+                <p class="text-white/80 text-sm md:text-base font-semibold">
+                    Academic & Industry Partners
+                </p>
+            </div>
+
+            <div class="text-center">
+                <div
+                    class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-400 mb-2">
+                    200+
+                </div>
+                <p class="text-white/80 text-sm md:text-base font-semibold">
+                    Training & Placement Supports
+                </p>
+            </div>
+
+            <div class="text-center">
+                <div
+                    class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-400 mb-2">
+                    150+
+                </div>
+                <p class="text-white/80 text-sm md:text-base font-semibold">
+                    Research & Documentation Projects
+                </p>
+            </div>
+
+            <div class="text-center">
+                <div
+                    class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 mb-2">
+                    100+
+                </div>
+                <p class="text-white/80 text-sm md:text-base font-semibold">
+                    IP & Legal Consultations
+                </p>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- HOW IT WORKS -->
     <section class="py-20">
@@ -210,6 +231,53 @@
             </div>
         </div>
     </section>
+{{-- call banner --}}
+<section class="relative py-15 overflow-hidden">
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+
+        <!-- Top Badge -->
+        <div class="inline-flex items-center px-5 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md mb-6">
+            <span class="text-sm md:text-base font-semibold tracking-wide text-cyan-200 uppercase">
+                Limited Time Free Consultation
+            </span>
+        </div>
+
+        <!-- Main Heading -->
+        <h2 class="text-3xl md:text-5xl font-black leading-tight text-white mb-6">
+            Free 30-Minute Expert Consultation
+        </h2>
+
+        <!-- Subtitle -->
+        <p class="max-w-3xl mx-auto text-lg md:text-2xl text-slate-200 leading-relaxed mb-10">
+            Get professional guidance for admissions, training, placements,
+            research projects, patents, copyrights, and startup registrations.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+
+           <a href="tel:{{ env('WA_NUMBER') }}"
+    class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-cyan-600 hover:bg-cyan-500 rounded-xl shadow-2xl transition duration-300">
+    Book Your Free Call
+</a>
+
+              <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
+                    class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-500 text-white font-bold rounded-xl shadow-lg transition-all duration-300 hover:scale-105">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    Chat on WhatsApp
+                </a>
+
+        </div>
+
+    </div>
+
+    <!-- Decorative Blur -->
+    <div class="absolute top-10 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+
+</section>
 
     <!-- TESTIMONIALS -->
     <section class="py-20 bg-slate-50 dark:bg-slate-900">
@@ -320,9 +388,9 @@
                 <a href="/admissions"
                     class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary-600 font-bold rounded-xl hover:bg-slate-100 hover:shadow-2xl transition-all duration-300 hover:scale-105">
                     <i class="fas fa-pen-to-square text-lg"></i>
-                    Explore Services
+                    Explore Admissions
                 </a>
-                <a href="https://wa.me/917619876249" target="_blank"
+                <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
                     class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-bold rounded-xl border-2 border-white/50 transition-all duration-300 hover:scale-105">
                     <i class="fab fa-whatsapp text-2xl"></i>
                     Chat on WhatsApp

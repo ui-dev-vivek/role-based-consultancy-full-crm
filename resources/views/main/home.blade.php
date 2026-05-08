@@ -232,7 +232,7 @@
         </div>
     </section>
 {{-- call banner --}}
-<section class="relative py-15 overflow-hidden">
+<section class="relative py-15 overflow-hidden" id="get-started">
 
     <!-- Content -->
     <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">

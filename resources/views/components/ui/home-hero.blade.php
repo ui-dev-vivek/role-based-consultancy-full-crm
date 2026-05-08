@@ -46,7 +46,7 @@
 
             <!-- Glowing Advanced Buttons -->
             <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                <a href="#apply"
+                <a href="#get-started"
                     class="group relative w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-extrabold rounded-2xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(15,23,42,0.3)] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.3)]">
                     <div
                         class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 dark:via-slate-900/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]">

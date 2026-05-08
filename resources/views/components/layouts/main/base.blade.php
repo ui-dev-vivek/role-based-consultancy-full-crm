@@ -453,32 +453,77 @@
         {{ $slot }}
 
     </main>
-    <footer class="bg-slate-900 text-white py-6">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="text-center md:text-left mb-4 md:mb-0">
-                    © {{ date('Y') }} AdacNext. All rights reserved.
+    <footer class="bg-slate-950 text-slate-100">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid gap-10 lg:grid-cols-3">
+                <div class="space-y-4">
+                    <a href="/" class="inline-flex items-center gap-3">
+                        <div class="flex items-center justify-center w-11 h-11 rounded-2xl bg-primary-600 text-white shadow-lg">
+                            <i class="fas fa-ad text-lg"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold tracking-tight">AdacNext</span>
+                    </a>
+                    <p class="max-w-md text-sm text-slate-400 leading-relaxed">
+                        Empowering students, innovators, and startups with admissions guidance, research support,
+                        internships, and intellectual property services.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800 text-primary-400">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <div>
+                            <p class="text-sm text-slate-400">Need help now?</p>
+                            <a href="https://wa.me/{{env('WA_NUMBER')}}?text=Hello%20AdacNext%2C%20I%20would%20like%20to%20chat%20about%20your%20services." target="_blank" rel="noopener"
+                                class="text-sm font-semibold text-white hover:text-primary-300">{{env('WA_NUMBER')}}</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex space-x-4">
-                    <a href="https://facebook.com/AdacNext" target="_blank"
-                        class="text-white hover:text-primary-500"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/AdacNext" target="_blank"
-                        class="text-white hover:text-primary-500"><i class="fab fa-twitter"></i></a>
-                    <a href="https://instagram.com/AdacNext" target="_blank"
-                        class="text-white hover:text-primary-500"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com/company/AdacNext" target="_blank"
-                        class="text-white hover:text-primary-500"><i class="fab fa-linkedin-in"></i></a>
+
+                <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:col-span-2">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-4">Explore</h3>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li><a href="/admissions" class="hover:text-white transition-colors">Admissions</a></li>
+                            <li><a href="/training-and-placements" class="hover:text-white transition-colors">Training & Placements</a></li>
+                            <li><a href="/intellectual-property" class="hover:text-white transition-colors">IP & Legal</a></li>
+                            <li><a href="/research" class="hover:text-white transition-colors">Research & Academic</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-4">Company</h3>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li><a href="/about" class="hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
+                            <li><a href="/privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                            <li><a href="/terms-of-service" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-4">Chat with us</h3>
+                        <p class="text-sm text-slate-400 mb-4">Get instant support on WhatsApp for admissions, training, and IP services.</p>
+                        <a href="https://wa.me/{{env('WA_NUMBER')}}?text=Hello%20AdacNext%2C%20I%20need%20help%20with%20your%20services" target="_blank" rel="noopener"
+                            class="inline-flex items-center justify-center gap-2 rounded-3xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#25D366]/30 transition-all hover:-translate-y-0.5 hover:bg-[#1ebd5a]">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                            WhatsApp Chat
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div
-                class="mt-4 flex flex-col md:flex-row items-center justify-center md:justify-end space-y-2 md:space-y-0 md:space-x-4 text-sm">
-                <a href="/privacy-policy" class="text-gray-300 hover:text-white">Privacy Policy</a>
-                <a href="/terms-of-service" class="text-gray-300 hover:text-white">Terms of Service</a>
-                <a href="/contact" class="text-gray-300 hover:text-white">Contact Us</a>
+
+            <div class="mt-10 border-t border-slate-800 pt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-slate-500">
+                <p>© {{ date('Y') }} AdacNext. All rights reserved.</p>
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <a href="/privacy-policy" class="hover:text-white">Privacy Policy</a>
+                    <a href="/terms-of-service" class="hover:text-white">Terms of Service</a>
+                    <a href="/contact" class="hover:text-white">Contact Us</a>
+                </div>
             </div>
         </div>
+    </footer>
 
-        @yield('script')
+    @yield('script')
 </body>
 
 </html>

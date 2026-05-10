@@ -18,12 +18,13 @@ use App\Http\Controllers\Main\Admissions;
 // Public
 Route::get('/', [Home::class, 'home'])->name('home');
 Route::get('admissions', [Admissions::class, 'index'])->name('admissions');
+Route::post('/api/admission/submit', [Admissions::class, 'submitInquiry']);
 Route::get('training-and-placements', [Home::class, 'trainings'])->name('trainings');
 Route::get('intellectual-property', [Home::class, 'intellectualProperty'])->name('ip');
 Route::get('research', [Home::class, 'research'])->name('research');
+Route::view('about-us', 'main.about');
+Route::view('contact-us', 'main.contact');
 
-// API Routes for Form Submissions
-Route::post('/api/admission/submit', [Admissions::class, 'submitInquiry']);
 // Sales
 Route::prefix('sales')->group(function () {
     Route::get('/', [Sales::class, 'index'])->name('sales.index');

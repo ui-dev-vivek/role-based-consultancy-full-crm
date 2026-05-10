@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('mobile_number', 20);
-            $table->string('guardian_mobile_number', 20);
+            $table->string('guardian_mobile_number', 20)->nullable();
             $table->string('interested_course');
             $table->string('city');
             $table->string('state');

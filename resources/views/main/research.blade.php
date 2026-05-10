@@ -1,195 +1,352 @@
 <x-layouts.main.base>
 
     @section('page-hero')
-        <x-ui.hero title="Excellence in" highlightText="Research & Academia"
-            description="Professional support for thesis, research papers, journal publications, and data analysis across all disciplines."
-            badge="Academic Support" breadcrumbText="Research" primaryBtnText="Get In Touch"
-            primaryBtnUrl="https://wa.me/917619876249" height="400px" />
+        <x-ui.hero title="Research," highlightText="Publications & Academic Support"
+            description="Professional guidance for thesis writing, dissertations, conference papers, journal publications, literature reviews, and research data analysis."
+            badge="Research Consultancy Services" breadcrumbText="Research & Academic" primaryBtnText="Talk to an Expert"
+            primaryBtnUrl="https://wa.me/{{ env('WA_NUMBER') }}" height="400px" :stats="[
+                ['icon' => 'fas fa-book-open', 'color' => 'orange-400', 'text' => 'Thesis & Dissertation Support'],
+                ['icon' => 'fas fa-newspaper', 'color' => 'emerald-400', 'text' => 'Journal & Conference Publications'],
+            ]" />
     @endsection
-
+    <!-- SERVICES GRID -->
     <!-- SERVICES GRID -->
     <section class="py-20 bg-slate-50 dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Heading -->
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Comprehensive Research Services</h2>
-                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                    From thesis writing to journal publication — we support your academic journey
+                <span
+                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-sm font-bold mb-4">
+                    Research Consultancy
+                </span>
+
+                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">
+                    Comprehensive Research Services
+                </h2>
+
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+                    Professional academic and research support for students, scholars,
+                    researchers, and professionals across multiple disciplines.
                 </p>
             </div>
 
+            <!-- Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Thesis/Dissertation -->
-                <div
-                    class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600">
-                    <div
-                        class="w-14 h-14 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Thesis & Dissertation Help</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
-                        Complete support from topic selection, literature review, methodology, writing to final
-                        submission. Expert guidance for Bachelor's, Master's, and PhD theses.
-                    </p>
-                    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-blue-600 mt-1"></i>
-                            <span>Topic Selection & Proposal</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-blue-600 mt-1"></i>
-                            <span>Research Design Consultation</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-blue-600 mt-1"></i>
-                            <span>Editing & Formatting</span>
-                        </li>
-                    </ul>
-                </div>
 
-                <!-- Research Papers -->
-                <div
-                    class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-600">
+                <!-- Conference Papers -->
+                <div id="conference-papers"
+                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-600">
+
                     <div
                         class="w-14 h-14 rounded-xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-pen-fancy"></i>
+                        <i class="fas fa-file-alt"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Research Papers & Articles</h3>
+
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">
+                        Conference Paper Support
+                    </h3>
+
                     <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
-                        Write, edit, and publish high-quality research papers. From conference papers to academic
-                        journals with proper citations and formatting.
+                        Assistance for writing, formatting, reviewing, and preparing
+                        conference papers for national and international conferences.
                     </p>
+
                     <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
                         <li class="flex items-start gap-2">
                             <i class="fas fa-check text-purple-600 mt-1"></i>
-                            <span>Original Research Writing</span>
+                            <span>Research Paper Structuring</span>
                         </li>
+
                         <li class="flex items-start gap-2">
                             <i class="fas fa-check text-purple-600 mt-1"></i>
-                            <span>Citation Management (APA, MLA, Chicago)</span>
+                            <span>Conference Formatting Standards</span>
                         </li>
+
                         <li class="flex items-start gap-2">
                             <i class="fas fa-check text-purple-600 mt-1"></i>
-                            <span>Conference Paper Preparation</span>
+                            <span>Presentation & Submission Guidance</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Journal Publication -->
-                <div
-                    class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-600">
+                <div id="journal-publication"
+                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-600">
+
                     <div
                         class="w-14 h-14 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
                         <i class="fas fa-newspaper"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Journal Publication (SCI, Scopus)
+
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">
+                        Journal Publication Guidance
                     </h3>
+
                     <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
-                        Publish your research in reputed SCI, Scopus indexed, and UGC approved journals. Complete
-                        support from submission to publication.
+                        End-to-end support for publishing research papers in SCI,
+                        Scopus, UGC, and peer-reviewed journals.
                     </p>
+
                     <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
                         <li class="flex items-start gap-2">
                             <i class="fas fa-check text-emerald-600 mt-1"></i>
-                            <span>Journal Selection & Guidance</span>
+                            <span>Journal Selection Assistance</span>
                         </li>
+
                         <li class="flex items-start gap-2">
                             <i class="fas fa-check text-emerald-600 mt-1"></i>
-                            <span>Manuscript Submission Support</span>
+                            <span>Manuscript Review & Editing</span>
                         </li>
+
                         <li class="flex items-start gap-2">
                             <i class="fas fa-check text-emerald-600 mt-1"></i>
-                            <span>Review & Revision Handling</span>
+                            <span>Submission & Revision Support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dissertation -->
+                <div id="dissertation-support"
+                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600">
+
+                    <div
+                        class="w-14 h-14 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-book"></i>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">
+                        Dissertation Assistance
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                        Professional support for undergraduate and postgraduate
+                        dissertations including formatting and documentation.
+                    </p>
+
+                    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-blue-600 mt-1"></i>
+                            <span>Topic & Research Planning</span>
+                        </li>
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-blue-600 mt-1"></i>
+                            <span>Documentation & Referencing</span>
+                        </li>
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-blue-600 mt-1"></i>
+                            <span>Formatting & Final Review</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Thesis -->
+                <div id="thesis-writing"
+                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-cyan-400 dark:hover:border-cyan-600">
+
+                    <div
+                        class="w-14 h-14 rounded-xl bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">
+                        Thesis Writing & Formatting
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                        Structured guidance for thesis writing, methodology,
+                        formatting, citations, and final submission preparation.
+                    </p>
+
+                    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-cyan-600 mt-1"></i>
+                            <span>Research Methodology Support</span>
+                        </li>
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-cyan-600 mt-1"></i>
+                            <span>APA, MLA & IEEE Formatting</span>
+                        </li>
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-cyan-600 mt-1"></i>
+                            <span>Editing & Proofreading</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Data Analysis -->
-                <div
-                    class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700 hover:border-cyan-400 dark:hover:border-cyan-600">
+                <div id="data-analysis"
+                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-orange-400 dark:hover:border-orange-600">
+
                     <div
-                        class="w-14 h-14 rounded-xl bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-orange-100 dark:bg-orange-900/30 text-orange-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
                         <i class="fas fa-chart-bar"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Data Analysis & Statistics</h3>
+
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">
+                        Research Data Analysis
+                    </h3>
+
                     <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
-                        Expert data analysis using SPSS, Python, R, STATA and more. Statistical interpretation and
-                        visualization of complex research data.
+                        Statistical analysis and research interpretation using
+                        SPSS, Python, Excel, R, and quantitative research tools.
                     </p>
+
                     <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
                         <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-cyan-600 mt-1"></i>
-                            <span>SPSS, Python, R Analysis</span>
+                            <i class="fas fa-check text-orange-600 mt-1"></i>
+                            <span>Quantitative & Qualitative Analysis</span>
                         </li>
+
                         <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-cyan-600 mt-1"></i>
-                            <span>Qualitative & Quantitative Methods</span>
+                            <i class="fas fa-check text-orange-600 mt-1"></i>
+                            <span>Charts & Data Visualization</span>
                         </li>
+
                         <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-cyan-600 mt-1"></i>
-                            <span>Data Visualization & Interpretation</span>
+                            <i class="fas fa-check text-orange-600 mt-1"></i>
+                            <span>Statistical Interpretation</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Literature Review -->
-                <div
-                    class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700 hover:border-orange-400 dark:hover:border-orange-600">
+                <div id="literature-review"
+                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-pink-400 dark:hover:border-pink-600">
+
                     <div
-                        class="w-14 h-14 rounded-xl bg-orange-100 dark:bg-orange-900/30 text-orange-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-book-open"></i>
+                        class="w-14 h-14 rounded-xl bg-pink-100 dark:bg-pink-900/30 text-pink-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-search"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Literature Review</h3>
+
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">
+                        Literature Review Support
+                    </h3>
+
                     <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
-                        Comprehensive literature reviews covering systematic review, scoping review, and meta-analysis
-                        with proper gap identification.
+                        Comprehensive literature reviews, research gap analysis,
+                        and thematic synthesis for academic projects.
                     </p>
+
                     <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
                         <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-orange-600 mt-1"></i>
-                            <span>Systematic Literature Search</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-orange-600 mt-1"></i>
-                            <span>Thematic Analysis & Synthesis</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-orange-600 mt-1"></i>
+                            <i class="fas fa-check text-pink-600 mt-1"></i>
                             <span>Research Gap Identification</span>
+                        </li>
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-pink-600 mt-1"></i>
+                            <span>Systematic Review Support</span>
+                        </li>
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-pink-600 mt-1"></i>
+                            <span>Reference Management</span>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Synopsis & Proposals -->
-                <div
-                    class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700 hover:border-pink-400 dark:hover:border-pink-600">
-                    <div
-                        class="w-14 h-14 rounded-xl bg-pink-100 dark:bg-pink-900/30 text-pink-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Synopsis & Proposal Writing</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
-                        Professional synopsis and research proposal writing for university approvals, grants, and
-                        fellowship applications.
-                    </p>
-                    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-pink-600 mt-1"></i>
-                            <span>PhD Synopsis Writing</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-pink-600 mt-1"></i>
-                            <span>Research Grant Proposals</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-pink-600 mt-1"></i>
-                            <span>Fellowship Applications</span>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
 
+    <!-- Highlight Active Hash -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const currentHash = window.location.hash;
+
+            if (currentHash) {
+
+                const activeCard = document.querySelector(currentHash);
+
+                if (activeCard) {
+
+                    activeCard.classList.add(
+                        'ring-2',
+                        'ring-cyan-500',
+                        'border-cyan-500',
+                        'shadow-2xl',
+                        'scale-[1.02]'
+                    );
+
+                    setTimeout(() => {
+                        activeCard.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'center'
+                        });
+                    }, 200);
+                }
+            }
+        });
+    </script>
+    <!-- Contact Support -->
+    <section class="py-20 bg-white dark:bg-slate-950">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div
+                class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-slate-700 shadow-2xl p-10 md:p-14">
+
+                <!-- Background Blur -->
+                <div class="absolute -top-20 -right-20 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl">
+                </div>
+
+                <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl">
+                </div>
+
+                <div class="relative z-10 text-center">
+
+                    <!-- Badge -->
+                    <span
+                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/10 text-cyan-300 text-sm font-bold uppercase tracking-wider mb-5">
+                        Research Assistance
+                    </span>
+
+                    <!-- Heading -->
+                    <h2 class="text-4xl md:text-5xl font-black text-white mb-5 leading-tight">
+                        Need Help With Your Research Work?
+                    </h2>
+
+                    <!-- Description -->
+                    <p class="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed mb-10">
+                        Connect with our experts for thesis writing, journal publications,
+                        conference papers, data analysis, dissertation support,
+                        and academic documentation guidance.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+
+                        <!-- Call -->
+                        <a href="tel:+{{ env('WA_NUMBER') }}"
+                            class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold shadow-xl transition-all duration-300">
+
+                            <i class="fas fa-phone-alt"></i>
+
+                            Call Now
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
+                            class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl border border-white/20 bg-white/10 hover:bg-white/20 text-white font-bold backdrop-blur-md transition-all duration-300">
+
+                            <i class="fab fa-whatsapp text-green-400 text-lg"></i>
+
+                            Chat on WhatsApp
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
     <!-- WHY CHOOSE US -->
     <section class="py-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -305,7 +462,7 @@
     </section>
 
     <!-- PRICING/PACKAGES -->
-    <section class="py-20">
+    {{-- <section class="py-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Flexible Service Packages</h2>
@@ -338,7 +495,7 @@
                             <span class="text-sm text-slate-700 dark:text-slate-300">Email support</span>
                         </li>
                     </ul>
-                    <button onclick="window.location.href='https://wa.me/917619876249'"
+                    <button onclick="window.location.href='https://wa.me/{{ env('WA_NUMBER') }}'"
                         class="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold transition-colors">
                         Get Started
                     </button>
@@ -377,7 +534,7 @@
                                 <span class="text-sm text-slate-700 dark:text-slate-300">Priority support</span>
                             </li>
                         </ul>
-                        <button onclick="window.location.href='https://wa.me/917619876249'"
+                        <button onclick="window.location.href='https://wa.me/{{ env('WA_NUMBER') }}'"
                             class="w-full py-2 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold transition-colors">
                             Get Started
                         </button>
@@ -408,17 +565,17 @@
                             <span class="text-sm text-slate-700 dark:text-slate-300">24/7 priority support</span>
                         </li>
                     </ul>
-                    <button onclick="window.location.href='https://wa.me/917619876249'"
+                    <button onclick="window.location.href='https://wa.me/{{ env('WA_NUMBER') }}'"
                         class="w-full py-2 px-4 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-bold transition-colors">
                         Contact Us
                     </button>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- GET IN TOUCH CTA -->
-    <section
+    {{-- <section
         class="py-20 bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 relative overflow-hidden">
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div
@@ -448,7 +605,7 @@
                     <h3 class="font-bold text-slate-900 dark:text-white mb-2">WhatsApp Chat</h3>
                     <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Quick response, personalized guidance
                     </p>
-                    <a href="https://wa.me/917619876249" target="_blank"
+                    <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
                         class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold transition-colors">
                         <i class="fab fa-whatsapp"></i>
                         +91 7619 876 249
@@ -478,7 +635,7 @@
                     </div>
                     <h3 class="font-bold text-slate-900 dark:text-white mb-2">Free Consultation</h3>
                     <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">30-minute expert session</p>
-                    <button onclick="window.location.href='https://wa.me/917619876249'"
+                    <button onclick="window.location.href='https://wa.me/{{ env('WA_NUMBER') }}'"
                         class="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-bold transition-colors">
                         <i class="fas fa-clock"></i>
                         Book Now
@@ -493,6 +650,6 @@
                 </p>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 </x-layouts.main.base>

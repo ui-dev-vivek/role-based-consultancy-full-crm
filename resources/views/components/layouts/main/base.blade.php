@@ -14,6 +14,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/main-style.css') }}">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('assets/logos/icon.png') }}">
+
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -36,23 +39,33 @@
     @php
         $navItems = [
             [
+                'title' => 'Services',
+                'icon' => 'fas fa-university',
+                'dropdown' => [
+                    ['title' => 'Admissions', 'url' => '/admissions'],
+                    ['title' => 'Training & Placements', 'url' => '/training-and-placements'],
+                    ['title' => 'Research Support', 'url' => '/research'],
+                    ['title' => 'IP & Legal Services', 'url' => '/intellectual-property'],
+                ],
+            ],
+            [
                 'title' => 'Admissions',
                 'icon' => 'fas fa-university',
                 'url' => '/admissions',
                 'lable' => 'Choose the Right College & Career Path',
                 'text' =>
-                    'Confused about courses, colleges, or entrance exams? Get expert guidance for B.Tech, BCA, MBA, BBA, Diploma, and other professional programs.',
-                'cta' => 'Get Free Counseling',
+                    'Confused about courses, colleges, or entrance exams? Get expert guidance for Technical, Management, and Professional Courses/programs.',
+                'cta' => 'View More',
             ],
 
             [
                 'title' => 'Training & Placements',
                 'icon' => 'fas fa-briefcase',
                 'url' => '/training-and-placements',
-                'lable' => 'Learn Skills That Companies Actually Hire For',
-                'text' =>
-                    'Industry-focused training, internships, resume preparation, interview support, and placement assistance to help students become job-ready.',
-                'cta' => 'Explore Training',
+                // 'lable' => 'Learn Skills That Companies Actually Hire For',
+                // 'text' =>
+                //     'Industry-focused training, internships, resume preparation, interview support, and placement assistance to help students become job-ready.',
+                // 'cta' => 'Explore Training',
             ],
 
             [
@@ -111,13 +124,13 @@
             [
                 'title' => 'About Us',
                 'icon' => 'fas fa-info-circle',
-                'url' => '/about',
+                'url' => '/about-us',
             ],
 
             [
                 'title' => 'Contact Us',
                 'icon' => 'fas fa-envelope',
-                'url' => '/contact',
+                'url' => '/contact-us',
             ],
         ];
     @endphp
@@ -138,8 +151,8 @@
                 <!-- Logo -->
                 <a href="/" class="flex items-center gap-3 group ">
                     <div
-                        class="flex items-center justify-center w-11 h-11 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-xl shadow-slate-200/50 dark:shadow-black/20 group-hover:rotate-6 ">
-                        <i class="fas fa-ad text-xl"></i>
+                        class="flex items-center justify-center w-11 h-11 rounded-2xl bg-green-600 dark:bg-white text-white dark:text-slate-900 shadow-xl shadow-slate-200/50 dark:shadow-black/20 group-hover:rotate-6 ">
+                        <i class="fas fa-graduation-cap text-xl"></i>
                     </div>
                     <span class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white">
                         {{ env('APP_NAME', 'Acad Next Solutions') }}
@@ -215,18 +228,19 @@
                                         @endif
                                     @else
                                         <!-- Normal Menu Design -->
-                                        <div class="w-full p-2 flex flex-col gap-1">
+                                        <div class="w-full p-1 flex flex-col gap-0.5">
                                             @foreach ($item['dropdown'] as $subItem)
                                                 <a href="{{ $subItem['url'] }}"
-                                                    class="group/link flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all duration-300">
-                                                    <div class="flex items-center gap-3">
+                                                    class="group/link flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all duration-300">
+                                                    <div class="flex items-center gap-2">
                                                         <div
-                                                            class="w-8 h-8 rounded-lg bg-slate-50 dark:bg-slate-800 flex items-center justify-center group-hover/link:bg-primary-100 dark:group-hover/link:bg-primary-900/30 transition-colors">
+                                                            class="w-6 h-6 rounded-md bg-slate-50 dark:bg-slate-800 flex items-center justify-center group-hover/link:bg-primary-100 dark:group-hover/link:bg-primary-900/30 transition-colors">
                                                             <i
-                                                                class="fas fa-chevron-right text-[10px] text-slate-400 group-hover/link:text-primary-500 transition-colors"></i>
+                                                                class="fas fa-chevron-right text-[8px] text-slate-400 group-hover/link:text-primary-500 transition-colors"></i>
                                                         </div>
                                                         <span
-                                                            class="text-[14px] font-bold text-slate-700 dark:text-slate-200 group-hover/link:text-primary-600 dark:group-hover/link:text-primary-400 transition-colors">{{ $subItem['title'] }}</span>
+                                                            class="text-[13px] font-semibold text-slate-700 dark:text-slate-200 group-hover/link:text-primary-600 dark:group-hover/link:text-primary-400 transition-colors">{{ $subItem['title'] }}
+                                                        </span>
                                                     </div>
                                                 </a>
                                             @endforeach
@@ -436,18 +450,20 @@
             <div class="p-6 bg-slate-50 dark:bg-slate-800/50 mt-auto border-t border-slate-100 dark:border-slate-800">
                 <div class="flex items-center gap-4 mb-5">
                     <div class="relative">
-                        <img src="https://ui-avatars.com/api/?name=Vivek&background=0f172a&color=fff&bold=true"
+                        <img src="https://ui-avatars.com/api/?name=Fate&background=0f172a&color=fff&bold=true"
                             class="w-14 h-14 rounded-full ring-4 ring-white dark:ring-slate-900 shadow-md"
-                            alt="Vivek">
+                            alt="Fateh">
                         <span
                             class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 border-2 border-white dark:border-slate-900 rounded-full"></span>
                     </div>
                     <div>
-                        <h4 class="text-base font-extrabold text-slate-900 dark:text-white">Vivek</h4>
+                        <h4 class="text-base font-extrabold text-slate-900 dark:text-white">
+                            {{ env('AGENT_NAME', 'Fateh Bahadur Kuwar') }}
+                        </h4>
                         <p class="text-sm font-medium text-slate-500 dark:text-slate-400">Available to help</p>
                     </div>
                 </div>
-                <a href="https://wa.me/917619876249" target="_blank"
+                <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
                     class="flex items-center justify-center gap-2 w-full px-4 py-3.5 bg-[#25D366] hover:bg-[#1ebd5a] text-white rounded-xl font-bold transition-all duration-300 shadow-lg shadow-[#25D366]/30 hover:shadow-[#25D366]/50 hover:-translate-y-0.5">
                     <i class="fab fa-whatsapp text-xl"></i>
                     Chat on WhatsApp
@@ -529,8 +545,8 @@
                     <div>
                         <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-4">Company</h3>
                         <ul class="space-y-3 text-sm text-slate-300">
-                            <li><a href="/about" class="hover:text-white transition-colors">About Us</a></li>
-                            <li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
+                            <li><a href="/about-us" class="hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="/contact-us" class="hover:text-white transition-colors">Contact</a></li>
                             <li><a href="/privacy-policy" class="hover:text-white transition-colors">Privacy
                                     Policy</a></li>
                             <li><a href="/terms-of-service" class="hover:text-white transition-colors">Terms of

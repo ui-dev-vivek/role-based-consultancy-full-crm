@@ -18,27 +18,26 @@ class Admissions extends Controller
         // Validate the incoming data
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'mobile_number' => 'required|regex:/^[0-9]{10}$/|unique:admission_inquiries',
-            'guardian_mobile_number' => 'required|regex:/^[0-9]{10}$/',
+            'mobile_number' => 'required|regex:/^[0-9]{10}$/',
+            'guardian_mobile_number' => 'nullable|regex:/^[0-9]{10}$/',
             'interested_course' => 'required|string|max:255',
             'city' => 'required|string|max:255',
             'state' => 'required|string|max:255',
             'scholarship_status' => 'required|in:scholarship,non-scholarship',
-            'admission_budget' => 'required|numeric|min:0',
+            // 'admission_budget' => 'required|numeric|min:0',
         ], [
-            'name.required' => 'कृपया अपना नाम दर्ज करें',
-            'mobile_number.required' => 'कृपया मोबाइल नंबर दर्ज करें',
-            'mobile_number.regex' => 'कृपया एक वैध 10 अंकों का मोबाइल नंबर दर्ज करें',
-            'mobile_number.unique' => 'यह मोबाइल नंबर पहले से पंजीकृत है',
-            'guardian_mobile_number.required' => 'कृपया अभिभावक का मोबाइल नंबर दर्ज करें',
-            'guardian_mobile_number.regex' => 'कृपया एक वैध 10 अंकों का नंबर दर्ज करें',
-            'interested_course.required' => 'कृपया अपनी रुचि का कोर्स चुनें',
-            'city.required' => 'कृपया शहर दर्ज करें',
-            'state.required' => 'कृपया राज्य चुनें',
-            'scholarship_status.required' => 'कृपया छात्रवृत्ति स्थिति चुनें',
-            'admission_budget.required' => 'कृपया प्रवेश बजट दर्ज करें',
+            'name.required' => 'Please enter your full name',
+            'mobile_number.required' => 'Please enter your mobile number',
+            'mobile_number.regex' => 'Please enter a valid 10-digit mobile number',
+            'mobile_number.unique' => 'This mobile number is already registered',
+            'guardian_mobile_number.required' => 'Please enter guardian mobile number',
+            'guardian_mobile_number.regex' => 'Please enter a valid 10-digit number',
+            'interested_course.required' => 'Please select your interested course',
+            'city.required' => 'Please enter your city',
+            'state.required' => 'Please select your state',
+            'scholarship_status.required' => 'Please select scholarship status',
+            'admission_budget.required' => 'Please enter admission budget',
         ]);
-
         try {
             // Create new admission inquiry
             $inquiry = AdmissionInquiry::create([
@@ -49,7 +48,7 @@ class Admissions extends Controller
                 'city' => $validated['city'],
                 'state' => $validated['state'],
                 'scholarship_status' => $validated['scholarship_status'],
-                'admission_budget' => $validated['admission_budget'],
+                // 'admission_budget' => $validated['admission_budget'],
                 'status' => 'pending',
             ]);
 
@@ -58,13 +57,17 @@ class Admissions extends Controller
 
             return response()->json([
                 'success' => true,
-                'message' => 'आपका आवेदन सफलतापूर्वक जमा हो गया है। हम जल्द ही आपसे संपर्क करेंगे।',
+                'message' => 'Your application has been submitted successfully. We will contact you soon.',
                 'data' => $inquiry,
             ], 201);
         } catch (\Exception $e) {
+            \Illuminate\Support\Facades\Log::error('Admission submission error: ' . $e->getMessage(), [
+                'exception' => $e,
+                'validated_data' => $validated,
+            ]);
             return response()->json([
                 'success' => false,
-                'message' => 'आवेदन जमा करने में त्रुटि हुई। कृपया पुनः प्रयास करें।',
+                'message' => 'Error submitting your application. Please try again.',
                 'error' => $e->getMessage(),
             ], 500);
         }

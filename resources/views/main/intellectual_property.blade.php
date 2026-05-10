@@ -1,118 +1,305 @@
 <x-layouts.main.base>
 
     @section('page-hero')
-        <x-ui.hero title="Protect Your" highlightText="Intellectual Property"
-            description="Expert trademark, patent, MSME & ISO registration services with guaranteed success."
-            badge="Legal Experts Available" breadcrumbText="IP & Legal" primaryBtnText="Get Consultation"
-            primaryBtnUrl="#consultation" height="400px" />
+        <x-ui.hero title="Protect Your" highlightText="Ideas, Brand & Innovation"
+            description="Professional support for trademarks, patents, copyrights, MSME registration, ISO certifications, and startup legal compliance services."
+            badge="IP & Legal Consultancy Services" breadcrumbText="IP & Legal" primaryBtnText="Talk to an Expert"
+            primaryBtnUrl="https://wa.me/{{ env('WA_NUMBER') }}" secondaryBtnText="Call Now"
+            secondaryBtnUrl="tel:+{{ env('WA_NUMBER') }}" height="400px" :stats="[
+                ['icon' => 'fas fa-trademark', 'color' => 'blue-400', 'text' => 'Trademark & Brand Protection'],
+                ['icon' => 'fas fa-lightbulb', 'color' => 'purple-400', 'text' => 'Patent & Startup Support'],
+            ]" />
     @endsection
 
     <!-- Services Section -->
+    <!-- IP SERVICES -->
     <section class="py-20 bg-slate-50 dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Heading -->
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Our IP Services</h2>
-                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                    Comprehensive intellectual property protection solutions for entrepreneurs, startups, and
-                    established businesses.
+
+                <span
+                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-bold mb-4">
+                    Intellectual Property & Legal Consultancy
+                </span>
+
+                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">
+                    Protect Your Ideas, Brand & Business
+                </h2>
+
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+                    End-to-end intellectual property, startup registration, and legal
+                    compliance services for students, startups, creators, innovators,
+                    and businesses.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Trademark -->
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Design Patent -->
+                <div id="design-patents"
+                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-cyan-400 dark:hover:border-cyan-600">
+
                     <div
-                        class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center mb-4">
-                        <i class="fas fa-trademark text-xl"></i>
+                        class="w-14 h-14 rounded-xl bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+
+                        <i class="fas fa-drafting-compass"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Trademark Registration</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                        Protect your brand name, logo & identity with comprehensive trademark registration across India.
+
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                        Design Patent Services
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                        Protect the visual appearance, product design, structure,
+                        packaging, and industrial creativity of your innovation.
                     </p>
+
                     <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> Logo & Brand Protection
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-cyan-600 mt-1"></i>
+                            <span>Industrial Design Protection</span>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> National & International
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-cyan-600 mt-1"></i>
+                            <span>Design Filing Assistance</span>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> 7-10 Days Filing
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-cyan-600 mt-1"></i>
+                            <span>Documentation & Consultation</span>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Patent -->
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
+                <!-- Utility Patent -->
+                <div id="utility-patents"
+                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-600">
+
                     <div
-                        class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center mb-4">
-                        <i class="fas fa-lightbulb text-xl"></i>
+                        class="w-14 h-14 rounded-xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+
+                        <i class="fas fa-lightbulb"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Patent Filing</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                        Secure your innovation with comprehensive patent protection for inventions & technology.
+
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                        Utility Patent Filing
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                        Secure legal protection for technical inventions, innovative
+                        systems, processes, products, and technologies.
                     </p>
+
                     <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> Utility & Design Patents
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Prior Art & Patent Search</span>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> Prior Art Search
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Technical Drafting Support</span>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> Expert Patent Drafting
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Patent Filing Guidance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Copyright -->
+                <div id="copyrights"
+                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-pink-400 dark:hover:border-pink-600">
+
+                    <div
+                        class="w-14 h-14 rounded-xl bg-pink-100 dark:bg-pink-900/30 text-pink-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+
+                        <i class="fas fa-copyright"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                        Copyright Registration
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                        Protect original creative works including software, content,
+                        books, research, music, videos, and digital assets.
+                    </p>
+
+                    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-pink-600 mt-1"></i>
+                            <span>Content & Software Protection</span>
+                        </li>
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-pink-600 mt-1"></i>
+                            <span>Creative Work Registration</span>
+                        </li>
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-pink-600 mt-1"></i>
+                            <span>Legal Ownership Documentation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Trademark -->
+                <div id="trademark"
+                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600">
+
+                    <div
+                        class="w-14 h-14 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+
+                        <i class="fas fa-trademark"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                        Trademark Registration
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                        Secure your business identity, logo, brand name, and product
+                        identity with professional trademark filing support.
+                    </p>
+
+                    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-blue-600 mt-1"></i>
+                            <span>Brand Name Protection</span>
+                        </li>
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-blue-600 mt-1"></i>
+                            <span>Logo & Identity Registration</span>
+                        </li>
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-blue-600 mt-1"></i>
+                            <span>Filing & Objection Support</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- MSME -->
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
+                <div id="msme-registration"
+                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-600">
+
                     <div
-                        class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 text-green-600 flex items-center justify-center mb-4">
-                        <i class="fas fa-building text-xl"></i>
+                        class="w-14 h-14 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+
+                        <i class="fas fa-building"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">MSME Registration</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                        Government recognition for micro, small & medium enterprises with benefits & subsidies.
+
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                        MSME Registration
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                        Register your business under MSME/Udyam to access government
+                        schemes, subsidies, financial support, and credibility benefits.
                     </p>
+
                     <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> Udyam Registration
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-emerald-600 mt-1"></i>
+                            <span>Udyam Registration Support</span>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> Tax Benefits & Subsidies
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-emerald-600 mt-1"></i>
+                            <span>Government Scheme Eligibility</span>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> Credit Facility Access
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-emerald-600 mt-1"></i>
+                            <span>Business Documentation Guidance</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- ISO -->
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
+                <div id="iso-registration"
+                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-red-400 dark:hover:border-red-600">
+
                     <div
-                        class="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30 text-red-600 flex items-center justify-center mb-4">
-                        <i class="fas fa-certificate text-xl"></i>
+                        class="w-14 h-14 rounded-xl bg-red-100 dark:bg-red-900/30 text-red-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+
+                        <i class="fas fa-certificate"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">ISO Certification</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                        International quality & management certifications to enhance business credibility globally.
+
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                        ISO Certification
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                        Improve trust, quality standards, and professional credibility
+                        through internationally recognized ISO certifications.
                     </p>
+
                     <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> ISO 9001, 27001, 45001
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-red-600 mt-1"></i>
+                            <span>ISO 9001 & Business Standards</span>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> Quality Management
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-red-600 mt-1"></i>
+                            <span>Documentation & Compliance Support</span>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check text-green-500"></i> Global Recognition
+
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-red-600 mt-1"></i>
+                            <span>Certification Assistance</span>
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </section>
+
+    <!-- Active Hash Highlight -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const currentHash = window.location.hash;
+
+            if (currentHash) {
+
+                const activeCard = document.querySelector(currentHash);
+
+                if (activeCard) {
+
+                    activeCard.classList.add(
+                        'ring-2',
+                        'ring-cyan-500',
+                        'border-cyan-500',
+                        'shadow-2xl',
+                        'scale-[1.02]'
+                    );
+
+                    setTimeout(() => {
+                        activeCard.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'center'
+                        });
+                    }, 200);
+                }
+            }
+        });
+    </script>
 
     <!-- Why Choose Us -->
     <section class="py-20">
@@ -219,8 +406,8 @@
     </section>
 
     <!-- Process Section -->
-    <section class="py-20 bg-slate-50 dark:bg-slate-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-0 bg-slate-50 dark:bg-slate-900">
+        {{-- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Our Simple Process</h2>
                 <p class="text-lg text-slate-600 dark:text-slate-400">
@@ -282,12 +469,12 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section>
 
     <!-- Pricing Section -->
-    <section class="py-20" id="consultation">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="" id="consultation">
+        {{-- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Simple & Transparent Pricing</h2>
                 <p class="text-lg text-slate-600 dark:text-slate-400">
@@ -407,7 +594,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section>
 
     <!-- FAQ Section -->
@@ -493,7 +680,7 @@
                 Get expert consultation from our experienced team. 100% confidential, 100% free.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/917619876249" target="_blank"
+                <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
                     class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary-600 font-bold rounded-xl hover:bg-slate-100 transition-colors">
                     <i class="fab fa-whatsapp text-2xl"></i>
                     Chat with Expert

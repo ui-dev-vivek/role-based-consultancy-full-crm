@@ -8,7 +8,7 @@
     'primaryBtnUrl' => '#apply',
     'primaryBtnOnclick' => '',
     'secondaryBtnText' => 'Chat with Us',
-    'secondaryBtnUrl' => 'https://wa.me/917619876249',
+    'secondaryBtnUrl' => 'https://wa.me/' . env('WA_NUMBER'),
     'height' => '350px',
     'stats' => [
         ['icon' => 'fas fa-university', 'color' => 'primary-400', 'text' => '100+ Partner Colleges'],

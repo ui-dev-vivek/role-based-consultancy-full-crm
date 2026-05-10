@@ -4,7 +4,7 @@
         <x-ui.hero title="Find Your Perfect" highlightText="College & Course"
             description="Expert guidance for BBA, BCA, B.Tech, MBA & more — with guaranteed placement support."
             badge="Admissions Open 2024–25" breadcrumbText="Admissions" primaryBtnText="Enquire Now" primaryBtnUrl="#apply"
-            secondaryBtnText="Chat with Us" secondaryBtnUrl="https://wa.me/917619876249" height="400px" />
+            secondaryBtnText="Chat with Us" secondaryBtnUrl="https://wa.me/{{ env('WA_NUMBER') }}" height="400px" />
     @endsection
 
     <!-- 🎓 SCHOLARSHIP HERO SECTION -->
@@ -65,11 +65,12 @@
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Scholarship Tiers & Eligibility</h2>
-                <p class="text-lg text-slate-600 dark:text-slate-400">Choose the scholarship that fits your profile</p>
+                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Scholarship Availabile </h2>
+                <p class="text-xl text-slate-600 dark:text-blue-500">Fill out the form below to apply for available
+                    scholarships</p>
             </div>
 
-
+            {{--
             <!-- LEFT SIDE - 2x2 SCHOLARSHIP CARDS -->
             <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 mb-12">
                 <!-- 100% Scholarship -->
@@ -221,7 +222,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
 
 
@@ -379,7 +380,7 @@
     </section>
 
     <!-- Featured Courses -->
-    <section class="py-20 bg-slate-50 dark:bg-slate-900">
+    {{-- <section class="py-20 bg-slate-50 dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Popular Courses</h2>
@@ -464,93 +465,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
-    <!-- Admission Modal Component -->
-    <x-ui.admission-form-modal />
+    <section></section>
 
-    <!-- Success Stories -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Success Stories</h2>
-                <p class="text-lg text-slate-600 dark:text-slate-400">From students to successful professionals</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
-                    <div class="flex items-center gap-4 mb-4">
-                        <img src="https://ui-avatars.com/api/?name=Rahul+Kumar&background=0f172a&color=fff&bold=true"
-                            alt="Rahul Kumar" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h4 class="font-bold text-slate-900 dark:text-white">Rahul Kumar</h4>
-                            <p class="text-sm text-slate-600 dark:text-slate-400">B.Tech, IIT Delhi</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-1 mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="text-slate-600 dark:text-slate-400 mb-4">
-                        "Got 100% scholarship + admission to IIT Delhi! Their counseling was exceptional. Now at Google
-                        earning ₹45 LPA!"
-                    </p>
-                    <p class="text-sm text-emerald-600 font-bold"><i class="fas fa-medal mr-1"></i>100% Scholarship
-                        Winner</p>
-                </div>
-
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
-                    <div class="flex items-center gap-4 mb-4">
-                        <img src="https://ui-avatars.com/api/?name=Priya+Sharma&background=0f172a&color=fff&bold=true"
-                            alt="Priya Sharma" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h4 class="font-bold text-slate-900 dark:text-white">Priya Sharma</h4>
-                            <p class="text-sm text-slate-600 dark:text-slate-400">BCA, Delhi University</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-1 mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="text-slate-600 dark:text-slate-400 mb-4">
-                        "Got 75% scholarship and free coding training. Placed in Amazon as SDE with ₹28 LPA!"
-                    </p>
-                    <p class="text-sm text-cyan-600 font-bold"><i class="fas fa-medal mr-1"></i>75% Scholarship Winner
-                    </p>
-                </div>
-
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
-                    <div class="flex items-center gap-4 mb-4">
-                        <img src="https://ui-avatars.com/api/?name=Arjun+Singh&background=0f172a&color=fff&bold=true"
-                            alt="Arjun Singh" class="w-16 h-16 rounded-full">
-                        <div>
-                            <h4 class="font-bold text-slate-900 dark:text-white">Arjun Singh</h4>
-                            <p class="text-sm text-slate-600 dark:text-slate-400">BBA, XLRI Jamshedpur</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-1 mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="text-slate-600 dark:text-slate-400 mb-4">
-                        "Received 50% scholarship to XLRI. Mentorship was game-changing. Now at McKinsey earning ₹35
-                        LPA!"
-                    </p>
-                    <p class="text-sm text-blue-600 font-bold"><i class="fas fa-medal mr-1"></i>50% Scholarship Winner
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Final CTA -->
     <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-800 relative overflow-hidden">
@@ -570,12 +488,12 @@
                 Don't let finances limit your dreams. Apply for scholarship and get admission within 7 days guaranteed.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
-                <button onclick="openAdmissionModal()"
+                <a href="#apply"
                     class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary-600 font-bold rounded-xl hover:bg-slate-100 hover:shadow-2xl transition-all duration-300 hover:scale-105">
                     <i class="fas fa-pen-to-square text-lg"></i>
                     Apply for Scholarship
-                </button>
-                <a href="https://wa.me/917619876249" target="_blank"
+                </a>
+                <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
                     class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-bold rounded-xl border-2 border-white/50 transition-all duration-300 hover:scale-105">
                     <i class="fab fa-whatsapp text-2xl"></i>
                     Chat on WhatsApp

@@ -37,7 +37,9 @@
             <!-- Form Content - Scrollable Body -->
             <div class="flex-1 overflow-y-auto overscroll-contain">
                 <div class="p-8">
-                    <form id="admissionForm" @submit.prevent="submitForm" class="space-y-5">
+                    <!-- Form Container -->
+                    <div id="formContent">
+                        <form id="admissionForm" @submit.prevent="submitForm" class="space-y-5">
                         @csrf
 
                         <!-- Progress Bar -->
@@ -279,8 +281,42 @@
                             </p>
                         </div>
                     </form>
+                    </div>
+
+                    <!-- Success Container -->
+                    <div id="successContent" class="hidden text-center">
+                        <div class="mb-6">
+                            <div class="flex justify-center mb-4">
+                                <div class="bg-green-100 dark:bg-green-900 rounded-full p-4">
+                                    <i class="fas fa-check text-3xl text-green-600 dark:text-green-400"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Thank You!</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-2" id="successMessage"></p>
+                            <p class="text-sm text-slate-500 dark:text-slate-500">Our team will reach out to you shortly with more information.</p>
+                        </div>
+
+                        <!-- WhatsApp Button -->
+                        <div class="mt-8">
+                            <a href="https://chat.whatsapp.com/{{ env('WHATSAPP_GROUP_LINK') }}" target="_blank"
+                                class="inline-flex items-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                Join Our WhatsApp Group
+                            </a>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 mt-3">
+                                Get instant updates about admissions and events
+                            </p>
+                        </div>
+
+                        <!-- Close Button -->
+                        <div class="mt-6">
+                            <button @click="open = false"
+                                class="inline-block px-6 py-2 border-2 border-primary-600 text-primary-600 dark:text-primary-400 font-bold rounded-xl hover:bg-primary-600 hover:text-white transition-all duration-300">
+                                Close
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                </form>
             </div>
         </div>
     </div>
@@ -334,8 +370,12 @@
                     const data = await response.json();
 
                     if (response.ok) {
-                        alert('✅ ' + data.message);
-                        this.open = false;
+                        // Hide form and show success message
+                        document.getElementById('formContent').classList.add('hidden');
+                        document.getElementById('successMessage').textContent = data.message;
+                        document.getElementById('successContent').classList.remove('hidden');
+                        
+                        // Reset form
                         this.formData = {
                             name: '',
                             mobile_number: '',
@@ -351,11 +391,21 @@
                         if (data.errors) {
                             this.errors = data.errors;
                         }
-                        alert('❌ ' + (data.message || 'An error occurred'));
+                        // Show error message without alert
+                        const errorMsg = data.message || 'An error occurred while submitting your application.';
+                        const errorDiv = document.createElement('div');
+                        errorDiv.className = 'bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-200 px-4 py-3 rounded-xl mb-4';
+                        errorDiv.innerHTML = `<i class="fas fa-exclamation-circle mr-2"></i>${errorMsg}`;
+                        document.getElementById('formContent').insertBefore(errorDiv, document.getElementById('admissionForm'));
+                        setTimeout(() => errorDiv.remove(), 5000);
                     }
                 } catch (error) {
                     console.error('Error:', error);
-                    alert('❌ Network error. Please try again.');
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-200 px-4 py-3 rounded-xl mb-4';
+                    errorDiv.innerHTML = '<i class="fas fa-exclamation-circle mr-2"></i>Network error. Please check your connection and try again.';
+                    document.getElementById('formContent').insertBefore(errorDiv, document.getElementById('admissionForm'));
+                    setTimeout(() => errorDiv.remove(), 5000);
                 } finally {
                     this.isSubmitting = false;
                 }

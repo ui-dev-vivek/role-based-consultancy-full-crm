@@ -62,10 +62,9 @@
                 'title' => 'Training & Placements',
                 'icon' => 'fas fa-briefcase',
                 'url' => '/training-and-placements',
-                // 'lable' => 'Learn Skills That Companies Actually Hire For',
-                // 'text' =>
-                //     'Industry-focused training, internships, resume preparation, interview support, and placement assistance to help students become job-ready.',
-                // 'cta' => 'Explore Training',
+                'lable' => 'Internships, Training & PPO Support',
+                'cta' => 'Explore Training',
+                'dropdown' => [['title' => 'Free Courses', 'url' => '/training-placement/free-courses']],
             ],
 
             [

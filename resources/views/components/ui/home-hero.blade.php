@@ -17,18 +17,18 @@
                 </div>
                 <span
                     class="text-sm font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-indigo-600 dark:from-primary-400 dark:to-indigo-400">
-                     5000+ Successful cases.
+                    5000+ Successful cases.
                 </span>
             </div>
 
             <!-- Main Headline -->
             <h1
                 class="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-black text-slate-900 dark:text-white leading-[1.1] tracking-tight mb-6">
-                Build Your Career,Research & Ideas With  <br class="hidden lg:block" />
+                Build Your Career,Research & Ideas With <br class="hidden lg:block" />
                 <span class="relative inline-block mt-2">
                     <span
                         class="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-indigo-600 to-cyan-500 dark:from-primary-400 dark:via-indigo-400 dark:to-cyan-400">Your
-                         Expert Guidance !</span>
+                        Expert Guidance !</span>
                     <span
                         class="absolute -bottom-2 left-0 w-full h-4 bg-primary-200 dark:bg-primary-900/50 -z-10 transform -rotate-1 rounded-sm"></span>
                 </span>
@@ -36,10 +36,12 @@
 
             <p class="text-lg lg:text-xl text-slate-600 dark:text-slate-300 mb-5 font-medium leading-relaxed">
                 From <span
-                    class="text-slate-900 dark:text-white font-bold px-1 bg-slate-200 dark:bg-slate-800 rounded">admissions and skill training to placements,
+                    class="text-slate-900 dark:text-white font-bold px-1 bg-slate-200 dark:bg-slate-800 rounded">admissions
+                    and skill training to placements,
                     research support, patents, trademarks,</span> and <span
-                    class="text-slate-900 dark:text-white font-bold px-1 bg-slate-200 dark:bg-slate-800 rounded"> startup registrations</span>.
-                    we help students, professionals, researchers, and startups grow with confidence.
+                    class="text-slate-900 dark:text-white font-bold px-1 bg-slate-200 dark:bg-slate-800 rounded">
+                    startup registrations</span>.
+                we help students, professionals, researchers, and startups grow with confidence.
             </p>
 
             <p class="mb-4 font-bold">5000+ Students & Professionals Assisted Across India</p>

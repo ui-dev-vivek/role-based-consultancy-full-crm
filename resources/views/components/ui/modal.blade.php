@@ -35,7 +35,7 @@
         x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200"
         x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
         x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-        class="flex items-center justify-center min-h-screen p-4">
+        class="relative z-10 flex items-center justify-center min-h-screen p-4">
         <div @click.away="show = false"
             class="bg-white rounded-2xl shadow-2xl transform transition-all w-full {{ $maxWidthClass }} overflow-hidden flex flex-col max-h-[90vh]">
             <!-- Header -->

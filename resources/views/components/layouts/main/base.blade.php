@@ -298,7 +298,7 @@
                                         class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">
                                         <i class="fas fa-user-cog w-4"></i> Profile Settings
                                     </a>
-                                    <form method="POST" action="{{ route('logout') }}" class="mt-1">
+                                    <form method="POST" action="{{ route('filament.admin.auth.logout') }}" class="mt-1">
                                         @csrf
                                         <button type="submit"
                                             class="flex items-center gap-2 w-full px-3 py-2 text-sm font-medium text-red-600 hover:bg-red-50 dark:hover:bg-red-900/10 rounded-xl transition-colors">
@@ -308,7 +308,7 @@
                                 </div>
                             </div>
                         @else
-                            <x-ui.button :href="route('login')" size="sm" variant="dark" icon="fas fa-sign-in-alt"
+                            <x-ui.button href="/admin" size="sm" variant="dark" icon="fas fa-sign-in-alt"
                                 className="rounded-xl shadow-lg shadow-slate-900/20">
                                 Sign In
                             </x-ui.button>
@@ -429,7 +429,7 @@
                             icon="fas fa-chart-pie">
                             Dashboard
                         </x-ui.button>
-                        <form method="POST" action="{{ route('logout') }}">
+                        <form method="POST" action="{{ route('filament.admin.auth.logout') }}">
                             @csrf
                             <x-ui.button type="submit" variant="danger" outline="true" size="sm"
                                 className="w-full rounded-xl" icon="fas fa-sign-out-alt">
@@ -438,7 +438,7 @@
                         </form>
                     </div>
                 @else
-                    <x-ui.button :href="route('login')" size="lg" variant="dark"
+                    <x-ui.button href="/admin" size="lg" variant="dark"
                         className="w-full rounded-xl shadow-lg shadow-slate-900/20" icon="fas fa-sign-in-alt">
                         Sign In to Account
                     </x-ui.button>

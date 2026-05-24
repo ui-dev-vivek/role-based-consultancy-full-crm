@@ -2,11 +2,14 @@
 
 namespace App\Models;
 
+use Filament\Models\Contracts\FilamentUser;
+use Filament\Models\Contracts\HasName;
+use Filament\Panel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements FilamentUser, HasName
 {
     use HasFactory, Notifiable;
 
@@ -16,11 +19,35 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
+        'name',
         'email',
         'password',
         'status',
         'is_email_verified',
     ];
+
+    /**
+     * Get the user's display name for Filament.
+     * Pulls from the related UserProfile's full_name, falling back to email.
+     */
+    public function getFilamentName(): string
+    {
+        try {
+            $profileName = $this->profile?->full_name;
+        } catch (\Throwable) {
+            $profileName = null;
+        }
+
+        return $profileName ?? $this->name ?? $this->email;
+    }
+
+    /**
+     * Determine if the user can access the Filament admin panel.
+     */
+    public function canAccessPanel(Panel $panel): bool
+    {
+        return true;
+    }
 
     /**
      * The attributes that should be hidden for serialization.

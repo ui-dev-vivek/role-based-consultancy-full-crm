@@ -130,7 +130,7 @@
                         <div class="space-y-4">
 
                             <!-- Call -->
-                            <a href="tel:+9176198763454"
+                            <a href="tel:+{{ config('app.wa_number', '9176198763454') }}"
                                 class="flex items-center justify-between gap-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-5 transition-all duration-300">
 
                                 <div class="flex items-center gap-4">

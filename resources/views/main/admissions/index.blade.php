@@ -3,7 +3,7 @@
     @section('page-hero')
         <x-ui.hero title="Find Your Perfect" highlightText="College & Course"
             description="Expert guidance for BBA, BCA, B.Tech, MBA & more — with guaranteed placement support."
-            badge="Admissions Open 2024–25" breadcrumbText="Admissions" primaryBtnText="Enquire Now" primaryBtnUrl="#apply"
+            badge="Admissions Open 2026-27" breadcrumbText="Admissions" primaryBtnText="Enquire Now" primaryBtnUrl="#apply"
             secondaryBtnText="Chat with Us" secondaryBtnUrl="https://wa.me/{{ env('WA_NUMBER') }}" height="400px" />
     @endsection
 
@@ -224,6 +224,236 @@
                 </div>
             </div> --}}
 
+            <!-- 🎓 COURSES OFFERED SECTION -->
+            <section class="py-20 bg-slate-50 dark:bg-slate-900">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+                    <!-- B.Tech Programs -->
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+                            <i class="fas fa-microchip text-blue-600"></i>
+                            B.Tech Programs
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-slate-900 dark:text-white font-semibold">Computer Science &
+                                            Engineering
+                                        </p>
+                                    </div>
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-slate-900 dark:text-white font-semibold">CS & Engineering
+                                            (Artificial
+                                            Intelligence)</p>
+                                    </div>
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-slate-900 dark:text-white font-semibold">CS & Eng. (AI & Machine
+                                            Learning)</p>
+                                    </div>
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-slate-900 dark:text-white font-semibold">CS & Engineering (Data
+                                            Science)
+                                        </p>
+                                    </div>
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-slate-900 dark:text-white font-semibold">Electronics &
+                                            Communication
+                                            Engineering</p>
+                                    </div>
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-slate-900 dark:text-white font-semibold">Electronics Eng. (VLSI
+                                            Design &
+                                            Technology)</p>
+                                    </div>
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-slate-900 dark:text-white font-semibold">Mechanical Engineering
+                                        </p>
+                                    </div>
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- B.Tech Working Professional Programs -->
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+                            <i class="fas fa-briefcase text-purple-600"></i>
+                            B.Tech Working Professional
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-purple-600 shadow-md hover:shadow-lg transition-all">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-slate-900 dark:text-white font-semibold">Computer Science &
+                                            Engineering
+                                        </p>
+                                    </div>
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-purple-600 shadow-md hover:shadow-lg transition-all">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-slate-900 dark:text-white font-semibold">Electronics &
+                                            Communication
+                                            Engineering</p>
+                                    </div>
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-purple-600 shadow-md hover:shadow-lg transition-all">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-slate-900 dark:text-white font-semibold">Mechanical Engineering
+                                        </p>
+                                    </div>
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Master Programs -->
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+                            <i class="fas fa-graduation-cap text-emerald-600"></i>
+                            Post Graduate Programs
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <span
+                                        class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                                        Available
+                                    </span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">BBA</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Bachelor of Business
+                                    Administration</p>
+                            </div>
+
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center">
+                                        <i class="fas fa-laptop-code"></i>
+                                    </div>
+                                    <span
+                                        class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                                        Available
+                                    </span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">BCA</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Bachelor of Computer Applications
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30 text-red-600 flex items-center justify-center">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <span
+                                        class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                                        Available
+                                    </span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">MBA</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Master of Business Administration
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 text-green-600 flex items-center justify-center">
+                                        <i class="fas fa-code-branch"></i>
+                                    </div>
+                                    <span
+                                        class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                                        Available
+                                    </span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">MCA</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Master of Computer Applications
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 flex items-center justify-center">
+                                        <i class="fas fa-microchip"></i>
+                                    </div>
+                                    <span
+                                        class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                                        Available
+                                    </span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">M.Tech (CSE)</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Master of Technology in Computer
+                                    Science
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
 
 
 
@@ -379,93 +609,6 @@
         </div>
     </section>
 
-    <!-- Featured Courses -->
-    {{-- <section class="py-20 bg-slate-50 dark:bg-slate-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Popular Courses</h2>
-                <p class="text-lg text-slate-600 dark:text-slate-400">Choose from India's most demanded programs</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-blue-200 dark:border-blue-800 hover:shadow-xl transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <span
-                            class="px-2 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
-                            Scholarship ✓
-                        </span>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">BBA</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Bachelor of Business Administration</p>
-                    <div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
-                        <i class="fas fa-briefcase text-emerald-500"></i>
-                        <span>Avg. Package: ₹8-12 LPA</span>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-purple-200 dark:border-purple-800 hover:shadow-xl transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="w-12 h-12 rounded-xl bg-purple-600 text-white flex items-center justify-center">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <span
-                            class="px-2 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
-                            Scholarship ✓
-                        </span>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">BCA</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Bachelor of Computer Applications</p>
-                    <div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
-                        <i class="fas fa-briefcase text-emerald-500"></i>
-                        <span>Avg. Package: ₹12-18 LPA</span>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-green-200 dark:border-green-800 hover:shadow-xl transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="w-12 h-12 rounded-xl bg-green-600 text-white flex items-center justify-center">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <span
-                            class="px-2 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
-                            Scholarship ✓
-                        </span>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">B.Tech</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Bachelor of Technology</p>
-                    <div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
-                        <i class="fas fa-briefcase text-emerald-500"></i>
-                        <span>Avg. Package: ₹15-25 LPA</span>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-red-200 dark:border-red-800 hover:shadow-xl transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <span
-                            class="px-2 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
-                            Scholarship ✓
-                        </span>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">MBA</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Master of Business Administration</p>
-                    <div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
-                        <i class="fas fa-briefcase text-emerald-500"></i>
-                        <span>Avg. Package: ₹18-30 LPA</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
 
     <section></section>
 

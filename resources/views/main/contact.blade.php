@@ -8,8 +8,8 @@
         <x-ui.hero title="Let’s" highlightText="Connect"
             description="Get in touch with us for admissions, internships, placements, research consultancy, startup guidance, or IP & legal services."
             badge="We’re Here to Help" breadcrumbText="Contact Us" primaryBtnText="Chat on WhatsApp"
-            primaryBtnUrl="https://wa.me/{{ env('WA_NUMBER') }}" secondaryBtnText="Call Now" secondaryBtnUrl="tel:+{{ env('WA_NUMBER') }}"
-            height="400px" :stats="[
+            primaryBtnUrl="https://wa.me/{{ env('WA_NUMBER') }}" secondaryBtnText="Call Now"
+            secondaryBtnUrl="tel:+{{ env('WA_NUMBER') }}" height="400px" :stats="[
                 ['icon' => 'fas fa-headset', 'color' => 'cyan-400', 'text' => 'Quick Support Available'],
                 ['icon' => 'fas fa-comments', 'color' => 'emerald-400', 'text' => 'Free Consultation'],
             ]" />
@@ -57,7 +57,7 @@
 
                                 <a href="tel:+{{ env('WA_NUMBER') }}"
                                     class="text-slate-600 dark:text-slate-400 hover:text-cyan-600">
-                                    +91 76198 76249
+                                    +{{ env('WA_NUMBER') }}
                                 </a>
                             </div>
 
@@ -100,7 +100,7 @@
                                 </h4>
 
                                 <p class="text-slate-600 dark:text-slate-400">
-                                    support@example.com
+                                    <a href="mailto:{{ env('EMAIL') }}">{{ env('EMAIL') }}</a>
                                 </p>
                             </div>
 
@@ -112,50 +112,7 @@
 
 
                 <!-- Right -->
-                <div
-                    class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8">
-
-                    <h3 class="text-3xl font-black text-slate-900 dark:text-white mb-6">
-                        Send a Message
-                    </h3>
-
-                    <form class="space-y-5">
-
-                        <div>
-                            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">
-                                Full Name
-                            </label>
-
-                            <input type="text"
-                                class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-4 py-3 focus:ring-2 focus:ring-cyan-500 outline-none">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">
-                                Email Address
-                            </label>
-
-                            <input type="email"
-                                class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-4 py-3 focus:ring-2 focus:ring-cyan-500 outline-none">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">
-                                Message
-                            </label>
-
-                            <textarea rows="5"
-                                class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-4 py-3 focus:ring-2 focus:ring-cyan-500 outline-none"></textarea>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full inline-flex items-center justify-center px-6 py-4 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold transition-all">
-                            Send Message
-                        </button>
-
-                    </form>
-
-                </div>
+                @livewire('main.contact-us')
 
             </div>
 

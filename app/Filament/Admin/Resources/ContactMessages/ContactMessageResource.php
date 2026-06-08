@@ -67,7 +67,7 @@ class ContactMessageResource extends Resource
                 //
             ])
             ->recordActions([
-                \Filament\Tables\Actions\ViewAction::make(),
+                // \Filament\Tables\Actions\ViewAction::make(),
                 EditAction::make(),
                 DeleteAction::make(),
             ])

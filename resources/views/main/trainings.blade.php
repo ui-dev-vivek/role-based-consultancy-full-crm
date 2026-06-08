@@ -156,7 +156,7 @@
                             </a>
 
                             <!-- WhatsApp -->
-                            <a href="https://wa.me/9176198763454" target="_blank"
+                            <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
                                 class="flex items-center justify-between gap-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-5 transition-all duration-300">
 
                                 <div class="flex items-center gap-4">

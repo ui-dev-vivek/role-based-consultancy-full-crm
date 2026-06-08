@@ -17,17 +17,17 @@
                 </div>
                 <span
                     class="text-sm font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-indigo-600 dark:from-primary-400 dark:to-indigo-400">
-                    5000+ Successful cases.
+                    500+ Successful cases.
                 </span>
             </div>
 
             <!-- Main Headline -->
             <h1
                 class="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-black text-slate-900 dark:text-white leading-[1.1] tracking-tight mb-6">
-                Build Your Career,Research & Ideas With <br class="hidden lg:block" />
+                Build Your With <br class="hidden lg:block" />
                 <span class="relative inline-block mt-2">
                     <span
-                        class="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-indigo-600 to-cyan-500 dark:from-primary-400 dark:via-indigo-400 dark:to-cyan-400">Your
+                        class="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-indigo-600 to-cyan-500 dark:from-primary-400 dark:via-indigo-400 dark:to-cyan-400">Our
                         Expert Guidance !</span>
                     <span
                         class="absolute -bottom-2 left-0 w-full h-4 bg-primary-200 dark:bg-primary-900/50 -z-10 transform -rotate-1 rounded-sm"></span>
@@ -44,7 +44,7 @@
                 we help students, professionals, researchers, and startups grow with confidence.
             </p>
 
-            <p class="mb-4 font-bold">5000+ Students & Professionals Assisted Across India</p>
+            <p class="mb-4 font-bold">500+ Students & Professionals Assisted Across India</p>
 
             <!-- Glowing Advanced Buttons -->
             <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">

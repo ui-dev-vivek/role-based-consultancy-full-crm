@@ -2,7 +2,23 @@
     @section('page-hero')
         <x-ui.home-hero />
     @endsection
+    <style>
+        /* Dark */
+        main .group .dark\:text-white {
+            min-height: 85px;
+            display: flex;
+            align-items: center;
+        }
 
+        /* Get started */
+        #get-started {
+            background-image: url("https://images.unsplash.com/photo-1522881193457-37ae97c905bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNTc5fDB8MXxzZWFyY2h8MzB8fGNvbnN1bHRhdGlvbiUyMHxlbnwwfHx8fDE3ODA5NDA2MDJ8MA&ixlib=rb-4.1.0&q=80&w=2560");
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.63);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
     <!-- SERVICES OVERVIEW -->
     <section class="py-20 bg-slate-50 dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,7 +39,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
 
                 <!-- Admissions -->
-                <a href="/admissions" class="group">
+                <a href="/admissions#apply" class="group">
                     <div
                         class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all h-full border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-600">
 
@@ -33,17 +49,17 @@
                         </div>
 
                         <h3 class="text-xl font-black text-slate-900 dark:text-white mb-2">
-                            Admissions & Career Counseling
+                            Career Counseling to Admission at the Right Place
                         </h3>
 
                         <p class=" text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
-                            Personalized guidance for Technical, Management, and professional
-                            courses with scholarship, college selection, and career support.
+                            Personalized guidance for Technical, Management, and Professional
+                            courses with scholarships, college selection, and career support.
                         </p>
 
                         <div
                             class="inline-flex items-center gap-2 text-emerald-600 font-bold text-sm group-hover:gap-3 transition-all">
-                            Explore Services
+                            Get In Touch
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -60,7 +76,7 @@
                         </div>
 
                         <h3 class="text-xl font-black text-slate-900 dark:text-white mb-2">
-                            Training & Placements
+                            Skilled Based Training to Placement
                         </h3>
 
                         <p class=" text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
@@ -70,7 +86,7 @@
 
                         <div
                             class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group-hover:gap-3 transition-all">
-                            Explore Services
+                            Explore More
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -88,7 +104,7 @@
                         </div>
 
                         <h3 class="text-xl font-black text-slate-900 dark:text-white mb-2">
-                            IP & Legal Services
+                            IPR & Legal Support
                         </h3>
 
                         <p class="  text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
@@ -98,7 +114,7 @@
 
                         <div
                             class="inline-flex  items-center gap-2 text-purple-600 font-bold text-sm group-hover:gap-3 transition-all">
-                            Explore Services
+                            View More
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -115,7 +131,7 @@
                         </div>
 
                         <h3 class="text-xl font-black text-slate-900 dark:text-white mb-2">
-                            Research & Academic Support
+                            Academic & Research Support
                         </h3>
 
                         <p class="text-slate-600  dark:text-slate-400 text-sm mb-4 leading-relaxed">
@@ -125,7 +141,7 @@
 
                         <div
                             class="inline-flex items-center gap-2 text-orange-600 font-bold text-sm group-hover:gap-3 transition-all">
-                            Explore Services
+                            View More
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -146,7 +162,7 @@
                     <div class="h-px flex-1 bg-slate-300 dark:bg-slate-700"></div>
                 </div> --}}
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
 
                     <!-- Digital Marketing -->
                     <div
@@ -159,38 +175,20 @@
                             </div>
 
                             <div>
-                                <h4 class="font-bold text-slate-900 dark:text-white">
-                                    Digital Marketing
-                                </h4>
+                                <h2 class="font-bold text-slate-900 dark:text-white">
+                                    Digital Marketing & Branding Solutions
+                                </h2>
 
                                 <p class="text-sm text-slate-500 dark:text-slate-400">
-                                    SEO, social media, paid ads & lead generation.
+                                    Strategic SEO, Social Media Marketing, Performance Ads, Lead Generation &
+                                    complete
+                                    Brand Identity.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Branding -->
-                    <div
-                        class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-6 py-5 hover:shadow-lg transition-all">
 
-                        <div class="flex items-center gap-4">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-pink-100 dark:bg-pink-900/30 text-pink-600 flex items-center justify-center text-xl">
-                                <i class="fas fa-pen-nib"></i>
-                            </div>
-
-                            <div>
-                                <h4 class="font-bold text-slate-900 dark:text-white">
-                                    Branding Solutions
-                                </h4>
-
-                                <p class="text-sm text-slate-500 dark:text-slate-400">
-                                    Brand identity, logos & professional design systems.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- Development -->
                     <div
@@ -204,11 +202,12 @@
 
                             <div>
                                 <h4 class="font-bold text-slate-900 dark:text-white">
-                                    Web & App Development
+                                    Web & App Development using AI & Automations
                                 </h4>
 
                                 <p class="text-sm text-slate-500 dark:text-slate-400">
-                                    Custom websites, portals, SaaS & mobile applications.
+                                    AI-powered websites, mobile apps, custom web portals, internal tools, and smart
+                                    automation workflows.
                                 </p>
                             </div>
                         </div>

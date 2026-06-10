@@ -6,7 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="{{ config('app.name', 'AdacNext') }}">
+    <meta name="description"
+        content="Expert guidance for college admissions, placements, internships, career counseling, skill development, research projects, patents, trademarks, and startup registration.">
+    <meta name="keywords"
+        content="admissions, placements, internships, career counseling, research projects, patents, startup registration, AdacNext">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="{{ config('app.name', 'AdacNext') }}">
+    <meta property="og:description"
+        content="Expert guidance for college admissions, placements, internships, career counseling, skill development, research projects, patents, trademarks, and startup registration.">
+    <meta property="og:image" content="{{ asset('assets/images/meta_image.png') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="{{ config('app.name', 'AdacNext') }}">
+    <meta property="twitter:description"
+        content="Expert guidance for college admissions, placements, internships, career counseling, skill development, research projects, patents, trademarks, and startup registration.">
+    <meta property="twitter:image" content="{{ asset('assets/images/meta_image.png') }}">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -281,7 +302,8 @@
                                         :class="{ 'rotate-180': userDropdownOpen }"></i>
                                 </button>
 
-                                <div x-show="userDropdownOpen" x-cloak x-transition:enter="transition ease-out duration-200"
+                                <div x-show="userDropdownOpen" x-cloak
+                                    x-transition:enter="transition ease-out duration-200"
                                     x-transition:enter-start="opacity-0 scale-95 translate-y-2"
                                     x-transition:enter-end="opacity-100 scale-100 translate-y-0"
                                     class="absolute right-0 mt-3 w-56 p-2 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/50 shadow-2xl">

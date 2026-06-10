@@ -154,7 +154,7 @@
                         <i class="fas fa-graduation-cap text-xl"></i>
                     </div>
                     <span class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-                        {{ env('APP_NAME', 'Acad Next Solutions') }}
+                        {{ config('app.name', 'Acad Next Solutions') }}
                     </span>
                 </a>
 
@@ -298,7 +298,8 @@
                                         class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">
                                         <i class="fas fa-user-cog w-4"></i> Profile Settings
                                     </a>
-                                    <form method="POST" action="{{ route('filament.admin.auth.logout') }}" class="mt-1">
+                                    <form method="POST" action="{{ route('filament.admin.auth.logout') }}"
+                                        class="mt-1">
                                         @csrf
                                         <button type="submit"
                                             class="flex items-center gap-2 w-full px-3 py-2 text-sm font-medium text-red-600 hover:bg-red-50 dark:hover:bg-red-900/10 rounded-xl transition-colors">
@@ -438,10 +439,6 @@
                         </form>
                     </div>
                 @else
-                    <x-ui.button href="/admin" size="lg" variant="dark"
-                        className="w-full rounded-xl shadow-lg shadow-slate-900/20" icon="fas fa-sign-in-alt">
-                        Sign In to Account
-                    </x-ui.button>
                 @endauth
             </div>
 
@@ -457,15 +454,15 @@
                     </div>
                     <div>
                         <h4 class="text-base font-extrabold text-slate-900 dark:text-white">
-                            {{ env('AGENT_NAME', 'Fateh Bahadur Kuwar') }}
+                            {{ config('app.agent_name', 'Fateh Bahadur Kuwar') }}
                         </h4>
                         <p class="text-sm font-medium text-slate-500 dark:text-slate-400">Available to help</p>
                     </div>
                 </div>
-                <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
+                <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
                     class="flex items-center justify-center gap-2 w-full px-4 py-3.5 bg-[#25D366] hover:bg-[#1ebd5a] text-white rounded-xl font-bold transition-all duration-300 shadow-lg shadow-[#25D366]/30 hover:shadow-[#25D366]/50 hover:-translate-y-0.5">
                     <i class="fab fa-whatsapp text-xl"></i>
-                    Chat on WhatsApp
+                    Chat
                 </a>
             </div>
         </div>
@@ -520,9 +517,9 @@
                         </span>
                         <div>
                             <p class="text-sm text-slate-400">Need help now?</p>
-                            <a href="https://wa.me/{{ env('WA_NUMBER') }}?text=Hello%20AdacNext%2C%20I%20would%20like%20to%20chat%20about%20your%20services."
+                            <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}?text=Hello%20AdacNext%2C%20I%20would%20like%20to%20chat%20about%20your%20services."
                                 target="_blank" rel="noopener"
-                                class="text-sm font-semibold text-white hover:text-primary-300">{{ env('WA_NUMBER') }}</a>
+                                class="text-sm font-semibold text-white hover:text-primary-300">{{ config('app.wa_number', '9176198763454') }}</a>
                         </div>
                     </div>
                 </div>
@@ -558,7 +555,7 @@
                         </h3>
                         <p class="text-sm text-slate-400 mb-4">Get instant support on WhatsApp for admissions,
                             training, and IP services.</p>
-                        <a href="https://wa.me/{{ env('WA_NUMBER') }}?text=Hello%20AdacNext%2C%20I%20need%20help%20with%20your%20services"
+                        <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}?text=Hello%20AdacNext%2C%20I%20need%20help%20with%20your%20services"
                             target="_blank" rel="noopener"
                             class="inline-flex items-center justify-center gap-2 rounded-3xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#25D366]/30 transition-all hover:-translate-y-0.5 hover:bg-[#1ebd5a]">
                             <i class="fab fa-whatsapp text-lg"></i>

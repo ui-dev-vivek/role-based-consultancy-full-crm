@@ -1,140 +1,205 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-        <!-- Left Content: Typography & CTA -->
-        <div class="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left pt-10 lg:pt-0">
+        <!-- Left Content -->
+        <div class="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left pt-4 sm:pt-8 lg:pt-0">
 
-            <!-- Advanced Glassmorphic Badge -->
+            <!-- Badge -->
             <div
-                class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-white/50 dark:border-slate-700/50 shadow-xl shadow-primary-500/10 mb-8 transform transition hover:-translate-y-1">
+                class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border border-slate-200 dark:border-slate-700 shadow-lg mb-6">
+
                 <div class="flex -space-x-2">
-                    <img class="w-7 h-7 rounded-full border-2 border-white dark:border-slate-800"
-                        src="https://i.pravatar.cc/100?img=1" alt="Student">
-                    <img class="w-7 h-7 rounded-full border-2 border-white dark:border-slate-800"
-                        src="https://i.pravatar.cc/100?img=2" alt="Student">
-                    <img class="w-7 h-7 rounded-full border-2 border-white dark:border-slate-800"
-                        src="https://i.pravatar.cc/100?img=3" alt="Student">
+                    <img class="w-7 h-7 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=1"
+                        alt="">
+                    <img class="w-7 h-7 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=2"
+                        alt="">
+                    <img class="w-7 h-7 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=3"
+                        alt="">
                 </div>
+
                 <span
-                    class="text-sm font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-indigo-600 dark:from-primary-400 dark:to-indigo-400">
-                    500+ Successful cases.
+                    class="text-xs sm:text-sm font-bold bg-gradient-to-r from-primary-600 to-indigo-600 bg-clip-text text-transparent">
+                    🎓 Trusted by 1,000+ Students Across India
                 </span>
             </div>
 
-            <!-- Main Headline -->
+            <!-- Heading -->
             <h1
-                class="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-black text-slate-900 dark:text-white leading-[1.1] tracking-tight mb-6">
-                Build Your With <br class="hidden lg:block" />
-                <span class="relative inline-block mt-2">
+                class="text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-black text-slate-900 dark:text-white leading-tight tracking-tight mb-6">
+
+                Build Your Career With
+
+                <span class="relative block mt-2">
                     <span
-                        class="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-indigo-600 to-cyan-500 dark:from-primary-400 dark:via-indigo-400 dark:to-cyan-400">Our
-                        Expert Guidance !</span>
+                        class="relative z-10 bg-gradient-to-r from-primary-600 via-indigo-600 to-cyan-500 bg-clip-text text-transparent">
+                        Our Expert Guidance.
+                    </span>
+
                     <span
-                        class="absolute -bottom-2 left-0 w-full h-4 bg-primary-200 dark:bg-primary-900/50 -z-10 transform -rotate-1 rounded-sm"></span>
+                        class="absolute left-0 bottom-1 w-full h-3 bg-primary-200/60 dark:bg-primary-900/40 rounded -z-10">
+                    </span>
                 </span>
             </h1>
 
-            <p class="text-lg lg:text-xl text-slate-600 dark:text-slate-300 mb-5 font-medium leading-relaxed">
-                From <span
-                    class="text-slate-900 dark:text-white font-bold px-1 bg-slate-200 dark:bg-slate-800 rounded">admissions
-                    and skill training to placements,
-                    research support, patents, trademarks,</span> and <span
-                    class="text-slate-900 dark:text-white font-bold px-1 bg-slate-200 dark:bg-slate-800 rounded">
-                    startup registrations</span>.
-                we help students, professionals, researchers, and startups grow with confidence.
+            <!-- Description -->
+            <p
+                class="text-base sm:text-lg lg:text-xl text-slate-600 dark:text-slate-300 mb-5 font-medium leading-relaxed">
+                Expert support for college admissions, placements, internships,
+                career counseling, skill development, research projects,
+                patents, trademarks, and startup registration.
             </p>
 
-            <p class="mb-4 font-bold">500+ Students & Professionals Assisted Across India</p>
+            <p class="mb-6 font-bold text-slate-800 dark:text-slate-200">
+                1,000+ Students Guided Across India
+            </p>
 
-            <!-- Glowing Advanced Buttons -->
-            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <!-- Buttons -->
+            <div
+                class="flex flex-col sm:flex-row w-full sm:w-auto items-stretch sm:items-center justify-center lg:justify-start gap-4">
+
                 <a href="#get-started"
-                    class="group relative w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-extrabold rounded-2xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(15,23,42,0.3)] dark:hover:shadow-[0_0_40px_rgba(255,255,255,0.3)]">
+                    class="group relative w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-extrabold rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105">
+
                     <div
-                        class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 dark:via-slate-900/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]">
+                        class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]">
                     </div>
-                    <span class="text-lg">Get Started</span>
-                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+
+                    <span>Book Free Counseling</span>
+
+                    <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                 </a>
 
-                <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
-                    class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/80 dark:bg-slate-800/80 backdrop-blur-lg border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white font-extrabold rounded-2xl transition-all hover:scale-105 hover:bg-white dark:hover:bg-slate-800 shadow-xl shadow-slate-200/20 dark:shadow-black/20 group">
-                    <div
-                        class="w-8 h-8 rounded-full bg-[#25D366]/10 flex items-center justify-center group-hover:bg-[#25D366] transition-colors">
-                        <i class="fab fa-whatsapp text-[#25D366] group-hover:text-white text-xl transition-colors"></i>
+                <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white font-extrabold rounded-2xl transition-all duration-300 hover:scale-105">
+
+                    <div class="w-8 h-8 rounded-full bg-[#25D366]/10 flex items-center justify-center">
+                        <i class="fab fa-whatsapp text-[#25D366] text-xl"></i>
                     </div>
-                    <span class="text-lg">Chat with Us</span>
+
+                    <span>WhatsApp Us</span>
                 </a>
             </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
+
+                <div class="text-center bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm">
+                    <div class="text-2xl font-black text-primary-600">
+                        1000+
+                    </div>
+                    <div class="text-xs text-slate-500">
+                        Students Guided
+                    </div>
+                </div>
+
+                <div class="text-center bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm">
+                    <div class="text-2xl font-black text-primary-600">
+                        100+
+                    </div>
+                    <div class="text-xs text-slate-500">
+                        Partner Colleges
+                    </div>
+                </div>
+
+                <div class="text-center bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm">
+                    <div class="text-2xl font-black text-primary-600">
+                        50+
+                    </div>
+                    <div class="text-xs text-slate-500">
+                        Career Programs
+                    </div>
+                </div>
+
+                <div class="text-center bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm">
+                    <div class="text-2xl font-black text-primary-600">
+                        4.9★
+                    </div>
+                    <div class="text-xs text-slate-500">
+                        Student Rating
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- Right Content: Advanced Image Composition -->
-        <div class="relative lg:h-[650px] flex items-center justify-center mt-16 lg:mt-0">
-            <!-- Main Image Container -->
+        <!-- Right Side -->
+        <div class="relative h-[340px] sm:h-[450px] lg:h-[650px] flex items-center justify-center mt-8 lg:mt-0">
+
+            <!-- Main Image -->
             <div
-                class="relative w-full max-w-md aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl group border-[6px] border-white dark:border-slate-800">
+                class="relative w-full max-w-[280px] sm:max-w-[340px] lg:max-w-md aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800 group">
+
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent z-10">
                 </div>
-                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                    alt="Students"
-                    class="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-110">
 
-                <!-- Inner Glass Card -->
-                <div class="absolute bottom-8 left-8 right-8 z-20">
-                    <div
-                        class="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl shadow-xl transform transition hover:-translate-y-1">
-                        <h3 class="text-white font-black text-xl">Secure Your Future</h3>
-                        <p class="text-white/80 text-sm font-medium mt-1">Get 1-on-1 counseling from industry
-                            experts today.</p>
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80"
+                    alt="Students"
+                    class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+
+                <div class="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 right-4 sm:right-8 z-20">
+
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl">
+
+                        <h3 class="text-white font-black text-lg sm:text-xl">
+                            Secure Your Future
+                        </h3>
+
+                        <p class="text-white/80 text-xs sm:text-sm mt-1">
+                            Get 1-on-1 career guidance from experts.
+                        </p>
+
                     </div>
+
                 </div>
             </div>
 
-            <!-- Floating Elements (Glassmorphism) -->
             <!-- Floating Card 1 -->
             <div
-                class="absolute top-10 -left-6 lg:-left-12 bg-white/95 dark:bg-slate-800/95 backdrop-blur-xl p-4 rounded-2xl shadow-2xl border border-white/50 dark:border-slate-700/50 animate-[float_6s_ease-in-out_infinite] z-30 hidden sm:flex items-center gap-4">
-                <div
-                    class="w-14 h-14 rounded-2xl bg-green-100 dark:bg-green-900/50 flex items-center justify-center text-green-600 dark:text-green-400 text-2xl shadow-inner">
+                class="hidden md:flex absolute top-10 -left-6 lg:-left-12 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-2xl items-center gap-4">
+
+                <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-green-600">
                     <i class="fas fa-chart-line"></i>
                 </div>
+
                 <div>
-                    <p class="text-[11px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">
-                        Success Rate</p>
-                    <p class="text-2xl font-black text-slate-900 dark:text-white leading-tight">100%</p>
+                    <p class="text-[11px] font-bold uppercase text-slate-400">
+                        Success Stories
+                    </p>
+                    <p class="text-xl font-black">
+                        1000+
+                    </p>
                 </div>
+
             </div>
 
             <!-- Floating Card 2 -->
             <div
-                class="absolute bottom-40 -right-6 lg:-right-16 bg-white/95 dark:bg-slate-800/95 backdrop-blur-xl p-5 rounded-2xl shadow-2xl border border-white/50 dark:border-slate-700/50 animate-[float_8s_ease-in-out_infinite_reverse] z-30 hidden sm:flex flex-col gap-3 w-52">
-                <div class="flex items-center justify-between">
-                    <div class="flex -space-x-3">
-                        <div
-                            class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center border-[3px] border-white dark:border-slate-800 shadow-sm">
-                            <i class="fas fa-star text-sm text-primary-600"></i>
-                        </div>
-                        <div
-                            class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center border-[3px] border-white dark:border-slate-800 shadow-sm">
-                            <i class="fas fa-star text-sm text-indigo-600"></i>
-                        </div>
-                        <div
-                            class="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center border-[3px] border-white dark:border-slate-800 shadow-sm">
-                            <i class="fas fa-star text-sm text-cyan-600"></i>
-                        </div>
-                    </div>
-                    <span class="text-base font-black text-slate-900 dark:text-white">4.9/5</span>
+                class="hidden md:flex absolute bottom-24 -right-6 lg:-right-14 bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-2xl flex-col gap-2 w-52">
+
+                <div class="flex justify-between items-center">
+                    <span class="font-black text-lg">
+                        4.9/5
+                    </span>
+
+                    <i class="fas fa-star text-yellow-400"></i>
                 </div>
-                <p class="text-[13px] font-bold text-slate-500 dark:text-slate-400">Top Rated Consultants</p>
+
+                <p class="text-sm font-semibold text-slate-500">
+                    Top Rated Student Support
+                </p>
+
             </div>
 
-            <!-- Decorative Orbit Rings -->
+            <!-- Rings -->
             <div
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] border-[2px] border-slate-200/50 dark:border-slate-700/50 rounded-full animate-[spin_30s_linear_infinite] -z-10 hidden lg:block border-dashed">
+                class="hidden lg:block absolute inset-0 border border-dashed border-slate-200 rounded-full scale-125 animate-spin [animation-duration:30s]">
             </div>
+
             <div
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] border-[2px] border-primary-200/30 dark:border-primary-700/30 rounded-full animate-[spin_20s_linear_infinite_reverse] -z-10 hidden lg:block">
+                class="hidden lg:block absolute inset-0 border border-primary-200 rounded-full scale-110 animate-spin [animation-duration:20s] [animation-direction:reverse]">
             </div>
+
         </div>
     </div>
 </div>

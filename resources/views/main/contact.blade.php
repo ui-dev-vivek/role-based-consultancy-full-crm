@@ -8,8 +8,8 @@
         <x-ui.hero title="Let’s" highlightText="Connect"
             description="Get in touch with us for admissions, internships, placements, research consultancy, startup guidance, or IP & legal services."
             badge="We’re Here to Help" breadcrumbText="Contact Us" primaryBtnText="Chat on WhatsApp"
-            primaryBtnUrl="https://wa.me/{{ env('WA_NUMBER') }}" secondaryBtnText="Call Now"
-            secondaryBtnUrl="tel:+{{ env('WA_NUMBER') }}" height="400px" :stats="[
+            primaryBtnUrl="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" secondaryBtnText="Call Now"
+            secondaryBtnUrl="tel:+{{ config('app.wa_number', '9176198763454') }}" height="400px" :stats="[
                 ['icon' => 'fas fa-headset', 'color' => 'cyan-400', 'text' => 'Quick Support Available'],
                 ['icon' => 'fas fa-comments', 'color' => 'emerald-400', 'text' => 'Free Consultation'],
             ]" />
@@ -55,9 +55,9 @@
                                     Phone Support
                                 </h4>
 
-                                <a href="tel:+{{ env('WA_NUMBER') }}"
+                                <a href="tel:+{{ config('app.wa_number', '9176198763454') }}"
                                     class="text-slate-600 dark:text-slate-400 hover:text-cyan-600">
-                                    +{{ env('WA_NUMBER') }}
+                                    +{{ config('app.wa_number', '9176198763454') }}
                                 </a>
                             </div>
 
@@ -77,7 +77,7 @@
                                     WhatsApp
                                 </h4>
 
-                                <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
+                                <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
                                     class="text-slate-600 dark:text-slate-400 hover:text-cyan-600">
                                     Chat With Us
                                 </a>
@@ -100,7 +100,7 @@
                                 </h4>
 
                                 <p class="text-slate-600 dark:text-slate-400">
-                                    <a href="mailto:{{ env('EMAIL') }}">{{ env('EMAIL') }}</a>
+                                    <a href="mailto:{{ config('app.email', 'info@acadnext.com') }}">{{ config('app.email', 'info@acadnext.com') }}</a>
                                 </p>
                             </div>
 

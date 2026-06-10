@@ -36,7 +36,7 @@
             </div>
 
             <!-- Main Services -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 mb-10">
 
                 <!-- Admissions -->
                 <a href="/admissions#apply" class="group">
@@ -438,12 +438,12 @@
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
 
-                <a href="tel:{{ env('WA_NUMBER') }}"
+                <a href="tel:{{ config('app.wa_number', '9176198763454') }}"
                     class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-cyan-600 hover:bg-cyan-500 rounded-xl shadow-2xl transition duration-300">
                     Book Your Free Call
                 </a>
 
-                <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
+                <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
                     class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-500 text-white font-bold rounded-xl shadow-lg transition-all duration-300 hover:scale-105">
                     <i class="fab fa-whatsapp text-2xl"></i>
                     Chat on WhatsApp
@@ -609,7 +609,7 @@
                     <i class="fas fa-pen-to-square text-lg"></i>
                     Explore Admissions
                 </a>
-                <a href="https://wa.me/{{ env('WA_NUMBER') }}" target="_blank"
+                <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
                     class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-bold rounded-xl border-2 border-white/50 transition-all duration-300 hover:scale-105">
                     <i class="fab fa-whatsapp text-2xl"></i>
                     Chat on WhatsApp

@@ -4,8 +4,8 @@
         <x-ui.hero title="Protect Your" highlightText="Ideas, Brand & Innovation"
             description="Professional support for trademarks, patents, copyrights, MSME registration, ISO certifications, and startup legal compliance services."
             badge="IP & Legal Consultancy Services" breadcrumbText="IP & Legal" primaryBtnText="Talk to an Expert"
-            primaryBtnUrl="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" secondaryBtnText="Call Now"
-            secondaryBtnUrl="tel:+{{ config('app.wa_number', '9176198763454') }}" height="400px" :stats="[
+            primaryBtnUrl="https://wa.me/{{ config('app.wa_number', '0000000000') }}" secondaryBtnText="Call Now"
+            secondaryBtnUrl="tel:+{{ config('app.wa_number', '0000000000') }}" height="400px" :stats="[
                 ['icon' => 'fas fa-trademark', 'color' => 'blue-400', 'text' => 'Trademark & Brand Protection'],
                 ['icon' => 'fas fa-lightbulb', 'color' => 'purple-400', 'text' => 'Patent & Startup Support'],
             ]" />
@@ -680,7 +680,7 @@
                 Get expert consultation from our experienced team. 100% confidential, 100% free.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
+                <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}" target="_blank"
                     class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary-600 font-bold rounded-xl hover:bg-slate-100 transition-colors">
                     <i class="fab fa-whatsapp text-2xl"></i>
                     Chat with Expert

@@ -459,7 +459,7 @@
                         <p class="text-sm font-medium text-slate-500 dark:text-slate-400">Available to help</p>
                     </div>
                 </div>
-                <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
+                <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}" target="_blank"
                     class="flex items-center justify-center gap-2 w-full px-4 py-3.5 bg-[#25D366] hover:bg-[#1ebd5a] text-white rounded-xl font-bold transition-all duration-300 shadow-lg shadow-[#25D366]/30 hover:shadow-[#25D366]/50 hover:-translate-y-0.5">
                     <i class="fab fa-whatsapp text-xl"></i>
                     Chat
@@ -517,9 +517,9 @@
                         </span>
                         <div>
                             <p class="text-sm text-slate-400">Need help now?</p>
-                            <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}?text=Hello%20AdacNext%2C%20I%20would%20like%20to%20chat%20about%20your%20services."
+                            <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}?text=Hello%20AdacNext%2C%20I%20would%20like%20to%20chat%20about%20your%20services."
                                 target="_blank" rel="noopener"
-                                class="text-sm font-semibold text-white hover:text-primary-300">{{ config('app.wa_number', '9176198763454') }}</a>
+                                class="text-sm font-semibold text-white hover:text-primary-300">{{ config('app.wa_number', '0000000000') }}</a>
                         </div>
                     </div>
                 </div>
@@ -555,7 +555,7 @@
                         </h3>
                         <p class="text-sm text-slate-400 mb-4">Get instant support on WhatsApp for admissions,
                             training, and IP services.</p>
-                        <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}?text=Hello%20AdacNext%2C%20I%20need%20help%20with%20your%20services"
+                        <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}?text=Hello%20AdacNext%2C%20I%20need%20help%20with%20your%20services"
                             target="_blank" rel="noopener"
                             class="inline-flex items-center justify-center gap-2 rounded-3xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#25D366]/30 transition-all hover:-translate-y-0.5 hover:bg-[#1ebd5a]">
                             <i class="fab fa-whatsapp text-lg"></i>

@@ -8,7 +8,7 @@
     'primaryBtnUrl' => '#apply',
     'primaryBtnOnclick' => '',
     'secondaryBtnText' => 'Chat with Us',
-    'secondaryBtnUrl' => 'https://wa.me/' . config('app.wa_number', '9176198763454'),
+    'secondaryBtnUrl' => 'https://wa.me/' . config('app.wa_number', '0000000000'),
     'stats' => [
         ['icon' => 'fas fa-university', 'color' => 'violet-500', 'text' => '100+ Partner Colleges'],
         ['icon' => 'fas fa-chart-line', 'color' => 'emerald-500', 'text' => '100% Placement Rate'],

@@ -4,7 +4,7 @@
         <x-ui.hero title="Research," highlightText="Publications & Academic Support"
             description="Professional guidance for thesis writing, dissertations, conference papers, journal publications, literature reviews, and research data analysis."
             badge="Research Consultancy Services" breadcrumbText="Research & Academic" primaryBtnText="Talk to an Expert"
-            primaryBtnUrl="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" height="400px" :stats="[
+            primaryBtnUrl="https://wa.me/{{ config('app.wa_number', '0000000000') }}" height="400px" :stats="[
                 ['icon' => 'fas fa-book-open', 'color' => 'orange-400', 'text' => 'Thesis & Dissertation Support'],
                 ['icon' => 'fas fa-newspaper', 'color' => 'emerald-400', 'text' => 'Journal & Conference Publications'],
             ]" />
@@ -322,7 +322,7 @@
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
 
                         <!-- Call -->
-                        <a href="tel:+{{ config('app.wa_number', '9176198763454') }}"
+                        <a href="tel:+{{ config('app.wa_number', '0000000000') }}"
                             class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold shadow-xl transition-all duration-300">
 
                             <i class="fas fa-phone-alt"></i>
@@ -331,7 +331,7 @@
                         </a>
 
                         <!-- WhatsApp -->
-                        <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
+                        <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}" target="_blank"
                             class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl border border-white/20 bg-white/10 hover:bg-white/20 text-white font-bold backdrop-blur-md transition-all duration-300">
 
                             <i class="fab fa-whatsapp text-green-400 text-lg"></i>
@@ -495,7 +495,7 @@
                             <span class="text-sm text-slate-700 dark:text-slate-300">Email support</span>
                         </li>
                     </ul>
-                    <button onclick="window.location.href='https://wa.me/{{ config('app.wa_number', '9176198763454') }}'"
+                    <button onclick="window.location.href='https://wa.me/{{ config('app.wa_number', '0000000000') }}'"
                         class="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold transition-colors">
                         Get Started
                     </button>
@@ -534,7 +534,7 @@
                                 <span class="text-sm text-slate-700 dark:text-slate-300">Priority support</span>
                             </li>
                         </ul>
-                        <button onclick="window.location.href='https://wa.me/{{ config('app.wa_number', '9176198763454') }}'"
+                        <button onclick="window.location.href='https://wa.me/{{ config('app.wa_number', '0000000000') }}'"
                             class="w-full py-2 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold transition-colors">
                             Get Started
                         </button>
@@ -565,7 +565,7 @@
                             <span class="text-sm text-slate-700 dark:text-slate-300">24/7 priority support</span>
                         </li>
                     </ul>
-                    <button onclick="window.location.href='https://wa.me/{{ config('app.wa_number', '9176198763454') }}'"
+                    <button onclick="window.location.href='https://wa.me/{{ config('app.wa_number', '0000000000') }}'"
                         class="w-full py-2 px-4 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-bold transition-colors">
                         Contact Us
                     </button>
@@ -605,7 +605,7 @@
                     <h3 class="font-bold text-slate-900 dark:text-white mb-2">WhatsApp Chat</h3>
                     <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Quick response, personalized guidance
                     </p>
-                    <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
+                    <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}" target="_blank"
                         class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold transition-colors">
                         <i class="fab fa-whatsapp"></i>
                         +91 7619 876 249
@@ -635,7 +635,7 @@
                     </div>
                     <h3 class="font-bold text-slate-900 dark:text-white mb-2">Free Consultation</h3>
                     <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">30-minute expert session</p>
-                    <button onclick="window.location.href='https://wa.me/{{ config('app.wa_number', '9176198763454') }}'"
+                    <button onclick="window.location.href='https://wa.me/{{ config('app.wa_number', '0000000000') }}'"
                         class="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-bold transition-colors">
                         <i class="fas fa-clock"></i>
                         Book Now

@@ -69,7 +69,7 @@
                     <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                 </a>
 
-                <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
+                <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}" target="_blank"
                     class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white font-extrabold rounded-2xl transition-all duration-300 hover:scale-105">
 
                     <div class="w-8 h-8 rounded-full bg-[#25D366]/10 flex items-center justify-center">

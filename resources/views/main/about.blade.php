@@ -8,8 +8,8 @@
         <x-ui.hero title="Building Careers," highlightText="Research & Innovation"
             description="We help students, researchers, startups, and professionals through admissions, training, placements, research consultancy, and intellectual property services."
             badge="About Our Organization" breadcrumbText="About Us" primaryBtnText="Talk to Our Team"
-            primaryBtnUrl="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" secondaryBtnText="Call Now" secondaryBtnUrl="tel:+{{ config('app.wa_number', '9176198763454') }}"
-            height="400px" :stats="[
+            primaryBtnUrl="https://wa.me/{{ config('app.wa_number', '0000000000') }}" secondaryBtnText="Call Now"
+            secondaryBtnUrl="tel:+{{ config('app.wa_number', '0000000000') }}" height="400px" :stats="[
                 ['icon' => 'fas fa-user-graduate', 'color' => 'emerald-400', 'text' => '1000+ Students Guided'],
                 ['icon' => 'fas fa-briefcase', 'color' => 'blue-400', 'text' => 'Career & Research Support'],
             ]" />

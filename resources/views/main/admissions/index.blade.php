@@ -4,7 +4,8 @@
         <x-ui.hero title="Find Your Perfect" highlightText="College & Course"
             description="Expert guidance for BBA, BCA, B.Tech, MBA & more — with guaranteed placement support."
             badge="Admissions Open 2026-27" breadcrumbText="Admissions" primaryBtnText="Enquire Now" primaryBtnUrl="#apply"
-            secondaryBtnText="Chat with Us" secondaryBtnUrl="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" height="400px" />
+            secondaryBtnText="Chat with Us" secondaryBtnUrl="https://wa.me/{{ config('app.wa_number', '0000000000') }}"
+            height="400px" />
     @endsection
 
     <!-- 🎓 SCHOLARSHIP HERO SECTION -->
@@ -636,7 +637,7 @@
                     <i class="fas fa-pen-to-square text-lg"></i>
                     Apply for Scholarship
                 </a>
-                <a href="https://wa.me/{{ config('app.wa_number', '9176198763454') }}" target="_blank"
+                <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}" target="_blank"
                     class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-bold rounded-xl border-2 border-white/50 transition-all duration-300 hover:scale-105">
                     <i class="fab fa-whatsapp text-2xl"></i>
                     Chat on WhatsApp

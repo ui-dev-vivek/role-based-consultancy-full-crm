@@ -15,6 +15,7 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'wa_number' => env('WA_NUMBER', '0000000000'),  
     /*
     |--------------------------------------------------------------------------
     | Application Environment

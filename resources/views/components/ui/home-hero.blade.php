@@ -49,9 +49,7 @@
                 patents, trademarks, and startup registration.
             </p>
 
-            <p class="mb-6 font-bold text-slate-800 dark:text-slate-200">
-                1,000+ Students Guided Across India
-            </p>
+
 
             <!-- Buttons -->
             <div

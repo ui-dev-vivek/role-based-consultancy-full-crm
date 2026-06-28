@@ -49,7 +49,7 @@
                         </div>
 
                         <h3 class="text-xl font-black text-slate-900 dark:text-white mb-2">
-                            Career Counseling to Admission at the Right Place
+                            Career Counseling & College Admissions
                         </h3>
 
                         <p class=" text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
@@ -76,7 +76,7 @@
                         </div>
 
                         <h3 class="text-xl font-black text-slate-900 dark:text-white mb-2">
-                            Skilled Based Training to Placement
+                            Skill-Based Training & Placement Support
                         </h3>
 
                         <p class=" text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
@@ -202,7 +202,7 @@
 
                             <div>
                                 <h4 class="font-bold text-slate-900 dark:text-white">
-                                    Web & App Development using AI & Automations
+                                    AI-Powered Web & App Development
                                 </h4>
 
                                 <p class="text-sm text-slate-500 dark:text-slate-400">
@@ -255,7 +255,7 @@
                         200+
                     </div>
                     <p class="text-white/80 text-sm md:text-base font-semibold">
-                        Training & Placement Supports
+                        Successful Placements
                     </p>
                 </div>
 
@@ -601,7 +601,7 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 class="text-4xl font-black text-white mb-4">Start Your Success Journey Today</h2>
             <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                Join 5000+ students who transformed their careers with our expert guidance
+                Join 1,000+ students who transformed their careers with our expert guidance
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
                 <a href="/admissions"

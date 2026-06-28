@@ -16,3 +16,5 @@ Route::get('intellectual-property', [Home::class, 'intellectualProperty'])->name
 Route::get('research', [Home::class, 'research'])->name('research');
 Route::view('about-us', 'main.about');
 Route::view('contact-us', 'main.contact');
+Route::view('privacy-policy', 'main.privacy_policy');
+Route::view('terms-of-service', 'main.terms_of_service');

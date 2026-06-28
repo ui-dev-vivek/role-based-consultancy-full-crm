@@ -26,7 +26,7 @@
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
                     Explore Our <span class="text-transparent bg-clip-text bg-gradient-to-r {{ $role === 'expert' ? 'from-blue-600 to-indigo-500 dark:from-blue-400 dark:to-indigo-450' : 'from-emerald-600 to-teal-500 dark:from-emerald-400 dark:to-teal-450' }}">{{ $role === 'expert' ? 'Experts & Mentors' : 'Teachers & Educators' }}</span>
                 </h1>
-                <p class="text-slate-655 dark:text-slate-400 mt-3 max-w-xl mx-auto text-sm sm:text-base leading-relaxed font-medium">
+                <p class="text-slate-600 dark:text-slate-400 mt-3 max-w-xl mx-auto text-sm sm:text-base leading-relaxed font-medium">
                     Connect directly with verified specialists across career counseling, admissions, training, research, and academic protection.
                 </p>
             </div>
@@ -99,13 +99,13 @@
                 <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-5">
                     
                     <!-- Role Tabs Switcher -->
-                    <div class="flex bg-slate-100 dark:bg-slate-950 p-1 rounded-xl border border-slate-200/60 dark:border-slate-850 shrink-0">
+                    <div class="flex bg-slate-100 dark:bg-slate-900 p-1 rounded-xl border border-slate-200/60 dark:border-slate-800 shrink-0">
                         <a href="/explore?r=expert" 
-                           class="flex-1 lg:flex-none text-center px-5 py-2.5 rounded-lg text-xs font-extrabold transition-all duration-200 flex items-center justify-center gap-2 {{ $role === 'expert' ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-md' : 'text-slate-500 dark:text-slate-450 hover:text-slate-900 dark:hover:text-white' }}">
+                           class="flex-1 lg:flex-none text-center px-5 py-2.5 rounded-lg text-xs font-extrabold transition-all duration-200 flex items-center justify-center gap-2 {{ $role === 'expert' ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-md' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white' }}">
                            <i class="fas fa-user-tie text-[10px]"></i> Experts & Mentors
                         </a>
                         <a href="/explore?r=teacher" 
-                           class="flex-1 lg:flex-none text-center px-5 py-2.5 rounded-lg text-xs font-extrabold transition-all duration-200 flex items-center justify-center gap-2 {{ $role === 'teacher' ? 'bg-white dark:bg-slate-800 text-emerald-600 dark:text-emerald-400 shadow-md' : 'text-slate-500 dark:text-slate-450 hover:text-slate-900 dark:hover:text-white' }}">
+                           class="flex-1 lg:flex-none text-center px-5 py-2.5 rounded-lg text-xs font-extrabold transition-all duration-200 flex items-center justify-center gap-2 {{ $role === 'teacher' ? 'bg-white dark:bg-slate-800 text-emerald-600 dark:text-emerald-400 shadow-md' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white' }}">
                            <i class="fas fa-chalkboard-teacher text-[10px]"></i> Teachers & Educators
                         </a>
                     </div>
@@ -164,7 +164,7 @@
                                 class="px-3 py-1 text-[10px] font-extrabold rounded-lg transition-all border"
                                 :class="search.toLowerCase() === tag.toLowerCase() 
                                     ? (roleAccent === 'blue' ? 'bg-blue-600 text-white border-blue-600 shadow-sm' : 'bg-emerald-600 text-white border-emerald-600 shadow-sm') 
-                                    : 'bg-slate-50 text-slate-650 border-slate-200 dark:bg-slate-950 dark:text-slate-400 dark:border-slate-850 hover:bg-slate-100 dark:hover:bg-slate-900'">
+                                    : 'bg-slate-50 text-slate-600 border-slate-200 dark:bg-slate-950 dark:text-slate-400 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-900'">
                             <span x-text="tag"></span>
                         </button>
                     </template>
@@ -297,7 +297,7 @@
 
                                 <!-- Social Links on Card -->
                                 @if(is_array($socials) && (isset($socials['linkedin']) || isset($socials['github']) || isset($socials['twitter']) || isset($socials['portfolio'])))
-                                    <div class="flex items-center gap-2 mt-4 pt-3 border-t border-slate-100 dark:border-slate-855">
+                                    <div class="flex items-center gap-2 mt-4 pt-3 border-t border-slate-100 dark:border-slate-800">
                                         @if(!empty($socials['linkedin']))
                                             <a href="{{ $socials['linkedin'] }}" target="_blank" class="w-6.5 h-6.5 rounded-full bg-slate-50 dark:bg-slate-950 text-slate-500 dark:text-slate-400 hover:bg-blue-600 hover:text-white flex items-center justify-center text-[10px] transition-all duration-200 hover:-translate-y-0.5 shadow-sm" title="LinkedIn Profile">
                                                 <i class="fab fa-linkedin-in"></i>
@@ -356,7 +356,7 @@
                             <div class="px-6 mt-4">
                                 <button type="button" 
                                         @click="openModal = true; activeTab = 'about'"
-                                        class="w-full flex items-center justify-between text-[10px] font-extrabold uppercase tracking-widest text-slate-450 hover:text-slate-800 dark:text-slate-500 dark:hover:text-slate-355 transition-colors pb-3 border-b border-slate-100 dark:border-slate-850">
+                                         class="w-full flex items-center justify-between text-[10px] font-extrabold uppercase tracking-widest text-slate-400 hover:text-slate-800 dark:text-slate-500 dark:hover:text-slate-300 transition-colors pb-3 border-b border-slate-100 dark:border-slate-800">
                                     <span>View Resume Details</span>
                                     <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                                 </button>
@@ -406,17 +406,17 @@
                                          <!-- Beautiful CV Split Layout -->
                                          <div class="flex flex-col md:flex-row min-h-[480px]">
                                              <!-- Left Column: Highlights and Social Contact Coordinates -->
-                                             <div class="w-full md:w-1/3 bg-slate-50 dark:bg-slate-955/80 p-8 border-b md:border-b-0 md:border-r border-slate-200/80 dark:border-slate-850 flex flex-col items-center text-center">
+                                             <div class="w-full md:w-1/3 bg-slate-50 dark:bg-slate-950/80 p-8 border-b md:border-b-0 md:border-r border-slate-200/80 dark:border-slate-800 flex flex-col items-center text-center">
                                                  <!-- Centered Circular Big Avatar -->
                                                  <div class="relative w-28 h-28 mx-auto mb-4">
                                                      @if($user->profile && $user->profile->avatar)
                                                          <img src="{{ asset('storage/' . $user->profile->avatar) }}" 
                                                               alt="{{ $user->profile->full_name }}" 
-                                                              class="w-28 h-28 rounded-full object-cover ring-4 ring-white dark:ring-slate-850 shadow-md" />
+                                                              class="w-28 h-28 rounded-full object-cover ring-4 ring-white dark:ring-slate-800 shadow-md" />
                                                      @else
                                                          <img src="https://ui-avatars.com/api/?name={{ urlencode($user->profile?->full_name ?? $user->name) }}&background={{ $accent === 'blue' ? '2563eb' : '059669' }}&color=fff&bold=true&size=128" 
                                                               alt="{{ $user->name }}" 
-                                                              class="w-28 h-28 rounded-full ring-4 ring-white dark:ring-slate-855 shadow-md animate-fade-in" />
+                                                              class="w-28 h-28 rounded-full ring-4 ring-white dark:ring-slate-800 shadow-md animate-fade-in" />
                                                      @endif
                                                      <span class="absolute top-1 left-1 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-white dark:border-slate-900 animate-pulse"></span>
                                                  </div>
@@ -491,7 +491,7 @@
                                                      <button type="button" 
                                                              x-data="{ copied: false }"
                                                              @click="navigator.clipboard.writeText('{{ url('/explore?r=' . $role) }}'); copied = true; setTimeout(() => copied = false, 2000)"
-                                                             class="w-full py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100/50 dark:hover:bg-slate-850 text-[10px] font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-sm">
+                                                             class="w-full py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100/50 dark:hover:bg-slate-800 text-[10px] font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-sm">
                                                          <i class="fas text-[11px]" :class="copied ? 'fa-check text-emerald-500' : 'fa-share-nodes'"></i>
                                                          <span x-text="copied ? 'Link Copied!' : 'Share Profile'"></span>
                                                      </button>
@@ -508,11 +508,11 @@
                                                          <h4 class="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3 flex items-center gap-1.5">
                                                              <i class="fas fa-user text-[9px] {{ $accent === 'blue' ? 'text-blue-500' : 'text-emerald-500' }}"></i> Biography & Overview
                                                          </h4>
-                                                         <p class="text-xs text-slate-655 dark:text-slate-400 leading-relaxed italic border-l-2 {{ $accent === 'blue' ? 'border-blue-500/40' : 'border-emerald-500/40' }} pl-4 py-1 mb-4">
+                                                         <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed italic border-l-2 {{ $accent === 'blue' ? 'border-blue-500/40' : 'border-emerald-500/40' }} pl-4 py-1 mb-4">
                                                              "{{ $user->profile?->bio ?? 'Ready to provide consulting support on AcadNext.' }}"
                                                          </p>
                                                          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                                                             <div class="bg-slate-50 dark:bg-slate-950/60 p-3.5 rounded-xl border border-slate-100 dark:border-slate-850 flex items-center gap-3">
+                                                             <div class="bg-slate-50 dark:bg-slate-950/60 p-3.5 rounded-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3">
                                                                  <div class="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/20 text-blue-600 dark:text-blue-400 flex items-center justify-center text-sm shrink-0">
                                                                      <i class="fas fa-map-location-dot"></i>
                                                                  </div>

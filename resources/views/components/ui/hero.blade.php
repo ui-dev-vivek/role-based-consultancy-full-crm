@@ -13,7 +13,7 @@
         ['icon' => 'fas fa-university', 'color' => 'violet-500', 'text' => '100+ Partner Colleges'],
         ['icon' => 'fas fa-chart-line', 'color' => 'emerald-500', 'text' => '100% Placement Rate'],
         ['icon' => 'fas fa-compass', 'color' => 'cyan-500', 'text' => 'Free Counseling'],
-        ['icon' => 'fas fa-users', 'color' => 'indigo-500', 'text' => '5,000+ Students Guided'],
+        ['icon' => 'fas fa-users', 'color' => 'indigo-500', 'text' => '1,000+ Students Guided'],
     ],
 ])
 

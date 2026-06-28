@@ -28,6 +28,8 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+              ->brandLogo(asset('assets/logos/acadnext-logo.png'))
+              ->brandLogoHeight('3rem')
 
             ->colors([
                 'primary' => Color::Amber,

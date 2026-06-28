@@ -6,7 +6,7 @@ use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Filament\Pages\Dashboard;
+use App\Filament\Portal\Pages\Dashboard;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
@@ -27,11 +27,14 @@ class PortalPanelProvider extends PanelProvider
             ->id('portal')
             ->path('portal')
             ->login()
-            ->registration()
+            ->registration(\App\Filament\Portal\Pages\Auth\Register::class)
             ->passwordReset()
+            ->profile(\App\Filament\Portal\Pages\EditProfile::class)
             ->spa()
             ->unsavedChangesAlerts()
             ->databaseTransactions()
+              ->brandLogo(asset('assets/logos/acadnext-logo.png'))
+              ->brandLogoHeight('3rem')
             ->colors([
                 'primary' => Color::Green,
             ])
@@ -55,6 +58,7 @@ class PortalPanelProvider extends PanelProvider
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
+                \App\Http\Middleware\RedirectToCompleteProfile::class,
             ])
             ->authMiddleware([
                 Authenticate::class,

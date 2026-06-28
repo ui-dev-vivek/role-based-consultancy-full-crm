@@ -22,12 +22,8 @@ class CheckPermission
 
         $user = Auth::user();
 
-        foreach ($user->roles as $role) {
-            foreach ($role->permissions as $permission) {
-                if (in_array($permission->code, $permissions)) {
-                    return $next($request);
-                }
-            }
+        if ($user->hasAnyPermission($permissions)) {
+            return $next($request);
         }
 
         abort(403, 'Unauthorized action.');

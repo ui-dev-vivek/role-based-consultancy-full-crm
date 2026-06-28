@@ -59,15 +59,20 @@
     <!-- Navbar -->
     @php
         $navItems = [
-            [
-                'title' => 'Services',
-                'icon' => 'fas fa-university',
-                'dropdown' => [
-                    ['title' => 'Admissions', 'url' => '/admissions'],
-                    ['title' => 'Training & Placements', 'url' => '/training-and-placements'],
-                    ['title' => 'Research Support', 'url' => '/research'],
-                    ['title' => 'IP & Legal Services', 'url' => '/intellectual-property'],
-                ],
+             [
+                'title' => 'Explore Us',
+                'icon' => 'fas fa-users',
+                 'dropdown' => [
+                    [
+                        'title' => 'Experts & Mentors',
+                        'url' => '/explore?r=expert',
+                    ],
+                    [
+                        'title' => 'Teachers & Educators',
+                        'url' => '/explore?r=teacher',
+                    ],
+                   
+                                ]
             ],
             [
                 'title' => 'Admissions',
@@ -125,7 +130,7 @@
             ],
 
             [
-                'title' => 'IP & Legal',
+                'title' => 'IPR & Legal',
                 'icon' => 'fas fa-balance-scale',
                 'url' => '/intellectual-property',
                 'lable' => 'Protect Your Ideas, Brand & Innovation',
@@ -141,17 +146,7 @@
                 ],
             ],
 
-            [
-                'title' => 'About Us',
-                'icon' => 'fas fa-info-circle',
-                'url' => '/about-us',
-            ],
-
-            [
-                'title' => 'Contact Us',
-                'icon' => 'fas fa-envelope',
-                'url' => '/contact-us',
-            ],
+          
         ];
     @endphp
     <nav x-data="{
@@ -169,24 +164,20 @@
             <div class="flex justify-between items-center transition-all duration-300"
                 :class="scrolled ? 'h-16' : 'h-20'">
                 <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group ">
-                    <div
-                        class="flex items-center justify-center w-11 h-11 rounded-2xl bg-green-600 dark:bg-white text-white dark:text-slate-900 shadow-xl shadow-slate-200/50 dark:shadow-black/20 group-hover:rotate-6 ">
-                        <i class="fas fa-graduation-cap text-xl"></i>
-                    </div>
-                    <span class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-                        {{ config('app.name', 'Acad Next Solutions') }}
-                    </span>
+                <a href="/" class="flex items-center gap-3 group ">                    
+                  
+                     <img class="h-14 w-auto" src="{{asset('assets\logos\acadnext-logo.png')}}" alt="Logo">
+                   
                 </a>
 
                 <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center gap-2">
+                <div class="hidden lg:flex items-center gap-1">
                     @foreach ($navItems as $item)
                         @if (isset($item['dropdown']) || !empty($item['lable']))
                             <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false"
                                 class="relative group py-2">
                                 <button
-                                    class="group/btn flex items-center gap-1.5 px-3 py-2 text-[15px] font-semibold text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 relative">
+                                    class="group/btn flex items-center gap-1 px-1 py-2 text-[14px] font-semibold text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 relative cursor-pointer">
                                     {{ $item['title'] }}
                                     <i class="fas fa-chevron-down text-[10px] text-slate-400 group-hover/btn:text-primary-500 transition-transform duration-300"
                                         :class="{ 'rotate-180': open }"></i>
@@ -289,7 +280,7 @@
 
                         @auth
                             <!-- Notifications -->
-                            <x-ui.notification-bell :notifications="auth()->user()->notifications()->latest()->take(5)->get()" :unreadCount="auth()->user()->unreadNotifications()->count()" />
+                          
 
                             <!-- User Dropdown -->
                             <div class="relative ml-2">
@@ -312,7 +303,7 @@
                                         <p class="text-sm font-bold text-slate-900 dark:text-white truncate">
                                             {{ auth()->user()->email }}</p>
                                     </div>
-                                    <a href="/dashboard"
+                                    <a href="/portal"
                                         class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">
                                         <i class="fas fa-chart-pie w-4"></i> Dashboard
                                     </a>
@@ -320,7 +311,7 @@
                                         class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">
                                         <i class="fas fa-user-cog w-4"></i> Profile Settings
                                     </a>
-                                    <form method="POST" action="{{ route('filament.admin.auth.logout') }}"
+                                    <form method="POST" action="{{ route('filament.portal.auth.logout') }}"
                                         class="mt-1">
                                         @csrf
                                         <button type="submit"
@@ -331,9 +322,9 @@
                                 </div>
                             </div>
                         @else
-                            <x-ui.button href="/admin" size="sm" variant="dark" icon="fas fa-sign-in-alt"
+                            <x-ui.button href="/portal" size="sm" variant="dark" icon="fas fa-sign-in-alt"
                                 className="rounded-xl shadow-lg shadow-slate-900/20">
-                                Sign In
+                                Login
                             </x-ui.button>
                         @endauth
                     </div>
@@ -342,7 +333,7 @@
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center gap-2">
                     @auth
-                        <x-ui.notification-bell :notifications="auth()->user()->notifications()->latest()->take(5)->get()" :unreadCount="auth()->user()->unreadNotifications()->count()" />
+                      
                     @endauth
                     <button @click="mobileMenuOpen = !mobileMenuOpen"
                         class="p-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl">
@@ -448,7 +439,7 @@
             <div class="px-6 py-4 border-t border-slate-100 dark:border-slate-800">
                 @auth
                     <div class="grid grid-cols-2 gap-3">
-                        <x-ui.button :href="url('/dashboard')" variant="light" size="sm" className="w-full rounded-xl"
+                        <x-ui.button :href="url('/portal')" variant="light" size="sm" className="w-full rounded-xl"
                             icon="fas fa-chart-pie">
                             Dashboard
                         </x-ui.button>
@@ -508,7 +499,7 @@
 
                 <!-- Premium Grid Pattern Overlay -->
                 <div
-                    class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgwLDAsMCwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] dark:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)]">
+                    class="absolute inset-0 ">
                 </div>
             </div>
             @yield('page-hero')
@@ -521,13 +512,11 @@
         <div class="container mx-auto px-4 py-12">
             <div class="grid gap-10 lg:grid-cols-3">
                 <div class="space-y-4">
-                    <a href="/" class="inline-flex items-center gap-3">
-                        <div
-                            class="flex items-center justify-center w-11 h-11 rounded-2xl bg-primary-600 text-white shadow-lg">
-                            <i class="fas fa-ad text-lg"></i>
-                        </div>
-                        <span class="text-2xl font-extrabold tracking-tight">AdacNext</span>
-                    </a>
+                    <a href="/" class="flex items-center gap-3 group ">                    
+                  
+                     <img class="h-14 w-auto" src="{{asset('assets\logos\acadnext-logo.png')}}" alt="Logo">
+                   
+                </a>
                     <p class="max-w-md text-sm text-slate-400 leading-relaxed">
                         Empowering students, innovators, and startups with admissions guidance, research support,
                         internships, and intellectual property services.

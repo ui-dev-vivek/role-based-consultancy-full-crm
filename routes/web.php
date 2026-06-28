@@ -7,6 +7,7 @@ use App\Http\Controllers\Main\Admissions;
 
 // Public
 Route::get('/', [Home::class, 'home'])->name('home');
+Route::get('explore', [Home::class, 'explore'])->name('explore');
 Route::get('admissions', [Admissions::class, 'index'])->name('admissions');
 Route::post('/api/admission/submit', [Admissions::class, 'submitInquiry']);
 Route::get('training-and-placements', [Home::class, 'trainings'])->name('trainings');

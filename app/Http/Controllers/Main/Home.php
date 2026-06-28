@@ -33,4 +33,19 @@ class Home extends Controller
     {
         return view('main.research');
     }
+
+    public function explore(Request $request)
+    {
+        $role = $request->query('r', 'expert');
+        if (!in_array($role, ['expert', 'teacher'])) {
+            $role = 'expert';
+        }
+
+        $users = \App\Models\User::role($role)
+            ->where('status', 'active')
+            ->with('profile')
+            ->get();
+
+        return view('main.explore', compact('users', 'role'));
+    }
 }

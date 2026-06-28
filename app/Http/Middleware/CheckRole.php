@@ -21,16 +21,13 @@ class CheckRole
         }
 
         $user = Auth::user();
+        $normalizedRoles = collect($roles)
+            ->map(fn (string $role): string => mb_strtolower(trim($role)))
+            ->values()
+            ->all();
 
-        // Check user_type or individual roles
-        if (in_array($user->user_type, $roles)) {
+        if ($user->hasAnyRole($normalizedRoles)) {
             return $next($request);
-        }
-
-        foreach ($user->roles as $role) {
-            if (in_array($role->role_name, $roles)) {
-                return $next($request);
-            }
         }
 
         abort(403, 'Unauthorized action.');

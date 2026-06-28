@@ -151,7 +151,6 @@
 
                     <div class="flex items-center ml-4 md:ml-6">
                         @if (auth()->user()->user_type === 'core')
-                            <x-ui.notification-bell :notifications="auth()->user()->notifications()->latest()->take(10)->get()" :unreadCount="auth()->user()->unreadNotifications()->count()" />
                         @endif
 
                         <div class="relative ml-3">

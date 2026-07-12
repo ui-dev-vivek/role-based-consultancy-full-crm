@@ -20,7 +20,7 @@
         }
     </style>
     <!-- SERVICES OVERVIEW -->
-    <section class="py-20 bg-slate-50 dark:bg-slate-900">
+    <section class="py-20 bg-slate-50 -slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Section Heading -->
@@ -41,7 +41,7 @@
                 <!-- Admissions -->
                 <a href="/admissions#apply" class="group">
                     <div
-                        class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all h-full border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-600">
+                        class="bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all h-full border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-600">
 
                         <div
                             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-100 to-cyan-100 dark:from-emerald-900/30 dark:to-cyan-900/30 text-emerald-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
@@ -68,7 +68,7 @@
                 <!-- Training -->
                 <a href="/training-and-placements" class="group">
                     <div
-                        class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all h-full border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600">
+                        class="bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all h-full border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600">
 
                         <div
                             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 text-blue-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
@@ -95,7 +95,7 @@
                 <!-- IP & Legal -->
                 <a href="/intellectual-property" class="group">
                     <div
-                        class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all h-full border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-600">
+                        class="bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all h-full border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-600">
 
                         <div
                             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 text-purple-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
@@ -123,7 +123,7 @@
                 <!-- Research -->
                 <a href="/research" class="group">
                     <div
-                        class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all h-full border border-slate-200 dark:border-slate-700 hover:border-orange-400 dark:hover:border-orange-600">
+                        class="bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all h-full border border-slate-200 dark:border-slate-700 hover:border-orange-400 dark:hover:border-orange-600">
 
                         <div
                             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-100 to-red-100 dark:from-orange-900/30 dark:to-red-900/30 text-orange-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
@@ -153,24 +153,24 @@
             <div class="mt-14">
 
                 {{-- <div class="flex items-center gap-3 mb-6">
-                    <div class="h-px flex-1 bg-slate-300 dark:bg-slate-700"></div>
+                    <div class="h-px flex-1 bg-slate-300 -slate-700"></div>
 
                     <span class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                         Other Services
                     </span>
 
-                    <div class="h-px flex-1 bg-slate-300 dark:bg-slate-700"></div>
+                    <div class="h-px flex-1 bg-slate-300 -slate-700"></div>
                 </div> --}}
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
 
                     <!-- Digital Marketing -->
                     <div
-                        class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-6 py-5 hover:shadow-lg transition-all">
+                        class="bg-white -slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-6 py-5 hover:shadow-lg transition-all">
 
                         <div class="flex items-center gap-4">
                             <div
-                                class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-xl">
+                                class="w-12 h-12 rounded-xl bg-blue-100 -blue-900/30 text-blue-600 flex items-center justify-center text-xl">
                                 <i class="fas fa-bullhorn"></i>
                             </div>
 
@@ -192,11 +192,11 @@
 
                     <!-- Development -->
                     <div
-                        class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-6 py-5 hover:shadow-lg transition-all">
+                        class="bg-white -slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-6 py-5 hover:shadow-lg transition-all">
 
                         <div class="flex items-center gap-4">
                             <div
-                                class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 flex items-center justify-center text-xl">
+                                class="w-12 h-12 rounded-xl bg-emerald-100 -emerald-900/30 text-emerald-600 flex items-center justify-center text-xl">
                                 <i class="fas fa-code"></i>
                             </div>
 
@@ -284,13 +284,13 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="py-20 bg-white dark:bg-slate-950">
+    <section class="py-20 bg-white -slate-950">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Heading -->
             <div class="text-center mb-14">
                 <span
-                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 text-sm font-bold mb-4">
+                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-cyan-100 -cyan-900/30 text-cyan-700 dark:text-cyan-300 text-sm font-bold mb-4">
                     Simple Process
                 </span>
 
@@ -316,7 +316,7 @@
 
                     <!-- Step 1 -->
                     <div
-                        class="relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        class="relative bg-white -slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
 
                         <div
                             class="w-14 h-14 rounded-2xl bg-gradient-to-r from-emerald-500 to-cyan-500 flex items-center justify-center mx-auto mb-4 shadow-lg relative z-10">
@@ -339,7 +339,7 @@
 
                     <!-- Step 2 -->
                     <div
-                        class="relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        class="relative bg-white -slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
 
                         <div
                             class="w-14 h-14 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center mx-auto mb-4 shadow-lg relative z-10">
@@ -362,7 +362,7 @@
 
                     <!-- Step 3 -->
                     <div
-                        class="relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        class="relative bg-white -slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
 
                         <div
                             class="w-14 h-14 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center mx-auto mb-4 shadow-lg relative z-10">
@@ -385,7 +385,7 @@
 
                     <!-- Step 4 -->
                     <div
-                        class="relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        class="relative bg-white -slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
 
                         <div
                             class="w-14 h-14 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center mx-auto mb-4 shadow-lg relative z-10">
@@ -460,13 +460,13 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="py-20 bg-slate-50 dark:bg-slate-900">
+    <section class="py-20 bg-slate-50 -slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Heading -->
             <div class="text-center mb-16">
                 <span
-                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 text-sm font-bold mb-4">
+                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-emerald-100 -emerald-900/30 text-emerald-700 dark:text-emerald-300 text-sm font-bold mb-4">
                     Testimonials
                 </span>
 
@@ -485,7 +485,7 @@
 
                 <!-- Testimonial 1 -->
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-200 dark:border-slate-700 transition-all duration-300">
+                    class="bg-white -slate-800 rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-200 dark:border-slate-700 transition-all duration-300">
 
                     <div class="flex items-center gap-4 mb-5">
                         <img src="https://ui-avatars.com/api/?name=Rahul+Kumar&background=0f172a&color=fff&bold=true"
@@ -518,7 +518,7 @@
 
                 <!-- Testimonial 2 -->
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-200 dark:border-slate-700 transition-all duration-300">
+                    class="bg-white -slate-800 rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-200 dark:border-slate-700 transition-all duration-300">
 
                     <div class="flex items-center gap-4 mb-5">
                         <img src="https://ui-avatars.com/api/?name=Priya+Sharma&background=0f172a&color=fff&bold=true"
@@ -551,7 +551,7 @@
 
                 <!-- Testimonial 3 -->
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-200 dark:border-slate-700 transition-all duration-300">
+                    class="bg-white -slate-800 rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-200 dark:border-slate-700 transition-all duration-300">
 
                     <div class="flex items-center gap-4 mb-5">
                         <img src="https://ui-avatars.com/api/?name=Arjun+Singh&background=0f172a&color=fff&bold=true"
@@ -587,7 +587,7 @@
     </section>
 
     <!-- PARTNER COLLEGES LOGOS -->
-    <section class=" bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
+    <section class=" bg-white -slate-800 border-t border-slate-200 dark:border-slate-700">
 
     </section>
 

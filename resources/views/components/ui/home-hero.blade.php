@@ -6,7 +6,7 @@
 
             <!-- Badge -->
             <div
-                class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border border-slate-200 dark:border-slate-700 shadow-lg mb-6">
+                class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/80 -slate-800/80 backdrop-blur-md border border-slate-200 dark:border-slate-700 shadow-lg mb-6">
 
                 <div class="flex -space-x-2">
                     <img class="w-7 h-7 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=1"
@@ -36,7 +36,7 @@
                     </span>
 
                     <span
-                        class="absolute left-0 bottom-1 w-full h-3 bg-primary-200/60 dark:bg-primary-900/40 rounded -z-10">
+                        class="absolute left-0 bottom-1 w-full h-3 bg-primary-200/60 -primary-900/40 rounded -z-10">
                     </span>
                 </span>
             </h1>
@@ -56,7 +56,7 @@
                 class="flex flex-col sm:flex-row w-full sm:w-auto items-stretch sm:items-center justify-center lg:justify-start gap-4">
 
                 <a href="#get-started"
-                    class="group relative w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-extrabold rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105">
+                    class="group relative w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-slate-900 -white text-white dark:text-slate-900 font-extrabold rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105">
 
                     <div
                         class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]">
@@ -68,7 +68,7 @@
                 </a>
 
                 <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}" target="_blank"
-                    class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white font-extrabold rounded-2xl transition-all duration-300 hover:scale-105">
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-white -slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white font-extrabold rounded-2xl transition-all duration-300 hover:scale-105">
 
                     <div class="w-8 h-8 rounded-full bg-[#25D366]/10 flex items-center justify-center">
                         <i class="fab fa-whatsapp text-[#25D366] text-xl"></i>
@@ -81,7 +81,7 @@
             <!-- Stats -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
 
-                <div class="text-center bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm">
+                <div class="text-center bg-white -slate-800 rounded-2xl p-4 shadow-sm">
                     <div class="text-2xl font-black text-primary-600">
                         1000+
                     </div>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="text-center bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm">
+                <div class="text-center bg-white -slate-800 rounded-2xl p-4 shadow-sm">
                     <div class="text-2xl font-black text-primary-600">
                         100+
                     </div>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="text-center bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm">
+                <div class="text-center bg-white -slate-800 rounded-2xl p-4 shadow-sm">
                     <div class="text-2xl font-black text-primary-600">
                         50+
                     </div>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="text-center bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm">
+                <div class="text-center bg-white -slate-800 rounded-2xl p-4 shadow-sm">
                     <div class="text-2xl font-black text-primary-600">
                         4.9★
                     </div>
@@ -154,7 +154,7 @@
 
             <!-- Floating Card 1 -->
             <div
-                class="hidden md:flex absolute top-10 -left-6 lg:-left-12 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-2xl items-center gap-4">
+                class="hidden md:flex absolute top-10 -left-6 lg:-left-12 bg-white -slate-800 p-4 rounded-2xl shadow-2xl items-center gap-4">
 
                 <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-green-600">
                     <i class="fas fa-chart-line"></i>
@@ -173,7 +173,7 @@
 
             <!-- Floating Card 2 -->
             <div
-                class="hidden md:flex absolute bottom-24 -right-6 lg:-right-14 bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-2xl flex-col gap-2 w-52">
+                class="hidden md:flex absolute bottom-24 -right-6 lg:-right-14 bg-white -slate-800 p-5 rounded-2xl shadow-2xl flex-col gap-2 w-52">
 
                 <div class="flex justify-between items-center">
                     <span class="font-black text-lg">

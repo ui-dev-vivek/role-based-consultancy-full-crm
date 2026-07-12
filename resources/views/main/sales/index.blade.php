@@ -120,7 +120,7 @@
 
             <!-- Left Sidebar: Language Tabs -->
             <aside
-                class="w-full lg:w-1/3 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl rounded-[2rem] border border-white/20 dark:border-slate-800/50 shadow-xl p-4 sticky top-28">
+                class="w-full lg:w-1/3 bg-white/60 -slate-900/60 backdrop-blur-xl rounded-[2rem] border border-white/20 dark:border-slate-800/50 shadow-xl p-4 sticky top-28">
                 <div class="mb-6 px-4 pt-2">
                     <h2 class="text-xl font-extrabold text-slate-900 dark:text-white mb-1">Sales Scripts</h2>
                     <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Select a Language</p>
@@ -145,16 +145,16 @@
             <main class="flex-1 w-full space-y-6">
                 <!-- Header Card: White BG, Amber Warning Accents -->
                 <div
-                    class="bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 border border-amber-200/50 dark:border-amber-900/30 shadow-2xl relative overflow-hidden group">
+                    class="bg-white -slate-900 rounded-[2.5rem] p-8 border border-amber-200/50 dark:border-amber-900/30 shadow-2xl relative overflow-hidden group">
                     <!-- Amber Accent Decoration -->
                     <div
-                        class="absolute top-0 right-0 w-32 h-32 bg-amber-100 dark:bg-amber-900/20 rounded-bl-full -z-0 opacity-50">
+                        class="absolute top-0 right-0 w-32 h-32 bg-amber-100 -amber-900/20 rounded-bl-full -z-0 opacity-50">
                     </div>
 
                     <div class="relative z-10">
                         <div class="flex items-center gap-4 mb-5">
                             <div
-                                class="w-12 h-12 rounded-2xl bg-amber-50 dark:bg-amber-900/30 flex items-center justify-center border border-amber-100 dark:border-amber-800/50">
+                                class="w-12 h-12 rounded-2xl bg-amber-50 -amber-900/30 flex items-center justify-center border border-amber-100 dark:border-amber-800/50">
                                 <span class="text-amber-600 dark:text-amber-400 text-2xl font-black"
                                     x-text="activeScript.charAt(0)"></span>
                             </div>
@@ -176,22 +176,22 @@
                 <div class="space-y-6">
                     <template x-for="group in currentScript.groups" :key="group.state">
                         <div
-                            class="bg-white/40 dark:bg-slate-900/40 backdrop-blur-md rounded-3xl border border-white/20 dark:border-slate-800/50 overflow-hidden">
+                            class="bg-white/40 -slate-900/40 backdrop-blur-md rounded-3xl border border-white/20 dark:border-slate-800/50 overflow-hidden">
                             <div
-                                class="px-6 py-4 bg-slate-50 dark:bg-slate-800/50 border-b border-white/20 dark:border-slate-800/50 flex items-center justify-between">
+                                class="px-6 py-4 bg-slate-50 -slate-800/50 border-b border-white/20 dark:border-slate-800/50 flex items-center justify-between">
                                 <h3 class="text-sm font-black text-slate-900 dark:text-white uppercase tracking-widest"
                                     x-text="group.state"></h3>
                                 <span
-                                    class="bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-[10px] font-bold px-2 py-1 rounded-lg"
+                                    class="bg-primary-100 -primary-900/30 text-primary-600 dark:text-primary-400 text-[10px] font-bold px-2 py-1 rounded-lg"
                                     x-text="`${group.cities.length} Cities`"></span>
                             </div>
                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4">
                                 <template x-for="city in group.cities" :key="city">
                                     <label
-                                        class="flex items-center gap-3 px-4 py-3 rounded-2xl border border-transparent hover:border-slate-200 dark:hover:border-slate-700 hover:bg-white/80 dark:hover:bg-slate-800/80 transition-all cursor-pointer group shadow-sm bg-white/40 dark:bg-slate-900/40">
+                                        class="flex items-center gap-3 px-4 py-3 rounded-2xl border border-transparent hover:border-slate-200 dark:hover:border-slate-700 hover:bg-white/80 dark:hover:bg-slate-800/80 transition-all cursor-pointer group shadow-sm bg-white/40 -slate-900/40">
                                         <div class="relative flex items-center">
                                             <input type="checkbox" :value="city" x-model="selectedCities"
-                                                class="w-4 h-4 rounded-md border-slate-300 dark:border-slate-700 text-primary-600 focus:ring-primary-500 dark:bg-slate-900 transition-all cursor-pointer">
+                                                class="w-4 h-4 rounded-md border-slate-300 dark:border-slate-700 text-primary-600 focus:ring-primary-500 -slate-900 transition-all cursor-pointer">
                                         </div>
                                         <div class="flex-1 min-w-0">
                                             <p class="text-xs font-bold text-slate-900 dark:text-white truncate group-hover:text-primary-600 transition-colors"
@@ -210,7 +210,7 @@
                     x-transition:enter-end="opacity-100 translate-y-0"
                     class="fixed bottom-8 left-1/2 -translate-x-1/2 w-full max-w-lg px-6 z-40">
                     <div
-                        class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-3xl p-4 shadow-2xl flex items-center justify-between border border-slate-700 dark:border-slate-200">
+                        class="bg-slate-900 -white text-white dark:text-slate-900 rounded-3xl p-4 shadow-2xl flex items-center justify-between border border-slate-700 dark:border-slate-200">
                         <div class="pl-4">
                             <p class="text-xs font-black uppercase tracking-widest opacity-70">Selection</p>
                             <p class="text-lg font-black"><span x-text="selectedCities.length"></span> <span

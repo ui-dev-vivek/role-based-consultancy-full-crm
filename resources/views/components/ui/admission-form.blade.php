@@ -3,7 +3,7 @@
     'subtitle' => 'Share your details and we\'ll guide you through the admission process',
 ])
 
-<div x-data="{ formData: { scholarship_status: 'non-scholarship' }, updateProgress() {} }" class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl p-8 max-w-3xl mx-auto">
+<div x-data="{ formData: { scholarship_status: 'non-scholarship' }, updateProgress() {} }" class="bg-white -slate-800 rounded-3xl shadow-xl p-8 max-w-3xl mx-auto">
     <!-- Header -->
     <div class="mb-8">
         <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-2">{{ $title }}</h2>
@@ -23,7 +23,7 @@
                         <span class="text-red-500">*</span> Full Name
                     </label>
                     <input type="text" id="name" name="name" required
-                        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-700 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
                         placeholder="Enter your full name">
                     <span class="text-red-500 text-sm mt-1 hidden" id="nameError"></span>
                 </div>
@@ -34,7 +34,7 @@
                         <span class="text-red-500">*</span> Mobile Number
                     </label>
                     <input type="tel" id="mobile_number" name="mobile_number" required pattern="[0-9]{10}"
-                        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-700 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
                         placeholder="10-digit mobile number">
                     <span class="text-red-500 text-sm mt-1 hidden" id="mobile_numberError"></span>
                 </div>
@@ -46,7 +46,7 @@
                     <span class="text-red-500"></span> Father/Guardian Mobile Number
                 </label>
                 <input type="tel" id="guardian_mobile_number" name="guardian_mobile_number" pattern="[0-9]{10}"
-                    class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-700 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
                     placeholder="10-digit guardian mobile number">
                 <span class="text-red-500 text-sm mt-1 hidden" id="guardian_mobile_numberError"></span>
             </div>
@@ -57,7 +57,7 @@
                     <span class="text-red-500">*</span> Interested Course
                 </label>
                 <select id="interested_course" name="interested_course" required
-                    class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition">
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition">
                     <option value="">-- Select a Course --</option>
                     <option value="BBA">BBA (Bachelor of Business Administration)</option>
                     <option value="BCA">BCA (Bachelor of Computer Applications)</option>
@@ -79,7 +79,7 @@
                         <span class="text-red-500">*</span> City
                     </label>
                     <input type="text" id="city" name="city" required
-                        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-700 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
                         placeholder="Enter your city">
                     <span class="text-red-500 text-sm mt-1 hidden" id="cityError"></span>
                 </div>
@@ -89,7 +89,7 @@
                         <span class="text-red-500">*</span> State
                     </label>
                     <select id="state" name="state" required
-                        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition">
+                        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition">
                         <option value="">-- Select State --</option>
                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -133,7 +133,7 @@
                     <label
                         class="relative flex items-center p-4 border-2 border-slate-300 dark:border-slate-600 rounded-xl cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all"
                         :class="formData.scholarship_status === 'scholarship' ?
-                            'border-primary-500 bg-primary-50 dark:bg-primary-900/10' : ''">
+                            'border-primary-500 bg-primary-50 -primary-900/10' : ''">
                         <input type="radio" name="scholarship_status" value="scholarship"
                             x-model="formData.scholarship_status" @input="updateProgress"
                             class="w-4 h-4 text-primary-600 accent-primary-600">
@@ -150,7 +150,7 @@
                     <label
                         class="relative flex items-center p-4 border-2 border-slate-300 dark:border-slate-600 rounded-xl cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all"
                         :class="formData.scholarship_status === 'non-scholarship' ?
-                            'border-primary-500 bg-primary-50 dark:bg-primary-900/10' : ''">
+                            'border-primary-500 bg-primary-50 -primary-900/10' : ''">
                         <input type="radio" name="scholarship_status" value="non-scholarship"
                             x-model="formData.scholarship_status" @input="updateProgress" required>
                         <span class="ml-3 flex-1">
@@ -171,7 +171,7 @@
             </label>
             <input type="number" id="admission_budget" name="admission_budget" required min="0"
                 step="1000"
-                class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
+                class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-700 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
                 placeholder="Enter your budget (e.g., 500000)">
             <p class="text-xs text-slate-600 dark:text-slate-400 mt-2">This helps us suggest suitable colleges &
                 courses</p>
@@ -197,7 +197,7 @@
     <div id="successContainer" class="hidden text-center">
         <div class="mb-6">
             <div class="flex justify-center mb-4">
-                <div class="bg-green-100 dark:bg-green-900 rounded-full p-4">
+                <div class="bg-green-100 -green-900 rounded-full p-4">
                     <i class="fas fa-check text-3xl text-green-600 dark:text-green-400"></i>
                 </div>
             </div>
@@ -238,14 +238,14 @@
                 document.querySelectorAll('.tab-button').forEach(btn => {
                     btn.classList.remove('active', 'bg-primary-600', 'text-white');
                     btn.classList.add('border-2', 'border-slate-300', 'dark:border-slate-600',
-                        'bg-white', 'dark:bg-slate-700', 'text-slate-900', 'dark:text-white');
+                        'bg-white', '-slate-700', 'text-slate-900', 'dark:text-white');
                     btn.setAttribute('aria-selected', 'false');
                 });
 
                 // Add active state to clicked button
                 this.classList.add('active', 'bg-primary-600', 'text-white');
                 this.classList.remove('border-2', 'border-slate-300', 'dark:border-slate-600', 'bg-white',
-                    'dark:bg-slate-700', 'text-slate-900', 'dark:text-white');
+                    '-slate-700', 'text-slate-900', 'dark:text-white');
                 this.setAttribute('aria-selected', 'true');
 
                 // Update hidden input
@@ -302,7 +302,7 @@
                     const errorMsg = data.message || 'An error occurred while submitting your application.';
                     const errorDiv = document.createElement('div');
                     errorDiv.className =
-                        'bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-200 px-4 py-3 rounded-xl mb-4';
+                        'bg-red-100 -red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-200 px-4 py-3 rounded-xl mb-4';
                     errorDiv.innerHTML = `<i class="fas fa-exclamation-circle mr-2"></i>${errorMsg}`;
                     document.getElementById('formContainer').insertBefore(errorDiv, document.getElementById(
                         'admissionForm'));
@@ -312,7 +312,7 @@
                 console.error('Error:', error);
                 const errorDiv = document.createElement('div');
                 errorDiv.className =
-                    'bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-200 px-4 py-3 rounded-xl mb-4';
+                    'bg-red-100 -red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-200 px-4 py-3 rounded-xl mb-4';
                 errorDiv.innerHTML =
                     '<i class="fas fa-exclamation-circle mr-2"></i>Network error. Please check your connection and try again.';
                 document.getElementById('formContainer').insertBefore(errorDiv, document.getElementById(

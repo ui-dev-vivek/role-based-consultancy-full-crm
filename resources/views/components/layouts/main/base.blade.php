@@ -56,7 +56,7 @@
     @yield('head')
 </head>
 
-<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 font-sans selection:bg-primary-500 selection:text-white">
+<body class="bg-slate-50 -slate-950 text-slate-900 font-sans selection:bg-primary-500 selection:text-white">
     <!-- Navbar -->
     @php
         $navItems = [
@@ -157,7 +157,7 @@
     }" @scroll.window="scrolled = (window.pageYOffset > 20)"
         @click.away="userDropdownOpen = false; mobileMenuOpen = false"
         :class="{
-            'bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] py-0': scrolled,
+            'bg-white/95 -slate-900/95 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] py-0': scrolled,
             'bg-transparent py-2': !scrolled
         }"
         class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
@@ -183,7 +183,7 @@
                                     <i class="fas fa-chevron-down text-[10px] text-slate-400 group-hover/btn:text-primary-500 transition-transform duration-300"
                                         :class="{ 'rotate-180': open }"></i>
                                     <span
-                                        class="absolute bottom-1 left-3 right-3 h-[2px] rounded-full bg-primary-600 dark:bg-primary-500 scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300 origin-left"></span>
+                                        class="absolute bottom-1 left-3 right-3 h-[2px] rounded-full bg-primary-600 -primary-500 scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300 origin-left"></span>
                                 </button>
                                 <div x-show="open" x-cloak x-transition:enter="transition ease-out duration-200"
                                     x-transition:enter-start="opacity-0 translate-y-3"
@@ -191,12 +191,12 @@
                                     x-transition:leave="transition ease-in duration-150"
                                     x-transition:leave-start="opacity-100 translate-y-0"
                                     x-transition:leave-end="opacity-0 translate-y-2"
-                                    class="absolute top-full mt-2 {{ !empty($item['label']) ? (isset($item['dropdown']) ? 'left-1/2 -translate-x-1/2 w-[650px] flex overflow-hidden rounded-3xl' : 'left-0 w-[320px] flex overflow-hidden rounded-3xl') : 'left-0 w-[260px] py-3 rounded-2xl' }} bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-2xl z-50 ring-1 ring-black/5 dark:ring-white/10">
+                                    class="absolute top-full mt-2 {{ !empty($item['label']) ? (isset($item['dropdown']) ? 'left-1/2 -translate-x-1/2 w-[650px] flex overflow-hidden rounded-3xl' : 'left-0 w-[320px] flex overflow-hidden rounded-3xl') : 'left-0 w-[260px] py-3 rounded-2xl' }} bg-white -slate-900 border border-slate-100 dark:border-slate-800 shadow-2xl z-50 ring-1 ring-black/5 dark:ring-white/10">
 
                                     @if (!empty($item['label']))
                                         <!-- Mega Menu Design -->
                                         <div
-                                            class="{{ isset($item['dropdown']) ? 'w-5/12 border-r border-slate-100 dark:border-slate-800' : 'w-full' }} bg-slate-50 dark:bg-slate-800/50 p-6 flex flex-col justify-between">
+                                            class="{{ isset($item['dropdown']) ? 'w-5/12 border-r border-slate-100 dark:border-slate-800' : 'w-full' }} bg-slate-50 -slate-800/50 p-6 flex flex-col justify-between">
                                             <div class="flex items-center  gap-2">
                                                 <div
                                                     class="w-10 h-10 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center mb-4 shadow-sm border border-primary-200">
@@ -227,7 +227,7 @@
                                                         class="group/link flex items-center justify-between p-1 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all duration-300">
                                                         <div class="flex items-center gap-1">
                                                             <div
-                                                                class="w-6 h-6 rounded-lg bg-white dark:bg-slate-800 flex items-center justify-center group-hover/link:border-primary-200 dark:group-hover/link:border-primary-800 group-hover/link:bg-primary-50 dark:group-hover/link:bg-primary-900/20 transition-all duration-300">
+                                                                class="w-6 h-6 rounded-lg bg-white -slate-800 flex items-center justify-center group-hover/link:border-primary-200 dark:group-hover/link:border-primary-800 group-hover/link:bg-primary-50 dark:group-hover/link:bg-primary-900/20 transition-all duration-300">
                                                                 <i
                                                                     class="fas fa-arrow-right text-[10px] text-slate-400 group-hover/link:text-primary-500 group-hover/link:-rotate-45 transition-all duration-300"></i>
                                                             </div>
@@ -246,7 +246,7 @@
                                                     class="group/link flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all duration-300">
                                                     <div class="flex items-center gap-2">
                                                         <div
-                                                            class="w-6 h-6 rounded-md bg-slate-50 dark:bg-slate-800 flex items-center justify-center group-hover/link:bg-primary-100 dark:group-hover/link:bg-primary-900/30 transition-colors">
+                                                            class="w-6 h-6 rounded-md bg-slate-50 -slate-800 flex items-center justify-center group-hover/link:bg-primary-100 dark:group-hover/link:bg-primary-900/30 transition-colors">
                                                             <i
                                                                 class="fas fa-chevron-right text-[8px] text-slate-400 group-hover/link:text-primary-500 transition-colors"></i>
                                                         </div>
@@ -266,7 +266,7 @@
                                     class="group/btn relative inline-block px-3 py-2 text-[15px] font-semibold text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300">
                                     {{ $item['title'] }}
                                     <span
-                                        class="absolute bottom-1 left-3 right-3 h-[2px] rounded-full bg-primary-600 dark:bg-primary-500 scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300 origin-left"></span>
+                                        class="absolute bottom-1 left-3 right-3 h-[2px] rounded-full bg-primary-600 -primary-500 scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300 origin-left"></span>
                                 </a>
                             </div>
                         @endif
@@ -298,7 +298,7 @@
                                     x-transition:enter="transition ease-out duration-200"
                                     x-transition:enter-start="opacity-0 scale-95 translate-y-2"
                                     x-transition:enter-end="opacity-100 scale-100 translate-y-0"
-                                    class="absolute right-0 mt-3 w-56 p-2 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/50 shadow-2xl">
+                                    class="absolute right-0 mt-3 w-56 p-2 rounded-2xl bg-white -slate-900 border border-slate-200/50 dark:border-slate-800/50 shadow-2xl">
                                     <div class="px-3 py-2 border-b border-slate-100 dark:border-slate-800 mb-1">
                                         <p class="text-xs text-slate-500">Signed in as</p>
                                         <p class="text-sm font-bold text-slate-900 dark:text-white truncate">
@@ -357,14 +357,14 @@
             x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0"
             x-transition:leave="transition ease-in-out duration-300 transform"
             x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full"
-            class="fixed inset-y-0 right-0 z-50 w-full h-[100dvh] bg-white dark:bg-slate-900 shadow-2xl overflow-hidden lg:hidden flex flex-col">
+            class="fixed inset-y-0 right-0 z-50 w-full h-[100dvh] bg-white -slate-900 shadow-2xl overflow-hidden lg:hidden flex flex-col">
 
             <!-- Drawer Header -->
             <div
-                class="px-6 py-5 flex items-center justify-between border-b border-slate-100 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shrink-0">
+                class="px-6 py-5 flex items-center justify-between border-b border-slate-100 dark:border-slate-800 bg-white/95 -slate-900/95 backdrop-blur-md shrink-0">
                 <span class="text-xl font-extrabold text-slate-900 dark:text-white tracking-tight">Menu</span>
                 <button @click="mobileMenuOpen = false"
-                    class="w-10 h-10 flex items-center justify-center text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-full transition-colors">
+                    class="w-10 h-10 flex items-center justify-center text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white bg-slate-100 -slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-full transition-colors">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -378,7 +378,7 @@
                                 class="flex items-center justify-between w-full px-4 py-3.5 text-[15px] font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-2xl transition-colors">
                                 <div class="flex items-center gap-3">
                                     <div
-                                        class="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 text-primary-500">
+                                        class="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-100 -slate-800 text-primary-500">
                                         <i class="{{ $item['icon'] }}"></i>
                                     </div>
                                     <span>{{ $item['title'] }}</span>
@@ -393,7 +393,7 @@
 
                                 @if (!empty($item['label']))
                                     <div
-                                        class="mb-4 mt-2 p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                        class="mb-4 mt-2 p-4 bg-slate-50 -slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800">
                                         <h4 class="text-sm font-bold text-slate-900 dark:text-white mb-1">
                                             {{ $item['label'] }}</h4>
                                         <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">
@@ -427,7 +427,7 @@
                         <a href="{{ $item['url'] }}"
                             class="flex items-center gap-3 px-4 py-3.5 text-[15px] font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-2xl transition-colors">
                             <div
-                                class="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 text-primary-500">
+                                class="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-100 -slate-800 text-primary-500">
                                 <i class="{{ $item['icon'] }}"></i>
                             </div>
                             {{ $item['title'] }}
@@ -457,7 +457,7 @@
             </div>
 
             <!-- Profile & WhatsApp Section -->
-            <div class="p-6 bg-slate-50 dark:bg-slate-800/50 mt-auto border-t border-slate-100 dark:border-slate-800">
+            <div class="p-6 bg-slate-50 -slate-800/50 mt-auto border-t border-slate-100 dark:border-slate-800">
                 <div class="flex items-center gap-4 mb-5">
                     <div class="relative">
                         <img src="https://ui-avatars.com/api/?name=Fate&background=0f172a&color=fff&bold=true"
@@ -483,19 +483,19 @@
     </nav>
 
     <main>
-        <div class="relative w-full flex items-center bg-[#f8fafc] dark:bg-[#0b1120] overflow-hidden pt-28 pb-16">
+        <div class="relative w-full flex items-center bg-[#f8fafc] -[#0b1120] overflow-hidden pt-28 pb-16">
 
             <!-- Advanced Dynamic Background -->
             <div class="absolute inset-0 overflow-hidden pointer-events-none">
                 <!-- Glowing Orbs -->
                 <div
-                    class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary-400/20 dark:bg-primary-600/20 blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-blob">
+                    class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary-400/20 -primary-600/20 blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-blob">
                 </div>
                 <div
-                    class="absolute top-[20%] -right-[10%] w-[40%] h-[60%] rounded-full bg-indigo-400/20 dark:bg-indigo-600/20 blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-blob animation-delay-2000">
+                    class="absolute top-[20%] -right-[10%] w-[40%] h-[60%] rounded-full bg-indigo-400/20 -indigo-600/20 blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-blob animation-delay-2000">
                 </div>
                 <div
-                    class="absolute -bottom-[20%] left-[20%] w-[60%] h-[50%] rounded-full bg-cyan-400/20 dark:bg-cyan-600/20 blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-blob animation-delay-4000">
+                    class="absolute -bottom-[20%] left-[20%] w-[60%] h-[50%] rounded-full bg-cyan-400/20 -cyan-600/20 blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-blob animation-delay-4000">
                 </div>
 
                 <!-- Premium Grid Pattern Overlay -->

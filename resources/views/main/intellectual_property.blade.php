@@ -13,14 +13,14 @@
 
     <!-- Services Section -->
     <!-- IP SERVICES -->
-    <section class="py-20 bg-slate-50 dark:bg-slate-900">
+    <section class="py-20 bg-slate-50 -slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Heading -->
             <div class="text-center mb-16">
 
                 <span
-                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-bold mb-4">
+                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-purple-100 -purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-bold mb-4">
                     Intellectual Property & Legal Consultancy
                 </span>
 
@@ -40,10 +40,10 @@
 
                 <!-- Design Patent -->
                 <div id="design-patents"
-                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-cyan-400 dark:hover:border-cyan-600">
+                    class="ip-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-cyan-400 dark:hover:border-cyan-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-cyan-100 -cyan-900/30 text-cyan-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
 
                         <i class="fas fa-drafting-compass"></i>
                     </div>
@@ -78,10 +78,10 @@
 
                 <!-- Utility Patent -->
                 <div id="utility-patents"
-                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-600">
+                    class="ip-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-purple-100 -purple-900/30 text-purple-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
 
                         <i class="fas fa-lightbulb"></i>
                     </div>
@@ -116,10 +116,10 @@
 
                 <!-- Copyright -->
                 <div id="copyrights"
-                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-pink-400 dark:hover:border-pink-600">
+                    class="ip-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-pink-400 dark:hover:border-pink-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-pink-100 dark:bg-pink-900/30 text-pink-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-pink-100 -pink-900/30 text-pink-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
 
                         <i class="fas fa-copyright"></i>
                     </div>
@@ -154,10 +154,10 @@
 
                 <!-- Trademark -->
                 <div id="trademark"
-                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600">
+                    class="ip-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-blue-100 -blue-900/30 text-blue-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
 
                         <i class="fas fa-trademark"></i>
                     </div>
@@ -192,10 +192,10 @@
 
                 <!-- MSME -->
                 <div id="msme-registration"
-                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-600">
+                    class="ip-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-emerald-100 -emerald-900/30 text-emerald-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
 
                         <i class="fas fa-building"></i>
                     </div>
@@ -230,10 +230,10 @@
 
                 <!-- ISO -->
                 <div id="iso-registration"
-                    class="ip-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-red-400 dark:hover:border-red-600">
+                    class="ip-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-red-400 dark:hover:border-red-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-red-100 dark:bg-red-900/30 text-red-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-red-100 -red-900/30 text-red-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
 
                         <i class="fas fa-certificate"></i>
                     </div>
@@ -315,7 +315,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0">
                         <div
-                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600">
+                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 -primary-900/30 text-primary-600">
                             <i class="fas fa-users-tie text-xl"></i>
                         </div>
                     </div>
@@ -330,7 +330,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0">
                         <div
-                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600">
+                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 -primary-900/30 text-primary-600">
                             <i class="fas fa-clock text-xl"></i>
                         </div>
                     </div>
@@ -345,7 +345,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0">
                         <div
-                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600">
+                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 -primary-900/30 text-primary-600">
                             <i class="fas fa-shield-alt text-xl"></i>
                         </div>
                     </div>
@@ -360,7 +360,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0">
                         <div
-                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600">
+                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 -primary-900/30 text-primary-600">
                             <i class="fas fa-indian-rupee-sign text-xl"></i>
                         </div>
                     </div>
@@ -375,7 +375,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0">
                         <div
-                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600">
+                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 -primary-900/30 text-primary-600">
                             <i class="fas fa-globe text-xl"></i>
                         </div>
                     </div>
@@ -390,7 +390,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0">
                         <div
-                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600">
+                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 -primary-900/30 text-primary-600">
                             <i class="fas fa-headset text-xl"></i>
                         </div>
                     </div>
@@ -406,7 +406,7 @@
     </section>
 
     <!-- Process Section -->
-    <section class="py-0 bg-slate-50 dark:bg-slate-900">
+    <section class="py-0 bg-slate-50 -slate-900">
         {{-- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Our Simple Process</h2>
@@ -418,9 +418,9 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div class="relative">
                     <div class="absolute top-12 left-16 right-0 h-0.5 bg-primary-300 hidden md:block"></div>
-                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 text-center relative z-10">
+                    <div class="bg-white -slate-800 rounded-2xl p-6 text-center relative z-10">
                         <div
-                            class="w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            class="w-16 h-16 rounded-full bg-primary-100 -primary-900/30 text-primary-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                             1
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Free Consultation</h3>
@@ -432,9 +432,9 @@
 
                 <div class="relative">
                     <div class="absolute top-12 left-16 right-0 h-0.5 bg-primary-300 hidden md:block"></div>
-                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 text-center relative z-10">
+                    <div class="bg-white -slate-800 rounded-2xl p-6 text-center relative z-10">
                         <div
-                            class="w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            class="w-16 h-16 rounded-full bg-primary-100 -primary-900/30 text-primary-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                             2
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Documentation</h3>
@@ -446,9 +446,9 @@
 
                 <div class="relative">
                     <div class="absolute top-12 left-16 right-0 h-0.5 bg-primary-300 hidden md:block"></div>
-                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 text-center relative z-10">
+                    <div class="bg-white -slate-800 rounded-2xl p-6 text-center relative z-10">
                         <div
-                            class="w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            class="w-16 h-16 rounded-full bg-primary-100 -primary-900/30 text-primary-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                             3
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">File & Track</h3>
@@ -458,9 +458,9 @@
                     </div>
                 </div>
 
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 text-center relative z-10">
+                <div class="bg-white -slate-800 rounded-2xl p-6 text-center relative z-10">
                     <div
-                        class="w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        class="w-16 h-16 rounded-full bg-primary-100 -primary-900/30 text-primary-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                         4
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Approval & Certificate</h3>
@@ -598,7 +598,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 bg-slate-50 dark:bg-slate-900">
+    <section class="py-20 bg-slate-50 -slate-900">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Frequently Asked Questions</h2>
@@ -608,7 +608,7 @@
             </div>
 
             <div class="space-y-4">
-                <div x-data="{ open: false }" class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden">
+                <div x-data="{ open: false }" class="bg-white -slate-800 rounded-xl overflow-hidden">
                     <button @click="open = !open"
                         class="w-full px-6 py-4 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
                         <h3 class="font-bold text-slate-900 dark:text-white text-left">
@@ -624,7 +624,7 @@
                     </div>
                 </div>
 
-                <div x-data="{ open: false }" class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden">
+                <div x-data="{ open: false }" class="bg-white -slate-800 rounded-xl overflow-hidden">
                     <button @click="open = !open"
                         class="w-full px-6 py-4 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
                         <h3 class="font-bold text-slate-900 dark:text-white text-left">
@@ -639,7 +639,7 @@
                     </div>
                 </div>
 
-                <div x-data="{ open: false }" class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden">
+                <div x-data="{ open: false }" class="bg-white -slate-800 rounded-xl overflow-hidden">
                     <button @click="open = !open"
                         class="w-full px-6 py-4 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
                         <h3 class="font-bold text-slate-900 dark:text-white text-left">
@@ -654,7 +654,7 @@
                     </div>
                 </div>
 
-                <div x-data="{ open: false }" class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden">
+                <div x-data="{ open: false }" class="bg-white -slate-800 rounded-xl overflow-hidden">
                     <button @click="open = !open"
                         class="w-full px-6 py-4 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
                         <h3 class="font-bold text-slate-900 dark:text-white text-left">

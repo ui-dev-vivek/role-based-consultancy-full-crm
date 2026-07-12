@@ -1,11 +1,11 @@
- <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8">
+ <div class="bg-slate-50 -slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8">
 
      <h3 class="text-3xl font-black text-slate-900 dark:text-white mb-6">
          Send a Message
      </h3>
 
      @if (session()->has('success'))
-         <div class="mb-6 p-4 rounded-xl bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-400">
+         <div class="mb-6 p-4 rounded-xl bg-green-50 -green-900/30 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-400">
              {{ session('success') }}
          </div>
      @endif
@@ -18,7 +18,7 @@
              </label>
 
              <input type="text" wire:model="name"
-                 class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-4 py-3 focus:ring-2 focus:ring-cyan-500 outline-none">
+                 class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white -slate-950 px-4 py-3 focus:ring-2 focus:ring-cyan-500 outline-none">
              @error('name') <span class="text-sm text-red-500 mt-1 block">{{ $message }}</span> @enderror
          </div>
 
@@ -28,7 +28,7 @@
              </label>
 
              <input type="email" wire:model="email"
-                 class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-4 py-3 focus:ring-2 focus:ring-cyan-500 outline-none">
+                 class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white -slate-950 px-4 py-3 focus:ring-2 focus:ring-cyan-500 outline-none">
              @error('email') <span class="text-sm text-red-500 mt-1 block">{{ $message }}</span> @enderror
          </div>
 
@@ -38,7 +38,7 @@
              </label>
 
              <textarea rows="5" wire:model="message"
-                 class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-4 py-3 focus:ring-2 focus:ring-cyan-500 outline-none"></textarea>
+                 class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white -slate-950 px-4 py-3 focus:ring-2 focus:ring-cyan-500 outline-none"></textarea>
              @error('message') <span class="text-sm text-red-500 mt-1 block">{{ $message }}</span> @enderror
          </div>
 

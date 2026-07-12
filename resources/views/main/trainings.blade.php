@@ -12,7 +12,7 @@
 
 
     <!-- Main Section -->
-    <section class="py-20 bg-white dark:bg-slate-950">
+    <section class="py-20 bg-white -slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -21,7 +21,7 @@
                 <div>
 
                     <span
-                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-bold mb-5">
+                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-100 -blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-bold mb-5">
                         Career Growth Ecosystem
                     </span>
 
@@ -41,7 +41,7 @@
                         <div class="flex items-start gap-4">
 
                             <div
-                                class="w-14 h-14 rounded-2xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 flex items-center justify-center shrink-0">
+                                class="w-14 h-14 rounded-2xl bg-emerald-100 -emerald-900/30 text-emerald-600 flex items-center justify-center shrink-0">
                                 <i class="fas fa-book-open"></i>
                             </div>
 
@@ -62,7 +62,7 @@
                         <div class="flex items-start gap-4">
 
                             <div
-                                class="w-14 h-14 rounded-2xl bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 flex items-center justify-center shrink-0">
+                                class="w-14 h-14 rounded-2xl bg-cyan-100 -cyan-900/30 text-cyan-600 flex items-center justify-center shrink-0">
                                 <i class="fas fa-briefcase"></i>
                             </div>
 
@@ -83,7 +83,7 @@
                         <div class="flex items-start gap-4">
 
                             <div
-                                class="w-14 h-14 rounded-2xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center shrink-0">
+                                class="w-14 h-14 rounded-2xl bg-purple-100 -purple-900/30 text-purple-600 flex items-center justify-center shrink-0">
                                 <i class="fas fa-award"></i>
                             </div>
 

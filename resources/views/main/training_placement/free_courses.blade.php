@@ -45,7 +45,7 @@
     @endsection
 
     <!-- Free Courses Grid -->
-    <section id="free-courses" class="py-12 bg-gray-50 dark:bg-slate-900">
+    <section id="free-courses" class="py-12 bg-gray-50 -slate-900">
         <div x-data="{ selected: null, courses: {{ json_encode($freeCourses['data']['items'] ?? []) }} }" class="container mx-auto px-4">
             <h2 class="text-3xl font-extrabold mb-8 text-center text-gray-800 dark:text-gray-100 tracking-tight">
                 Free Learning Courses
@@ -58,7 +58,7 @@
                     @endif
 
                     <x-ui.card padding="p-0"
-                        class="transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer flex flex-col h-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 overflow-hidden"
+                        class="transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer flex flex-col h-full bg-white -slate-800 border border-slate-200 dark:border-slate-700 overflow-hidden"
                         x-on:click="selected = courses[{{ $index }}]; $dispatch('open-modal', 'course-modal')">
                         <div class="relative overflow-hidden">
                             @if (!empty($course['image']))
@@ -66,7 +66,7 @@
                                     class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
                             @else
                                 <div
-                                    class="w-full h-48 bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-400">
+                                    class="w-full h-48 bg-slate-100 -slate-700 flex items-center justify-center text-slate-400">
                                     <i class="fas fa-graduation-cap text-4xl"></i>
                                 </div>
                             @endif
@@ -108,7 +108,7 @@
                         </template>
                         <template x-if="!selected?.image">
                             <div
-                                class="w-full h-64 bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-400">
+                                class="w-full h-64 bg-slate-100 -slate-700 flex items-center justify-center text-slate-400">
                                 <i class="fas fa-graduation-cap text-6xl"></i>
                             </div>
                         </template>
@@ -127,7 +127,7 @@
                         </div>
 
                         <div
-                            class="flex flex-wrap gap-6 text-sm text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-800/40 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50">
+                            class="flex flex-wrap gap-6 text-sm text-slate-600 dark:text-slate-300 bg-slate-50 -slate-800/40 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50">
                             <div class="flex items-center gap-2">
                                 <i class="fas fa-globe text-primary"></i>
                                 <span><strong>Language:</strong> <span

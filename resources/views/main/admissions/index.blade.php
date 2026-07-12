@@ -13,17 +13,17 @@
         class="py-20 bg-gradient-to-br from-emerald-50 to-cyan-50 dark:from-emerald-950/20 dark:to-cyan-950/20 relative overflow-hidden">
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div
-                class="absolute -top-40 -right-40 w-80 h-80 bg-emerald-200/30 dark:bg-emerald-600/10 rounded-full blur-3xl">
+                class="absolute -top-40 -right-40 w-80 h-80 bg-emerald-200/30 -emerald-600/10 rounded-full blur-3xl">
             </div>
             <div
-                class="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-200/30 dark:bg-cyan-600/10 rounded-full blur-3xl">
+                class="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-200/30 -cyan-600/10 rounded-full blur-3xl">
             </div>
         </div>
 
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
                 <div
-                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 dark:bg-emerald-900/30 border border-emerald-300 dark:border-emerald-800 mb-6">
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 -emerald-900/30 border border-emerald-300 dark:border-emerald-800 mb-6">
                     <i class="fas fa-star text-emerald-600"></i>
                     <span class="font-bold text-emerald-900 dark:text-emerald-300">Up to 100% Scholarship
                         Available</span>
@@ -43,22 +43,22 @@
             {{-- <!-- Scholarship Stats -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
                 <div
-                    class="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-2xl p-6 border border-slate-200 dark:border-slate-700 text-center">
+                    class="bg-white/80 -slate-800/80 backdrop-blur rounded-2xl p-6 border border-slate-200 dark:border-slate-700 text-center">
                     <div class="text-4xl font-black text-emerald-600 mb-2">500+</div>
                     <p class="text-sm font-semibold text-slate-600 dark:text-slate-400">Scholarships Awarded</p>
                 </div>
                 <div
-                    class="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-2xl p-6 border border-slate-200 dark:border-slate-700 text-center">
+                    class="bg-white/80 -slate-800/80 backdrop-blur rounded-2xl p-6 border border-slate-200 dark:border-slate-700 text-center">
                     <div class="text-4xl font-black text-cyan-600 mb-2">₹50Cr+</div>
                     <p class="text-sm font-semibold text-slate-600 dark:text-slate-400">Total Aid Distributed</p>
                 </div>
                 <div
-                    class="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-2xl p-6 border border-slate-200 dark:border-slate-700 text-center">
+                    class="bg-white/80 -slate-800/80 backdrop-blur rounded-2xl p-6 border border-slate-200 dark:border-slate-700 text-center">
                     <div class="text-4xl font-black text-blue-600 mb-2">95%</div>
                     <p class="text-sm font-semibold text-slate-600 dark:text-slate-400">Approval Rate</p>
                 </div>
                 <div
-                    class="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-2xl p-6 border border-slate-200 dark:border-slate-700 text-center">
+                    class="bg-white/80 -slate-800/80 backdrop-blur rounded-2xl p-6 border border-slate-200 dark:border-slate-700 text-center">
                     <div class="text-4xl font-black text-purple-600 mb-2">7 Days</div>
                     <p class="text-sm font-semibold text-slate-600 dark:text-slate-400">Quick Approval</p>
                 </div>
@@ -80,7 +80,7 @@
                         class="absolute inset-0 bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-3xl blur-2xl opacity-0 group-hover:opacity-60 transition-opacity duration-500">
                     </div>
                     <div
-                        class="relative bg-white dark:bg-slate-900 rounded-3xl p-7 border-2 border-emerald-300 dark:border-emerald-700 h-full flex flex-col shadow-lg hover:shadow-2xl transition-shadow">
+                        class="relative bg-white -slate-900 rounded-3xl p-7 border-2 border-emerald-300 dark:border-emerald-700 h-full flex flex-col shadow-lg hover:shadow-2xl transition-shadow">
                         <div class="mb-4 flex items-center justify-between">
                             <span
                                 class="inline-block px-3 py-1.5 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-full text-sm font-bold">⭐
@@ -117,7 +117,7 @@
                         class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl blur-2xl opacity-0 group-hover:opacity-60 transition-opacity duration-500">
                     </div>
                     <div
-                        class="relative bg-white dark:bg-slate-900 rounded-3xl p-7 border-2 border-cyan-300 dark:border-cyan-700 h-full flex flex-col shadow-lg hover:shadow-2xl transition-shadow">
+                        class="relative bg-white -slate-900 rounded-3xl p-7 border-2 border-cyan-300 dark:border-cyan-700 h-full flex flex-col shadow-lg hover:shadow-2xl transition-shadow">
                         <div class="mb-4 flex items-center justify-between">
                             <span
                                 class="inline-block px-3 py-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full text-sm font-bold">💎
@@ -155,7 +155,7 @@
                         class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur-2xl opacity-0 group-hover:opacity-60 transition-opacity duration-500">
                     </div>
                     <div
-                        class="relative bg-white dark:bg-slate-900 rounded-3xl p-7 border-2 border-blue-300 dark:border-blue-700 h-full flex flex-col shadow-lg hover:shadow-2xl transition-shadow">
+                        class="relative bg-white -slate-900 rounded-3xl p-7 border-2 border-blue-300 dark:border-blue-700 h-full flex flex-col shadow-lg hover:shadow-2xl transition-shadow">
                         <div class="mb-4 flex items-center justify-between">
                             <span
                                 class="inline-block px-3 py-1.5 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full text-sm font-bold">👍
@@ -192,7 +192,7 @@
                         class="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl blur-2xl opacity-0 group-hover:opacity-60 transition-opacity duration-500">
                     </div>
                     <div
-                        class="relative bg-white dark:bg-slate-900 rounded-3xl p-7 border-2 border-orange-300 dark:border-orange-700 h-full flex flex-col shadow-lg hover:shadow-2xl transition-shadow">
+                        class="relative bg-white -slate-900 rounded-3xl p-7 border-2 border-orange-300 dark:border-orange-700 h-full flex flex-col shadow-lg hover:shadow-2xl transition-shadow">
                         <div class="mb-4 flex items-center justify-between">
                             <span
                                 class="inline-block px-3 py-1.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full text-sm font-bold">🎓
@@ -226,7 +226,7 @@
             </div> --}}
 
             <!-- 🎓 COURSES OFFERED SECTION -->
-            <section class="py-20 bg-slate-50 dark:bg-slate-900">
+            <section class="py-20 bg-slate-50 -slate-900">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
 
@@ -238,7 +238,7 @@
                         </h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                class="bg-white -slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
                                 <div class="flex items-start justify-between">
                                     <div>
                                         <p class="text-slate-900 dark:text-white font-semibold">Computer Science &
@@ -249,7 +249,7 @@
                                 </div>
                             </div>
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                class="bg-white -slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
                                 <div class="flex items-start justify-between">
                                     <div>
                                         <p class="text-slate-900 dark:text-white font-semibold">CS & Engineering
@@ -260,7 +260,7 @@
                                 </div>
                             </div>
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                class="bg-white -slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
                                 <div class="flex items-start justify-between">
                                     <div>
                                         <p class="text-slate-900 dark:text-white font-semibold">CS & Eng. (AI & Machine
@@ -270,7 +270,7 @@
                                 </div>
                             </div>
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                class="bg-white -slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
                                 <div class="flex items-start justify-between">
                                     <div>
                                         <p class="text-slate-900 dark:text-white font-semibold">CS & Engineering (Data
@@ -281,7 +281,7 @@
                                 </div>
                             </div>
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                class="bg-white -slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
                                 <div class="flex items-start justify-between">
                                     <div>
                                         <p class="text-slate-900 dark:text-white font-semibold">Electronics &
@@ -292,7 +292,7 @@
                                 </div>
                             </div>
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                class="bg-white -slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
                                 <div class="flex items-start justify-between">
                                     <div>
                                         <p class="text-slate-900 dark:text-white font-semibold">Electronics Eng. (VLSI
@@ -303,7 +303,7 @@
                                 </div>
                             </div>
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
+                                class="bg-white -slate-800 rounded-xl p-5 border-l-4 border-blue-600 shadow-md hover:shadow-lg transition-all">
                                 <div class="flex items-start justify-between">
                                     <div>
                                         <p class="text-slate-900 dark:text-white font-semibold">Mechanical Engineering
@@ -323,7 +323,7 @@
                         </h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-purple-600 shadow-md hover:shadow-lg transition-all">
+                                class="bg-white -slate-800 rounded-xl p-5 border-l-4 border-purple-600 shadow-md hover:shadow-lg transition-all">
                                 <div class="flex items-start justify-between">
                                     <div>
                                         <p class="text-slate-900 dark:text-white font-semibold">Computer Science &
@@ -334,7 +334,7 @@
                                 </div>
                             </div>
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-purple-600 shadow-md hover:shadow-lg transition-all">
+                                class="bg-white -slate-800 rounded-xl p-5 border-l-4 border-purple-600 shadow-md hover:shadow-lg transition-all">
                                 <div class="flex items-start justify-between">
                                     <div>
                                         <p class="text-slate-900 dark:text-white font-semibold">Electronics &
@@ -345,7 +345,7 @@
                                 </div>
                             </div>
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-xl p-5 border-l-4 border-purple-600 shadow-md hover:shadow-lg transition-all">
+                                class="bg-white -slate-800 rounded-xl p-5 border-l-4 border-purple-600 shadow-md hover:shadow-lg transition-all">
                                 <div class="flex items-start justify-between">
                                     <div>
                                         <p class="text-slate-900 dark:text-white font-semibold">Mechanical Engineering
@@ -365,14 +365,14 @@
                         </h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
+                                class="bg-white -slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
                                 <div class="flex items-center justify-between mb-4">
                                     <div
-                                        class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center">
+                                        class="w-12 h-12 rounded-xl bg-blue-100 -blue-900/30 text-blue-600 flex items-center justify-center">
                                         <i class="fas fa-chart-bar"></i>
                                     </div>
                                     <span
-                                        class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                                        class="px-3 py-1 bg-emerald-100 -emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
                                         Available
                                     </span>
                                 </div>
@@ -382,14 +382,14 @@
                             </div>
 
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
+                                class="bg-white -slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
                                 <div class="flex items-center justify-between mb-4">
                                     <div
-                                        class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center">
+                                        class="w-12 h-12 rounded-xl bg-purple-100 -purple-900/30 text-purple-600 flex items-center justify-center">
                                         <i class="fas fa-laptop-code"></i>
                                     </div>
                                     <span
-                                        class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                                        class="px-3 py-1 bg-emerald-100 -emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
                                         Available
                                     </span>
                                 </div>
@@ -399,14 +399,14 @@
                             </div>
 
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
+                                class="bg-white -slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
                                 <div class="flex items-center justify-between mb-4">
                                     <div
-                                        class="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30 text-red-600 flex items-center justify-center">
+                                        class="w-12 h-12 rounded-xl bg-red-100 -red-900/30 text-red-600 flex items-center justify-center">
                                         <i class="fas fa-graduation-cap"></i>
                                     </div>
                                     <span
-                                        class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                                        class="px-3 py-1 bg-emerald-100 -emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
                                         Available
                                     </span>
                                 </div>
@@ -416,14 +416,14 @@
                             </div>
 
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
+                                class="bg-white -slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
                                 <div class="flex items-center justify-between mb-4">
                                     <div
-                                        class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 text-green-600 flex items-center justify-center">
+                                        class="w-12 h-12 rounded-xl bg-green-100 -green-900/30 text-green-600 flex items-center justify-center">
                                         <i class="fas fa-code-branch"></i>
                                     </div>
                                     <span
-                                        class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                                        class="px-3 py-1 bg-emerald-100 -emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
                                         Available
                                     </span>
                                 </div>
@@ -433,14 +433,14 @@
                             </div>
 
                             <div
-                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
+                                class="bg-white -slate-800 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-all">
                                 <div class="flex items-center justify-between mb-4">
                                     <div
-                                        class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 flex items-center justify-center">
+                                        class="w-12 h-12 rounded-xl bg-indigo-100 -indigo-900/30 text-indigo-600 flex items-center justify-center">
                                         <i class="fas fa-microchip"></i>
                                     </div>
                                     <span
-                                        class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
+                                        class="px-3 py-1 bg-emerald-100 -emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold">
                                         Available
                                     </span>
                                 </div>
@@ -469,7 +469,7 @@
     </section>
 
     <!-- 📋 SCHOLARSHIP APPLICATION PROCESS -->
-    <section class="py-20 bg-slate-50 dark:bg-slate-900">
+    <section class="py-20 bg-slate-50 -slate-900">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Simple 4-Step Scholarship Process
@@ -489,7 +489,7 @@
                             class="w-12 h-12 rounded-full bg-gradient-to-r from-emerald-500 to-cyan-500 flex items-center justify-center mx-auto mb-4 relative z-10 shadow-lg">
                             <span class="text-white font-black text-lg">1</span>
                         </div>
-                        <div class="bg-white dark:bg-slate-800 rounded-xl p-6 text-center">
+                        <div class="bg-white -slate-800 rounded-xl p-6 text-center">
                             <h3 class="font-bold text-slate-900 dark:text-white mb-2">Fill Application</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Complete your profile with academic
                                 details and family income</p>
@@ -501,7 +501,7 @@
                             class="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center mx-auto mb-4 relative z-10 shadow-lg">
                             <span class="text-white font-black text-lg">2</span>
                         </div>
-                        <div class="bg-white dark:bg-slate-800 rounded-xl p-6 text-center">
+                        <div class="bg-white -slate-800 rounded-xl p-6 text-center">
                             <h3 class="font-bold text-slate-900 dark:text-white mb-2">Document Submission</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Upload 12th mark sheet, entrance
                                 score, and income proof</p>
@@ -513,7 +513,7 @@
                             class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center mx-auto mb-4 relative z-10 shadow-lg">
                             <span class="text-white font-black text-lg">3</span>
                         </div>
-                        <div class="bg-white dark:bg-slate-800 rounded-xl p-6 text-center">
+                        <div class="bg-white -slate-800 rounded-xl p-6 text-center">
                             <h3 class="font-bold text-slate-900 dark:text-white mb-2">Verification Call</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Our team verifies your documents and
                                 discusses your profile</p>
@@ -525,7 +525,7 @@
                             class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center mx-auto mb-4 relative z-10 shadow-lg">
                             <span class="text-white font-black text-lg">4</span>
                         </div>
-                        <div class="bg-white dark:bg-slate-800 rounded-xl p-6 text-center">
+                        <div class="bg-white -slate-800 rounded-xl p-6 text-center">
                             <h3 class="font-bold text-slate-900 dark:text-white mb-2">Approval & Award</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Get your scholarship letter within 7
                                 days guaranteed</p>
@@ -548,9 +548,9 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
+                <div class="bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
                     <div
-                        class="w-14 h-14 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 flex items-center justify-center mb-4 text-2xl">
+                        class="w-14 h-14 rounded-full bg-primary-100 -primary-900/30 text-primary-600 flex items-center justify-center mb-4 text-2xl">
                         <i class="fas fa-university"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">100+ Partner Colleges</h3>
@@ -558,9 +558,9 @@
                         scholarship options</p>
                 </div>
 
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
+                <div class="bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
                     <div
-                        class="w-14 h-14 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 flex items-center justify-center mb-4 text-2xl">
+                        class="w-14 h-14 rounded-full bg-emerald-100 -emerald-900/30 text-emerald-600 flex items-center justify-center mb-4 text-2xl">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">100% Placement Rate</h3>
@@ -568,9 +568,9 @@
                         package ₹15+ LPA</p>
                 </div>
 
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
+                <div class="bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
                     <div
-                        class="w-14 h-14 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center mb-4 text-2xl">
+                        class="w-14 h-14 rounded-full bg-blue-100 -blue-900/30 text-blue-600 flex items-center justify-center mb-4 text-2xl">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Expert Counselors</h3>
@@ -578,9 +578,9 @@
                     </p>
                 </div>
 
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
+                <div class="bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
                     <div
-                        class="w-14 h-14 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center mb-4 text-2xl">
+                        class="w-14 h-14 rounded-full bg-purple-100 -purple-900/30 text-purple-600 flex items-center justify-center mb-4 text-2xl">
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Skill Development</h3>
@@ -588,9 +588,9 @@
                         training</p>
                 </div>
 
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
+                <div class="bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
                     <div
-                        class="w-14 h-14 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 flex items-center justify-center mb-4 text-2xl">
+                        class="w-14 h-14 rounded-full bg-yellow-100 -yellow-900/30 text-yellow-600 flex items-center justify-center mb-4 text-2xl">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Scholarship Support</h3>
@@ -598,9 +598,9 @@
                     </p>
                 </div>
 
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
+                <div class="bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
                     <div
-                        class="w-14 h-14 rounded-full bg-pink-100 dark:bg-pink-900/30 text-pink-600 flex items-center justify-center mb-4 text-2xl">
+                        class="w-14 h-14 rounded-full bg-pink-100 -pink-900/30 text-pink-600 flex items-center justify-center mb-4 text-2xl">
                         <i class="fas fa-clock"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Fast Track Admission</h3>

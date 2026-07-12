@@ -17,7 +17,7 @@
 
 
     <!-- About Intro -->
-    <section class="py-20 bg-white dark:bg-slate-950">
+    <section class="py-20 bg-white -slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -26,7 +26,7 @@
                 <div>
 
                     <span
-                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 text-sm font-bold mb-5">
+                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-cyan-100 -cyan-900/30 text-cyan-700 dark:text-cyan-300 text-sm font-bold mb-5">
                         Who We Are
                     </span>
 
@@ -52,7 +52,7 @@
                 <div class="grid grid-cols-2 gap-5">
 
                     <div
-                        class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
+                        class="bg-slate-50 -slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
 
                         <i class="fas fa-graduation-cap text-4xl text-emerald-500 mb-4"></i>
 
@@ -66,7 +66,7 @@
                     </div>
 
                     <div
-                        class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
+                        class="bg-slate-50 -slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
 
                         <i class="fas fa-briefcase text-4xl text-blue-500 mb-4"></i>
 
@@ -80,7 +80,7 @@
                     </div>
 
                     <div
-                        class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
+                        class="bg-slate-50 -slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
 
                         <i class="fas fa-flask text-4xl text-orange-500 mb-4"></i>
 
@@ -94,7 +94,7 @@
                     </div>
 
                     <div
-                        class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
+                        class="bg-slate-50 -slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
 
                         <i class="fas fa-balance-scale text-4xl text-purple-500 mb-4"></i>
 
@@ -116,11 +116,11 @@
 
 
     <!-- Vision -->
-    <section class="py-20 bg-slate-50 dark:bg-slate-900">
+    <section class="py-20 bg-slate-50 -slate-900">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
             <span
-                class="inline-flex items-center px-4 py-1.5 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 text-sm font-bold mb-5">
+                class="inline-flex items-center px-4 py-1.5 rounded-full bg-emerald-100 -emerald-900/30 text-emerald-700 dark:text-emerald-300 text-sm font-bold mb-5">
                 Our Vision
             </span>
 

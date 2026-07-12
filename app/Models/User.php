@@ -19,11 +19,6 @@ class User extends Authenticatable implements FilamentUser, HasName
     }
 
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
     protected $fillable = [
         'name',
         'email',
@@ -34,10 +29,7 @@ class User extends Authenticatable implements FilamentUser, HasName
         'requested_role',
     ];
 
-    /**
-     * Get the user's display name for Filament.
-     * Pulls from the related UserProfile's full_name, falling back to email.
-     */
+ 
     public function getFilamentName(): string
     {
         try {

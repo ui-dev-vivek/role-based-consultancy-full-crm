@@ -20,7 +20,7 @@
         x-transition:leave-end="opacity-0 scale-95 translate-y-4"
         class="fixed inset-0 z-[1000] flex items-center justify-center p-4 overflow-hidden" @click.self="open = false">
 
-        <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col">
+        <div class="bg-white -slate-900 rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col">
             <!-- Modal Header with Gradient - Sticky -->
             <div
                 class="sticky top-0 z-10 bg-gradient-to-r from-primary-600 to-primary-800 p-6 flex items-center justify-between border-b border-primary-700/30 flex-shrink-0">
@@ -49,7 +49,7 @@
                                 <span class="text-sm font-bold text-primary-600"
                                     x-text="Math.round(progress) + '%'"></span>
                             </div>
-                            <div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                            <div class="w-full h-2 bg-slate-200 -slate-700 rounded-full overflow-hidden">
                                 <div class="h-full bg-gradient-to-r from-primary-500 to-primary-600 transition-all duration-300"
                                     :style="`width: ${progress}%`"></div>
                             </div>
@@ -67,7 +67,7 @@
                                         class="fas fa-user absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary-600 transition-colors"></i>
                                     <input type="text" id="name" name="name" x-model="formData.name"
                                         @input="updateProgress" required
-                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-800 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
                                         placeholder="Your full name">
                                 </div>
                                 <span class="text-red-500 text-xs mt-1 block" x-show="errors.name"
@@ -85,7 +85,7 @@
                                     <input type="tel" id="mobile_number" name="mobile_number"
                                         x-model="formData.mobile_number" @input="updateProgress" required
                                         pattern="[0-9]{10}"
-                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-800 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
                                         placeholder="10-digit number">
                                 </div>
                                 <span class="text-red-500 text-xs mt-1 block" x-show="errors.mobile_number"
@@ -106,7 +106,7 @@
                                     <input type="tel" id="guardian_mobile_number" name="guardian_mobile_number"
                                         x-model="formData.guardian_mobile_number" @input="updateProgress" required
                                         pattern="[0-9]{10}"
-                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-800 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
                                         placeholder="Father/Guardian number">
                                 </div>
                                 <span class="text-red-500 text-xs mt-1 block" x-show="errors.guardian_mobile_number"
@@ -123,7 +123,7 @@
                                         class="fas fa-book absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary-600 transition-colors pointer-events-none"></i>
                                     <select id="interested_course" name="interested_course"
                                         x-model="formData.interested_course" @input="updateProgress" required
-                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition appearance-none">
+                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition appearance-none">
                                         <option value="">-- Select Course --</option>
                                         <option value="BBA">BBA</option>
                                         <option value="BCA">BCA</option>
@@ -151,7 +151,7 @@
                                         class="fas fa-map-marker-alt absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary-600 transition-colors"></i>
                                     <input type="text" id="city" name="city" x-model="formData.city"
                                         @input="updateProgress" required
-                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-800 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
                                         placeholder="Your city">
                                 </div>
                                 <span class="text-red-500 text-xs mt-1 block" x-show="errors.city"
@@ -168,7 +168,7 @@
                                         class="fas fa-map absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary-600 transition-colors pointer-events-none"></i>
                                     <select id="state" name="state" x-model="formData.state"
                                         @input="updateProgress" required
-                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition appearance-none">
+                                        class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition appearance-none">
                                         <option value="">-- Select State --</option>
                                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -206,7 +206,7 @@
                                 <label
                                     class="relative flex items-center p-4 border-2 border-slate-300 dark:border-slate-600 rounded-xl cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all"
                                     :class="formData.scholarship_status === 'scholarship' ?
-                                        'border-primary-500 bg-primary-50 dark:bg-primary-900/10' : ''">
+                                        'border-primary-500 bg-primary-50 -primary-900/10' : ''">
                                     <input type="radio" name="scholarship_status" value="scholarship"
                                         x-model="formData.scholarship_status" @input="updateProgress"
                                         class="w-4 h-4 text-primary-600 accent-primary-600">
@@ -224,7 +224,7 @@
                                 <label
                                     class="relative flex items-center p-4 border-2 border-slate-300 dark:border-slate-600 rounded-xl cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all"
                                     :class="formData.scholarship_status === 'non-scholarship' ?
-                                        'border-primary-500 bg-primary-50 dark:bg-primary-900/10' : ''">
+                                        'border-primary-500 bg-primary-50 -primary-900/10' : ''">
                                     <input type="radio" name="scholarship_status" value="non-scholarship"
                                         x-model="formData.scholarship_status" @input="updateProgress" required>
                                     <span class="ml-3 flex-1">
@@ -251,7 +251,7 @@
                                 <input type="number" id="admission_budget" name="admission_budget"
                                     x-model="formData.admission_budget" @input="updateProgress" required
                                     min="0" step="10000"
-                                    class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+                                    class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white -slate-800 text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
                                     placeholder="e.g., 500000">
                                 <span
                                     class="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-slate-600 dark:text-slate-400"
@@ -287,7 +287,7 @@
                     <div id="successContent" class="hidden text-center">
                         <div class="mb-6">
                             <div class="flex justify-center mb-4">
-                                <div class="bg-green-100 dark:bg-green-900 rounded-full p-4">
+                                <div class="bg-green-100 -green-900 rounded-full p-4">
                                     <i class="fas fa-check text-3xl text-green-600 dark:text-green-400"></i>
                                 </div>
                             </div>
@@ -394,7 +394,7 @@
                         // Show error message without alert
                         const errorMsg = data.message || 'An error occurred while submitting your application.';
                         const errorDiv = document.createElement('div');
-                        errorDiv.className = 'bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-200 px-4 py-3 rounded-xl mb-4';
+                        errorDiv.className = 'bg-red-100 -red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-200 px-4 py-3 rounded-xl mb-4';
                         errorDiv.innerHTML = `<i class="fas fa-exclamation-circle mr-2"></i>${errorMsg}`;
                         document.getElementById('formContent').insertBefore(errorDiv, document.getElementById('admissionForm'));
                         setTimeout(() => errorDiv.remove(), 5000);
@@ -402,7 +402,7 @@
                 } catch (error) {
                     console.error('Error:', error);
                     const errorDiv = document.createElement('div');
-                    errorDiv.className = 'bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-200 px-4 py-3 rounded-xl mb-4';
+                    errorDiv.className = 'bg-red-100 -red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-200 px-4 py-3 rounded-xl mb-4';
                     errorDiv.innerHTML = '<i class="fas fa-exclamation-circle mr-2"></i>Network error. Please check your connection and try again.';
                     document.getElementById('formContent').insertBefore(errorDiv, document.getElementById('admissionForm'));
                     setTimeout(() => errorDiv.remove(), 5000);

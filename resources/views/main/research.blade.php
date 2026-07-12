@@ -11,13 +11,13 @@
     @endsection
     <!-- SERVICES GRID -->
     <!-- SERVICES GRID -->
-    <section class="py-20 bg-slate-50 dark:bg-slate-900">
+    <section class="py-20 bg-slate-50 -slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Heading -->
             <div class="text-center mb-16">
                 <span
-                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-sm font-bold mb-4">
+                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-orange-100 -orange-900/30 text-orange-700 dark:text-orange-300 text-sm font-bold mb-4">
                     Research Consultancy
                 </span>
 
@@ -36,10 +36,10 @@
 
                 <!-- Conference Papers -->
                 <div id="conference-papers"
-                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-600">
+                    class="research-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-purple-100 -purple-900/30 text-purple-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
                         <i class="fas fa-file-alt"></i>
                     </div>
 
@@ -72,10 +72,10 @@
 
                 <!-- Journal Publication -->
                 <div id="journal-publication"
-                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-600">
+                    class="research-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-emerald-100 -emerald-900/30 text-emerald-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
                         <i class="fas fa-newspaper"></i>
                     </div>
 
@@ -108,10 +108,10 @@
 
                 <!-- Dissertation -->
                 <div id="dissertation-support"
-                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600">
+                    class="research-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-blue-100 -blue-900/30 text-blue-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
                         <i class="fas fa-book"></i>
                     </div>
 
@@ -144,10 +144,10 @@
 
                 <!-- Thesis -->
                 <div id="thesis-writing"
-                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-cyan-400 dark:hover:border-cyan-600">
+                    class="research-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-cyan-400 dark:hover:border-cyan-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-cyan-100 -cyan-900/30 text-cyan-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
                         <i class="fas fa-book-open"></i>
                     </div>
 
@@ -180,10 +180,10 @@
 
                 <!-- Data Analysis -->
                 <div id="data-analysis"
-                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-orange-400 dark:hover:border-orange-600">
+                    class="research-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-orange-400 dark:hover:border-orange-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-orange-100 dark:bg-orange-900/30 text-orange-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-orange-100 -orange-900/30 text-orange-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
                         <i class="fas fa-chart-bar"></i>
                     </div>
 
@@ -216,10 +216,10 @@
 
                 <!-- Literature Review -->
                 <div id="literature-review"
-                    class="research-card group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-pink-400 dark:hover:border-pink-600">
+                    class="research-card group bg-white -slate-800 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-pink-400 dark:hover:border-pink-600">
 
                     <div
-                        class="w-14 h-14 rounded-xl bg-pink-100 dark:bg-pink-900/30 text-pink-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                        class="w-14 h-14 rounded-xl bg-pink-100 -pink-900/30 text-pink-600 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
                         <i class="fas fa-search"></i>
                     </div>
 
@@ -285,7 +285,7 @@
         });
     </script>
     <!-- Contact Support -->
-    <section class="py-20 bg-white dark:bg-slate-950">
+    <section class="py-20 bg-white -slate-950">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div
@@ -358,9 +358,9 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all">
+                    class="bg-white -slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all">
                     <div
-                        class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-2xl mb-4">
+                        class="w-12 h-12 rounded-full bg-blue-100 -blue-900/30 text-blue-600 flex items-center justify-center text-2xl mb-4">
                         <i class="fas fa-user-tie"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Expert Team</h3>
@@ -369,9 +369,9 @@
                 </div>
 
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all">
+                    class="bg-white -slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all">
                     <div
-                        class="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 flex items-center justify-center text-2xl mb-4">
+                        class="w-12 h-12 rounded-full bg-emerald-100 -emerald-900/30 text-emerald-600 flex items-center justify-center text-2xl mb-4">
                         <i class="fas fa-check-circle"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Quality Assured</h3>
@@ -380,9 +380,9 @@
                 </div>
 
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all">
+                    class="bg-white -slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all">
                     <div
-                        class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center text-2xl mb-4">
+                        class="w-12 h-12 rounded-full bg-purple-100 -purple-900/30 text-purple-600 flex items-center justify-center text-2xl mb-4">
                         <i class="fas fa-lock"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">100% Confidential</h3>
@@ -390,9 +390,9 @@
                 </div>
 
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all">
+                    class="bg-white -slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all">
                     <div
-                        class="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-600 flex items-center justify-center text-2xl mb-4">
+                        class="w-12 h-12 rounded-full bg-orange-100 -orange-900/30 text-orange-600 flex items-center justify-center text-2xl mb-4">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">24/7 Support</h3>
@@ -404,7 +404,7 @@
     </section>
 
     <!-- PROCESS TIMELINE -->
-    <section class="py-20 bg-slate-50 dark:bg-slate-900">
+    <section class="py-20 bg-slate-50 -slate-900">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Our Research Process</h2>
@@ -471,7 +471,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-300 dark:border-slate-700 hover:shadow-xl transition-all">
+                    class="bg-white -slate-800 rounded-2xl p-8 border border-slate-300 dark:border-slate-700 hover:shadow-xl transition-all">
                     <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Basic Package</h3>
                     <div class="text-3xl font-black text-blue-600 mb-6">₹5,000<span
                             class="text-sm text-slate-600 dark:text-slate-400">/month</span></div>
@@ -506,7 +506,7 @@
                         class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-2xl blur-lg opacity-0 group-hover:opacity-75 transition-opacity">
                     </div>
                     <div
-                        class="relative bg-white dark:bg-slate-900 rounded-2xl p-8 border-2 border-emerald-400 dark:border-emerald-600">
+                        class="relative bg-white -slate-900 rounded-2xl p-8 border-2 border-emerald-400 dark:border-emerald-600">
                         <div
                             class="absolute -top-4 left-1/2 transform -translate-x-1/2 px-4 py-1 bg-emerald-600 text-white rounded-full text-sm font-bold">
                             Most Popular</div>
@@ -542,7 +542,7 @@
                 </div>
 
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-300 dark:border-slate-700 hover:shadow-xl transition-all">
+                    class="bg-white -slate-800 rounded-2xl p-8 border border-slate-300 dark:border-slate-700 hover:shadow-xl transition-all">
                     <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Enterprise Package</h3>
                     <div class="text-3xl font-black text-purple-600 mb-6">Custom<span
                             class="text-sm text-slate-600 dark:text-slate-400"> pricing</span></div>
@@ -579,9 +579,9 @@
         class="py-20 bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 relative overflow-hidden">
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div
-                class="absolute -top-40 -right-40 w-80 h-80 bg-orange-200/30 dark:bg-orange-600/10 rounded-full blur-3xl">
+                class="absolute -top-40 -right-40 w-80 h-80 bg-orange-200/30 -orange-600/10 rounded-full blur-3xl">
             </div>
-            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-red-200/30 dark:bg-red-600/10 rounded-full blur-3xl">
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-red-200/30 -red-600/10 rounded-full blur-3xl">
             </div>
         </div>
 
@@ -597,9 +597,9 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 text-center border border-slate-200 dark:border-slate-700">
+                    class="bg-white -slate-800 rounded-2xl p-8 text-center border border-slate-200 dark:border-slate-700">
                     <div
-                        class="w-14 h-14 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-600 flex items-center justify-center text-2xl mx-auto mb-4">
+                        class="w-14 h-14 rounded-full bg-orange-100 -orange-900/30 text-orange-600 flex items-center justify-center text-2xl mx-auto mb-4">
                         <i class="fas fa-phone"></i>
                     </div>
                     <h3 class="font-bold text-slate-900 dark:text-white mb-2">WhatsApp Chat</h3>
@@ -613,9 +613,9 @@
                 </div>
 
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 text-center border border-slate-200 dark:border-slate-700">
+                    class="bg-white -slate-800 rounded-2xl p-8 text-center border border-slate-200 dark:border-slate-700">
                     <div
-                        class="w-14 h-14 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-2xl mx-auto mb-4">
+                        class="w-14 h-14 rounded-full bg-blue-100 -blue-900/30 text-blue-600 flex items-center justify-center text-2xl mx-auto mb-4">
                         <i class="fas fa-envelope"></i>
                     </div>
                     <h3 class="font-bold text-slate-900 dark:text-white mb-2">Email Support</h3>
@@ -628,9 +628,9 @@
                 </div>
 
                 <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 text-center border border-slate-200 dark:border-slate-700">
+                    class="bg-white -slate-800 rounded-2xl p-8 text-center border border-slate-200 dark:border-slate-700">
                     <div
-                        class="w-14 h-14 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center text-2xl mx-auto mb-4">
+                        class="w-14 h-14 rounded-full bg-purple-100 -purple-900/30 text-purple-600 flex items-center justify-center text-2xl mx-auto mb-4">
                         <i class="fas fa-calendar-check"></i>
                     </div>
                     <h3 class="font-bold text-slate-900 dark:text-white mb-2">Free Consultation</h3>

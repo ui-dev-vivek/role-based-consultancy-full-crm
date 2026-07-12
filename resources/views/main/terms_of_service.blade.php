@@ -11,7 +11,7 @@
     @endsection
 
     <!-- Terms Content Section -->
-    <section class="py-20 bg-white dark:bg-slate-950">
+    <section class="py-20 bg-white -slate-950">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="prose prose-slate dark:prose-invert max-w-none space-y-8 text-slate-700 dark:text-slate-300">
                 
@@ -67,7 +67,7 @@
                     <p class="leading-relaxed">
                         For questions or clarifications regarding these terms, please contact us:
                     </p>
-                    <div class="mt-4 p-5 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-2">
+                    <div class="mt-4 p-5 bg-slate-50 -slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-2">
                         <p><strong>Email:</strong> <a href="mailto:{{ config('app.email', 'info@acadnext.com') }}" class="text-primary-600 dark:text-primary-400 font-bold">{{ config('app.email', 'info@acadnext.com') }}</a></p>
                         <p><strong>WhatsApp Support:</strong> <a href="https://wa.me/{{ config('app.wa_number', '917619876249') }}" target="_blank" class="text-primary-600 dark:text-primary-400 font-bold">+{{ config('app.wa_number', '917619876249') }}</a></p>
                     </div>

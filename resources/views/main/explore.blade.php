@@ -1,6 +1,6 @@
 <x-layouts.main.base>
 
-    <div class="py-16 bg-slate-50 dark:bg-slate-950 min-h-screen relative overflow-hidden" 
+    <div class="py-16 bg-slate-50 -slate-950 min-h-screen relative overflow-hidden" 
          x-data="{ 
             search: '',
             filterLocation: '',
@@ -13,14 +13,14 @@
          }">
         
         <!-- Decorative Ambient Light Orbs -->
-        <div class="absolute top-0 left-1/4 w-[400px] h-[400px] bg-blue-500/5 dark:bg-blue-500/10 rounded-full blur-[100px] pointer-events-none"></div>
-        <div class="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-emerald-500/5 dark:bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute top-0 left-1/4 w-[400px] h-[400px] bg-blue-500/5 -blue-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-emerald-500/5 -emerald-500/10 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
             <!-- Page Header -->
             <div class="text-center mb-12">
-                <span class="inline-flex items-center px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase tracking-widest text-blue-700 dark:text-blue-300 bg-blue-100/50 dark:bg-blue-900/30 mb-4 border border-blue-200/20 dark:border-blue-800/20 animate-fade-in">
+                <span class="inline-flex items-center px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase tracking-widest text-blue-700 dark:text-blue-300 bg-blue-100/50 -blue-900/30 mb-4 border border-blue-200/20 dark:border-blue-800/20 animate-fade-in">
                     Ecosystem Directory
                 </span>
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
@@ -60,8 +60,8 @@
 
             <!-- Stats Dashboard Banner -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
-                <div class="bg-white/70 dark:bg-slate-900/70 backdrop-blur-md p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex items-center gap-4 relative overflow-hidden group hover:shadow-md transition-all duration-300">
-                    <div class="w-12 h-12 rounded-xl {{ $role === 'expert' ? 'bg-blue-100/60 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400' : 'bg-emerald-100/60 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-450' }} flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                <div class="bg-white/70 -slate-900/70 backdrop-blur-md p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex items-center gap-4 relative overflow-hidden group hover:shadow-md transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl {{ $role === 'expert' ? 'bg-blue-100/60 -blue-900/30 text-blue-600 dark:text-blue-400' : 'bg-emerald-100/60 -emerald-900/30 text-emerald-600 dark:text-emerald-450' }} flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
                         <i class="fas fa-users animate-pulse"></i>
                     </div>
                     <div>
@@ -71,8 +71,8 @@
                     <div class="absolute bottom-0 left-0 right-0 h-0.5 {{ $role === 'expert' ? 'bg-blue-500/40' : 'bg-emerald-500/40' }}"></div>
                 </div>
                 
-                <div class="bg-white/70 dark:bg-slate-900/70 backdrop-blur-md p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex items-center gap-4 relative overflow-hidden group hover:shadow-md transition-all duration-300">
-                    <div class="w-12 h-12 rounded-xl {{ $role === 'expert' ? 'bg-blue-100/60 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400' : 'bg-emerald-100/60 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-450' }} flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                <div class="bg-white/70 -slate-900/70 backdrop-blur-md p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex items-center gap-4 relative overflow-hidden group hover:shadow-md transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl {{ $role === 'expert' ? 'bg-blue-100/60 -blue-900/30 text-blue-600 dark:text-blue-400' : 'bg-emerald-100/60 -emerald-900/30 text-emerald-600 dark:text-emerald-450' }} flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <div>
@@ -82,8 +82,8 @@
                     <div class="absolute bottom-0 left-0 right-0 h-0.5 {{ $role === 'expert' ? 'bg-blue-500/40' : 'bg-emerald-500/40' }}"></div>
                 </div>
 
-                <div class="bg-white/70 dark:bg-slate-900/70 backdrop-blur-md p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex items-center gap-4 relative overflow-hidden group hover:shadow-md transition-all duration-300">
-                    <div class="w-12 h-12 rounded-xl {{ $role === 'expert' ? 'bg-blue-100/60 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400' : 'bg-emerald-100/60 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-450' }} flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                <div class="bg-white/70 -slate-900/70 backdrop-blur-md p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex items-center gap-4 relative overflow-hidden group hover:shadow-md transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl {{ $role === 'expert' ? 'bg-blue-100/60 -blue-900/30 text-blue-600 dark:text-blue-400' : 'bg-emerald-100/60 -emerald-900/30 text-emerald-600 dark:text-emerald-450' }} flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
                         <i class="fas fa-location-dot"></i>
                     </div>
                     <div>
@@ -95,17 +95,17 @@
             </div>
 
             <!-- Control Bar (Tabs & Interactive Multi-Filters) -->
-            <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8">
+            <div class="bg-white -slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8">
                 <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-5">
                     
                     <!-- Role Tabs Switcher -->
-                    <div class="flex bg-slate-100 dark:bg-slate-900 p-1 rounded-xl border border-slate-200/60 dark:border-slate-800 shrink-0">
+                    <div class="flex bg-slate-100 -slate-900 p-1 rounded-xl border border-slate-200/60 dark:border-slate-800 shrink-0">
                         <a href="/explore?r=expert" 
-                           class="flex-1 lg:flex-none text-center px-5 py-2.5 rounded-lg text-xs font-extrabold transition-all duration-200 flex items-center justify-center gap-2 {{ $role === 'expert' ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-md' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white' }}">
+                           class="flex-1 lg:flex-none text-center px-5 py-2.5 rounded-lg text-xs font-extrabold transition-all duration-200 flex items-center justify-center gap-2 {{ $role === 'expert' ? 'bg-white -slate-800 text-blue-600 dark:text-blue-400 shadow-md' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white' }}">
                            <i class="fas fa-user-tie text-[10px]"></i> Experts & Mentors
                         </a>
                         <a href="/explore?r=teacher" 
-                           class="flex-1 lg:flex-none text-center px-5 py-2.5 rounded-lg text-xs font-extrabold transition-all duration-200 flex items-center justify-center gap-2 {{ $role === 'teacher' ? 'bg-white dark:bg-slate-800 text-emerald-600 dark:text-emerald-400 shadow-md' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white' }}">
+                           class="flex-1 lg:flex-none text-center px-5 py-2.5 rounded-lg text-xs font-extrabold transition-all duration-200 flex items-center justify-center gap-2 {{ $role === 'teacher' ? 'bg-white -slate-800 text-emerald-600 dark:text-emerald-400 shadow-md' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white' }}">
                            <i class="fas fa-chalkboard-teacher text-[10px]"></i> Teachers & Educators
                         </a>
                     </div>
@@ -117,7 +117,7 @@
                             <input type="text" 
                                    x-model="search" 
                                    placeholder="Name, bio, skills..." 
-                                   class="w-full pl-9 pr-8 py-2.5 text-xs rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-850 dark:text-slate-100 focus:outline-none focus:ring-2 {{ $role === 'expert' ? 'focus:ring-blue-500/40 focus:border-blue-500' : 'focus:ring-emerald-500/40 focus:border-emerald-500' }} transition-all font-medium" />
+                                   class="w-full pl-9 pr-8 py-2.5 text-xs rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 -slate-950 text-slate-850 dark:text-slate-100 focus:outline-none focus:ring-2 {{ $role === 'expert' ? 'focus:ring-blue-500/40 focus:border-blue-500' : 'focus:ring-emerald-500/40 focus:border-emerald-500' }} transition-all font-medium" />
                             <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs">
                                 <i class="fas fa-search"></i>
                             </span>
@@ -132,7 +132,7 @@
                         <!-- Location Selector Filter -->
                         <div>
                             <select x-model="filterLocation" 
-                                    class="w-full px-3 py-2.5 text-xs rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 {{ $role === 'expert' ? 'focus:ring-blue-500/40 focus:border-blue-500' : 'focus:ring-emerald-500/40 focus:border-emerald-500' }} transition-all font-semibold">
+                                    class="w-full px-3 py-2.5 text-xs rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 -slate-950 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 {{ $role === 'expert' ? 'focus:ring-blue-500/40 focus:border-blue-500' : 'focus:ring-emerald-500/40 focus:border-emerald-500' }} transition-all font-semibold">
                                 <option value="">All Locations</option>
                                 @foreach($allLocations as $val => $label)
                                     <option value="{{ $val }}">{{ $label }}</option>
@@ -143,7 +143,7 @@
                         <!-- Years of Experience Selector Filter -->
                         <div>
                             <select x-model="filterExperience" 
-                                    class="w-full px-3 py-2.5 text-xs rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 {{ $role === 'expert' ? 'focus:ring-blue-500/40 focus:border-blue-500' : 'focus:ring-emerald-500/40 focus:border-emerald-500' }} transition-all font-semibold">
+                                    class="w-full px-3 py-2.5 text-xs rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 -slate-950 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 {{ $role === 'expert' ? 'focus:ring-blue-500/40 focus:border-blue-500' : 'focus:ring-emerald-500/40 focus:border-emerald-500' }} transition-all font-semibold">
                                 <option value="all">Any Experience</option>
                                 <option value="1-3">1 - 3 Years</option>
                                 <option value="4-7">4 - 7 Years</option>
@@ -164,7 +164,7 @@
                                 class="px-3 py-1 text-[10px] font-extrabold rounded-lg transition-all border"
                                 :class="search.toLowerCase() === tag.toLowerCase() 
                                     ? (roleAccent === 'blue' ? 'bg-blue-600 text-white border-blue-600 shadow-sm' : 'bg-emerald-600 text-white border-emerald-600 shadow-sm') 
-                                    : 'bg-slate-50 text-slate-600 border-slate-200 dark:bg-slate-950 dark:text-slate-400 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-900'">
+                                    : 'bg-slate-50 text-slate-600 border-slate-200 -slate-950 dark:text-slate-400 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-900'">
                             <span x-text="tag"></span>
                         </button>
                     </template>
@@ -181,8 +181,8 @@
 
             <!-- Members Grid -->
             @if($users->isEmpty())
-                <div class="text-center py-20 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm max-w-md mx-auto">
-                    <div class="w-16 h-16 bg-slate-100 dark:bg-slate-800/40 rounded-xl flex items-center justify-center mx-auto mb-4 text-slate-400 dark:text-slate-550 text-2xl">
+                <div class="text-center py-20 bg-white -slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm max-w-md mx-auto">
+                    <div class="w-16 h-16 bg-slate-100 -slate-800/40 rounded-xl flex items-center justify-center mx-auto mb-4 text-slate-400 dark:text-slate-550 text-2xl">
                         <i class="fas fa-users-slash animate-bounce"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">No Active Profiles Found</h3>
@@ -199,9 +199,9 @@
                     
                     <!-- Alpine-based client-side fallback empty state when all cards are hidden -->
                     <div x-show="count === 0" 
-                         class="col-span-full text-center py-16 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-850 rounded-2xl shadow-sm max-w-md mx-auto w-full"
+                         class="col-span-full text-center py-16 bg-white -slate-900 border border-slate-200 dark:border-slate-850 rounded-2xl shadow-sm max-w-md mx-auto w-full"
                          x-cloak>
-                        <div class="w-14 h-14 bg-slate-100 dark:bg-slate-850 rounded-xl flex items-center justify-center mx-auto mb-4 text-slate-400 text-xl">
+                        <div class="w-14 h-14 bg-slate-100 -slate-850 rounded-xl flex items-center justify-center mx-auto mb-4 text-slate-400 text-xl">
                             <i class="fas fa-filter"></i>
                         </div>
                         <h3 class="text-sm font-bold text-slate-900 dark:text-white mb-1">No Results Match Filters</h3>
@@ -243,7 +243,7 @@
                              x-transition:enter="transition ease-out duration-300"
                              x-transition:enter-start="opacity-0 scale-95"
                              x-transition:enter-end="opacity-100 scale-100"
-                             class="profile-card-item bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl shadow-sm hover:shadow-xl {{ $role === 'expert' ? 'hover:border-blue-500/40 hover:shadow-blue-500/5' : 'hover:border-emerald-500/40 hover:shadow-emerald-500/5' }} hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group">
+                             class="profile-card-item bg-white -slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl shadow-sm hover:shadow-xl {{ $role === 'expert' ? 'hover:border-blue-500/40 hover:shadow-blue-500/5' : 'hover:border-emerald-500/40 hover:shadow-emerald-500/5' }} hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group">
                              
                             <!-- Accent Top Highlight Line -->
                             <div class="h-1 w-full {{ $accent === 'blue' ? 'bg-blue-500' : 'bg-emerald-500' }}"></div>
@@ -251,7 +251,7 @@
                             <!-- Header Section -->
                             <div class="p-6 relative flex-1 flex flex-col">
                                 <!-- Verified Label -->
-                                <span class="absolute top-6 right-6 inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-450 border border-emerald-100/30 dark:border-emerald-900/30 shadow-sm z-10">
+                                <span class="absolute top-6 right-6 inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-emerald-50 -emerald-950/30 text-emerald-600 dark:text-emerald-450 border border-emerald-100/30 dark:border-emerald-900/30 shadow-sm z-10">
                                     <i class="fas fa-check-circle"></i> Verified
                                 </span>
 
@@ -299,22 +299,22 @@
                                 @if(is_array($socials) && (isset($socials['linkedin']) || isset($socials['github']) || isset($socials['twitter']) || isset($socials['portfolio'])))
                                     <div class="flex items-center gap-2 mt-4 pt-3 border-t border-slate-100 dark:border-slate-800">
                                         @if(!empty($socials['linkedin']))
-                                            <a href="{{ $socials['linkedin'] }}" target="_blank" class="w-6.5 h-6.5 rounded-full bg-slate-50 dark:bg-slate-950 text-slate-500 dark:text-slate-400 hover:bg-blue-600 hover:text-white flex items-center justify-center text-[10px] transition-all duration-200 hover:-translate-y-0.5 shadow-sm" title="LinkedIn Profile">
+                                            <a href="{{ $socials['linkedin'] }}" target="_blank" class="w-6.5 h-6.5 rounded-full bg-slate-50 -slate-950 text-slate-500 dark:text-slate-400 hover:bg-blue-600 hover:text-white flex items-center justify-center text-[10px] transition-all duration-200 hover:-translate-y-0.5 shadow-sm" title="LinkedIn Profile">
                                                 <i class="fab fa-linkedin-in"></i>
                                             </a>
                                         @endif
                                         @if(!empty($socials['github']))
-                                            <a href="{{ $socials['github'] }}" target="_blank" class="w-6.5 h-6.5 rounded-full bg-slate-50 dark:bg-slate-950 text-slate-500 dark:text-slate-400 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-black flex items-center justify-center text-[10px] transition-all duration-200 hover:-translate-y-0.5 shadow-sm" title="GitHub Profile">
+                                            <a href="{{ $socials['github'] }}" target="_blank" class="w-6.5 h-6.5 rounded-full bg-slate-50 -slate-950 text-slate-500 dark:text-slate-400 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-black flex items-center justify-center text-[10px] transition-all duration-200 hover:-translate-y-0.5 shadow-sm" title="GitHub Profile">
                                                 <i class="fab fa-github"></i>
                                             </a>
                                         @endif
                                         @if(!empty($socials['twitter']))
-                                            <a href="{{ $socials['twitter'] }}" target="_blank" class="w-6.5 h-6.5 rounded-full bg-slate-50 dark:bg-slate-950 text-slate-500 dark:text-slate-400 hover:bg-slate-950 hover:text-white flex items-center justify-center text-[10px] transition-all duration-200 hover:-translate-y-0.5 shadow-sm" title="Twitter / X Profile">
+                                            <a href="{{ $socials['twitter'] }}" target="_blank" class="w-6.5 h-6.5 rounded-full bg-slate-50 -slate-950 text-slate-500 dark:text-slate-400 hover:bg-slate-950 hover:text-white flex items-center justify-center text-[10px] transition-all duration-200 hover:-translate-y-0.5 shadow-sm" title="Twitter / X Profile">
                                                 <i class="fab fa-x-twitter"></i>
                                             </a>
                                         @endif
                                         @if(!empty($socials['portfolio']))
-                                            <a href="{{ $socials['portfolio'] }}" target="_blank" class="w-6.5 h-6.5 rounded-full bg-slate-50 dark:bg-slate-950 text-slate-500 dark:text-slate-400 hover:bg-indigo-600 hover:text-white flex items-center justify-center text-[10px] transition-all duration-200 hover:-translate-y-0.5 shadow-sm" title="Personal Website">
+                                            <a href="{{ $socials['portfolio'] }}" target="_blank" class="w-6.5 h-6.5 rounded-full bg-slate-50 -slate-950 text-slate-500 dark:text-slate-400 hover:bg-indigo-600 hover:text-white flex items-center justify-center text-[10px] transition-all duration-200 hover:-translate-y-0.5 shadow-sm" title="Personal Website">
                                                 <i class="fas fa-globe"></i>
                                             </a>
                                         @endif
@@ -324,7 +324,7 @@
 
                             <!-- Showcase Info Badges -->
                             <div class="grid grid-cols-2 gap-3 px-6">
-                                <div class="bg-slate-50 dark:bg-slate-950/60 p-3 rounded-xl border border-slate-100 dark:border-slate-800/80 flex items-center gap-2">
+                                <div class="bg-slate-50 -slate-950/60 p-3 rounded-xl border border-slate-100 dark:border-slate-800/80 flex items-center gap-2">
                                     <div class="text-[11px] shrink-0 {{ $accent === 'blue' ? 'text-blue-500' : 'text-emerald-500' }}">
                                         <i class="fas fa-graduation-cap"></i>
                                     </div>
@@ -337,7 +337,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bg-slate-50 dark:bg-slate-950/60 p-3 rounded-xl border border-slate-100 dark:border-slate-800/80 flex items-center gap-2">
+                                <div class="bg-slate-50 -slate-950/60 p-3 rounded-xl border border-slate-100 dark:border-slate-800/80 flex items-center gap-2">
                                     <div class="text-[11px] shrink-0 {{ $accent === 'blue' ? 'text-blue-500' : 'text-emerald-500' }}">
                                         <i class="fas fa-briefcase"></i>
                                     </div>
@@ -363,7 +363,7 @@
                             </div>
 
                             <!-- Card Footer Action -->
-                            <div class="px-6 py-4 bg-slate-50 dark:bg-slate-950/40 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-3">
+                            <div class="px-6 py-4 bg-slate-50 -slate-950/40 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-3">
                                 <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 flex items-center gap-1.5">
                                     <i class="fas fa-shield-halves {{ $accent === 'blue' ? 'text-blue-500/60' : 'text-emerald-500/60' }}"></i> Secure Link
                                 </span>
@@ -388,7 +388,7 @@
                                     
                                     <!-- Modal Container -->
                                     <div @click.away="openModal = false" 
-                                         class="bg-white dark:bg-slate-900 rounded-2xl w-full max-w-3xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 flex flex-col relative animate-scale-up"
+                                         class="bg-white -slate-900 rounded-2xl w-full max-w-3xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 flex flex-col relative animate-scale-up"
                                          x-transition:enter="transition ease-out duration-300"
                                          x-transition:enter-start="opacity-0 translate-y-4 scale-95"
                                          x-transition:enter-end="opacity-100 translate-y-0 scale-100"
@@ -399,14 +399,14 @@
                                          <!-- Close Icon -->
                                          <button type="button" 
                                                  @click="openModal = false"
-                                                 class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors z-30 shadow-sm border border-slate-200/20">
+                                                 class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 -slate-800 text-slate-500 dark:text-slate-400 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors z-30 shadow-sm border border-slate-200/20">
                                              <i class="fas fa-xmark text-xs"></i>
                                          </button>
                                          
                                          <!-- Beautiful CV Split Layout -->
                                          <div class="flex flex-col md:flex-row min-h-[480px]">
                                              <!-- Left Column: Highlights and Social Contact Coordinates -->
-                                             <div class="w-full md:w-1/3 bg-slate-50 dark:bg-slate-950/80 p-8 border-b md:border-b-0 md:border-r border-slate-200/80 dark:border-slate-800 flex flex-col items-center text-center">
+                                             <div class="w-full md:w-1/3 bg-slate-50 -slate-950/80 p-8 border-b md:border-b-0 md:border-r border-slate-200/80 dark:border-slate-800 flex flex-col items-center text-center">
                                                  <!-- Centered Circular Big Avatar -->
                                                  <div class="relative w-28 h-28 mx-auto mb-4">
                                                      @if($user->profile && $user->profile->avatar)
@@ -442,7 +442,7 @@
                                                  <div class="w-full space-y-3.5 text-left text-[11px]">
                                                      <div class="flex items-center justify-between">
                                                          <span class="text-slate-400 dark:text-slate-500 font-bold uppercase text-[9px] tracking-wider">Role Type</span>
-                                                         <span class="font-extrabold uppercase text-[9px] tracking-wider px-2 py-0.5 rounded-full {{ $accent === 'blue' ? 'bg-blue-50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-450 border border-blue-100/30 dark:border-blue-900/30' : 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-450 border border-emerald-100/30 dark:border-emerald-900/30' }}">
+                                                         <span class="font-extrabold uppercase text-[9px] tracking-wider px-2 py-0.5 rounded-full {{ $accent === 'blue' ? 'bg-blue-50 -blue-950/30 text-blue-600 dark:text-blue-450 border border-blue-100/30 dark:border-blue-900/30' : 'bg-emerald-50 -emerald-950/30 text-emerald-600 dark:text-emerald-450 border border-emerald-100/30 dark:border-emerald-900/30' }}">
                                                              {{ $role === 'expert' ? 'Expert & Advisor' : 'Teacher & Educator' }}
                                                          </span>
                                                      </div>
@@ -464,22 +464,22 @@
                                                  @if(is_array($socials) && (isset($socials['linkedin']) || isset($socials['github']) || isset($socials['twitter']) || isset($socials['portfolio'])))
                                                      <div class="flex items-center justify-center gap-2.5 w-full mb-6">
                                                          @if(!empty($socials['linkedin']))
-                                                             <a href="{{ $socials['linkedin'] }}" target="_blank" class="w-8 h-8 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white flex items-center justify-center text-sm text-slate-500 dark:text-slate-400 transition-all duration-200 hover:-translate-y-0.5 shadow-sm">
+                                                             <a href="{{ $socials['linkedin'] }}" target="_blank" class="w-8 h-8 rounded-xl bg-slate-100 -slate-800 hover:bg-blue-600 hover:text-white flex items-center justify-center text-sm text-slate-500 dark:text-slate-400 transition-all duration-200 hover:-translate-y-0.5 shadow-sm">
                                                                  <i class="fab fa-linkedin-in"></i>
                                                              </a>
                                                          @endif
                                                          @if(!empty($socials['github']))
-                                                             <a href="{{ $socials['github'] }}" target="_blank" class="w-8 h-8 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-black flex items-center justify-center text-sm text-slate-500 dark:text-slate-400 transition-all duration-200 hover:-translate-y-0.5 shadow-sm">
+                                                             <a href="{{ $socials['github'] }}" target="_blank" class="w-8 h-8 rounded-xl bg-slate-100 -slate-800 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-black flex items-center justify-center text-sm text-slate-500 dark:text-slate-400 transition-all duration-200 hover:-translate-y-0.5 shadow-sm">
                                                                  <i class="fab fa-github"></i>
                                                              </a>
                                                          @endif
                                                          @if(!empty($socials['twitter']))
-                                                             <a href="{{ $socials['twitter'] }}" target="_blank" class="w-8 h-8 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-950 hover:text-white flex items-center justify-center text-sm text-slate-500 dark:text-slate-400 transition-all duration-200 hover:-translate-y-0.5 shadow-sm">
+                                                             <a href="{{ $socials['twitter'] }}" target="_blank" class="w-8 h-8 rounded-xl bg-slate-100 -slate-800 hover:bg-slate-950 hover:text-white flex items-center justify-center text-sm text-slate-500 dark:text-slate-400 transition-all duration-200 hover:-translate-y-0.5 shadow-sm">
                                                                  <i class="fab fa-x-twitter"></i>
                                                              </a>
                                                          @endif
                                                          @if(!empty($socials['portfolio']))
-                                                             <a href="{{ $socials['portfolio'] }}" target="_blank" class="w-8 h-8 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-indigo-600 hover:text-white flex items-center justify-center text-sm text-slate-500 dark:text-slate-400 transition-all duration-200 hover:-translate-y-0.5 shadow-sm">
+                                                             <a href="{{ $socials['portfolio'] }}" target="_blank" class="w-8 h-8 rounded-xl bg-slate-100 -slate-800 hover:bg-indigo-600 hover:text-white flex items-center justify-center text-sm text-slate-500 dark:text-slate-400 transition-all duration-200 hover:-translate-y-0.5 shadow-sm">
                                                                  <i class="fas fa-globe"></i>
                                                              </a>
                                                          @endif
@@ -512,8 +512,8 @@
                                                              "{{ $user->profile?->bio ?? 'Ready to provide consulting support on AcadNext.' }}"
                                                          </p>
                                                          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                                                             <div class="bg-slate-50 dark:bg-slate-950/60 p-3.5 rounded-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3">
-                                                                 <div class="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/20 text-blue-600 dark:text-blue-400 flex items-center justify-center text-sm shrink-0">
+                                                             <div class="bg-slate-50 -slate-950/60 p-3.5 rounded-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3">
+                                                                 <div class="w-8 h-8 rounded-lg bg-blue-50 -blue-950/20 text-blue-600 dark:text-blue-400 flex items-center justify-center text-sm shrink-0">
                                                                      <i class="fas fa-map-location-dot"></i>
                                                                  </div>
                                                                  <div class="min-w-0">
@@ -523,8 +523,8 @@
                                                                      </div>
                                                                  </div>
                                                              </div>
-                                                             <div class="bg-slate-50 dark:bg-slate-950/60 p-3.5 rounded-xl border border-slate-100 dark:border-slate-850 flex items-center gap-3">
-                                                                 <div class="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-sm shrink-0">
+                                                             <div class="bg-slate-50 -slate-950/60 p-3.5 rounded-xl border border-slate-100 dark:border-slate-850 flex items-center gap-3">
+                                                                 <div class="w-8 h-8 rounded-lg bg-emerald-50 -emerald-950/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-sm shrink-0">
                                                                      <i class="fas fa-circle-check animate-pulse"></i>
                                                                  </div>
                                                                  <div class="min-w-0">
@@ -557,7 +557,7 @@
                                                                          <div class="text-[11px] font-medium text-slate-500 dark:text-slate-400 mt-0.5">
                                                                              {{ $edu['institution'] ?? 'N/A' }}
                                                                          </div>
-                                                                         <div class="inline-flex items-center gap-1.5 mt-2 text-[9px] font-bold text-slate-450 dark:text-slate-500 uppercase tracking-wider bg-slate-550/5 dark:bg-slate-950/50 px-2 py-0.5 rounded border border-slate-100 dark:border-slate-850">
+                                                                         <div class="inline-flex items-center gap-1.5 mt-2 text-[9px] font-bold text-slate-450 dark:text-slate-500 uppercase tracking-wider bg-slate-550/5 -slate-950/50 px-2 py-0.5 rounded border border-slate-100 dark:border-slate-850">
                                                                              <i class="fas fa-calendar-days text-[8px]"></i>
                                                                              Class of {{ $edu['passing_year'] ?? 'N/A' }}
                                                                              @if(!empty($edu['grade']))
@@ -569,7 +569,7 @@
                                                                  @endforeach
                                                              </div>
                                                          @else
-                                                             <div class="text-center py-6 bg-slate-50/50 dark:bg-slate-950/30 rounded-xl border border-dashed border-slate-200 dark:border-slate-800/80">
+                                                             <div class="text-center py-6 bg-slate-50/50 -slate-950/30 rounded-xl border border-dashed border-slate-200 dark:border-slate-800/80">
                                                                  <p class="text-xs italic text-slate-400 dark:text-slate-505">No education entries added.</p>
                                                              </div>
                                                          @endif
@@ -594,12 +594,12 @@
                                                                          </div>
                                                                          <div class="text-[11px] font-medium text-slate-500 dark:text-slate-450 mt-0.5 flex items-center gap-2">
                                                                              <span>{{ $prof['organization'] ?? 'N/A' }}</span>
-                                                                             <span class="text-[9px] text-blue-600 dark:text-blue-450 font-extrabold uppercase tracking-widest bg-blue-50 dark:bg-blue-950/30 px-1.5 py-0.5 rounded">
+                                                                             <span class="text-[9px] text-blue-600 dark:text-blue-450 font-extrabold uppercase tracking-widest bg-blue-50 -blue-950/30 px-1.5 py-0.5 rounded">
                                                                                  {{ $prof['years_experience'] ?? '0' }} Yrs Exp
                                                                              </span>
                                                                          </div>
                                                                          @if(!empty($prof['description']))
-                                                                             <p class="text-xs text-slate-650 dark:text-slate-400 mt-2.5 leading-relaxed bg-slate-50 dark:bg-slate-950/60 p-3 rounded-xl border border-slate-100 dark:border-slate-850">
+                                                                             <p class="text-xs text-slate-650 dark:text-slate-400 mt-2.5 leading-relaxed bg-slate-50 -slate-950/60 p-3 rounded-xl border border-slate-100 dark:border-slate-850">
                                                                                  {{ $prof['description'] }}
                                                                              </p>
                                                                          @endif
@@ -607,7 +607,7 @@
                                                                  @endforeach
                                                              </div>
                                                          @else
-                                                             <div class="text-center py-6 bg-slate-50/50 dark:bg-slate-950/30 rounded-xl border border-dashed border-slate-200 dark:border-slate-800/80">
+                                                             <div class="text-center py-6 bg-slate-50/50 -slate-950/30 rounded-xl border border-dashed border-slate-200 dark:border-slate-800/80">
                                                                  <p class="text-xs italic text-slate-400 dark:text-slate-505">No experience history added.</p>
                                                              </div>
                                                          @endif

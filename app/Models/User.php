@@ -5,13 +5,19 @@ namespace App\Models;
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
 use Filament\Panel;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Spatie\Permission\Traits\HasRoles;
+
 
 class User extends Authenticatable implements FilamentUser, HasName
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, HasRoles {
+        hasPermissionTo as protected spatieHasPermissionTo;
+    }
+
 
     /**
      * The attributes that are mass assignable.
@@ -24,6 +30,8 @@ class User extends Authenticatable implements FilamentUser, HasName
         'password',
         'status',
         'is_email_verified',
+        'is_profile_complete',
+        'requested_role',
     ];
 
     /**
@@ -46,7 +54,19 @@ class User extends Authenticatable implements FilamentUser, HasName
      */
     public function canAccessPanel(Panel $panel): bool
     {
-        return true;
+        if ($this->status !== 'active') {
+            return false;
+        }
+
+        if ($panel->getId() === 'admin') {
+            return $this->hasRole('admin');
+        }
+
+        if ($panel->getId() === 'portal') {
+            return $this->hasAnyRole(['public', 'student', 'teacher', 'expert']);
+        }
+
+        return false;
     }
 
     /**
@@ -68,31 +88,16 @@ class User extends Authenticatable implements FilamentUser, HasName
     {
         return [
             'password' => 'hashed',
+            'is_profile_complete' => 'boolean',
         ];
     }
 
     /**
      * Get the user's profile.
      */
-    public function profile()
+    public function profile(): HasOne
     {
         return $this->hasOne(UserProfile::class);
-    }
-
-    /**
-     * The roles that belong to the user.
-     */
-    public function roles()
-    {
-        return $this->belongsToMany(Role::class, 'user_role_map', 'user_id', 'role_id')->withTimestamps();
-    }
-
-    /**
-     * Helper to check if user has a specific role type.
-     */
-    public function hasRoleType(string $roleType): bool
-    {
-        return $this->roles()->where('role_type', $roleType)->exists();
     }
 
     /**
@@ -100,9 +105,7 @@ class User extends Authenticatable implements FilamentUser, HasName
      */
     public function hasPermission(string $permissionCode): bool
     {
-        return $this->roles()->whereHas('permissions', function ($query) use ($permissionCode) {
-            $query->where('code', $permissionCode);
-        })->exists();
+        return $this->spatieHasPermissionTo($permissionCode);
     }
 
     /**
@@ -112,25 +115,51 @@ class User extends Authenticatable implements FilamentUser, HasName
     {
         $permissions = is_array($permissions) ? $permissions : func_get_args();
 
-        return $this->roles()->whereHas('permissions', function ($query) use ($permissions) {
-            $query->whereIn('code', $permissions);
-        })->exists();
+        foreach ($permissions as $permission) {
+            if ($this->spatieHasPermissionTo($permission)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /**
      * Check if user has a specific role by name.
      */
-    public function hasRole(string $roleName): bool
+    public function hasRole($roles, ?string $guard = null): bool
     {
-        return $this->roles()->where('role_name', $roleName)->exists();
+        $roles = is_array($roles) ? $roles : [$roles];
+        $userRoles = $this->getRoleNames()->map(fn (string $role): string => mb_strtolower(trim($role)));
+
+        foreach ($roles as $role) {
+            if (is_object($role) && method_exists($role, 'getAttribute')) {
+                $role = $role->getAttribute('name');
+            } elseif (is_object($role) && method_exists($role, '__toString')) {
+                $role = (string) $role;
+            }
+
+            if ($role === null) {
+                continue;
+            }
+
+            $normalizedRole = mb_strtolower(trim((string) $role));
+
+            if ($userRoles->contains($normalizedRole)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /**
      * Check if user has any of the given roles by name.
      */
-    public function hasAnyRole(array|string $roles): bool
+    public function hasAnyRole(...$roles): bool
     {
-        $roles = is_array($roles) ? $roles : func_get_args();
-        return $this->roles()->whereIn('role_name', $roles)->exists();
+        $roles = count($roles) === 1 && is_array($roles[0]) ? $roles[0] : $roles;
+
+        return $this->hasRole($roles);
     }
 }

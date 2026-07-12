@@ -605,10 +605,10 @@
                     <h3 class="font-bold text-slate-900 dark:text-white mb-2">WhatsApp Chat</h3>
                     <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Quick response, personalized guidance
                     </p>
-                    <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}" target="_blank"
+                    <a href="https://wa.me/{{ config('app.wa_number', '917619876249') }}" target="_blank"
                         class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold transition-colors">
                         <i class="fab fa-whatsapp"></i>
-                        +91 7619 876 249
+                        +{{ config('app.wa_number', '917619876249') }}
                     </a>
                 </div>
 
@@ -620,7 +620,7 @@
                     </div>
                     <h3 class="font-bold text-slate-900 dark:text-white mb-2">Email Support</h3>
                     <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Detailed project inquiries</p>
-                    <a href="mailto:research@adacnext.com"
+                    <a href="mailto:research@acadnext.com"
                         class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold transition-colors">
                         <i class="fas fa-envelope"></i>
                         Email Us

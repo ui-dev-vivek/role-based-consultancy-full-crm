@@ -3,7 +3,7 @@
     'subtitle' => 'Share your details and we\'ll guide you through the admission process',
 ])
 
-<div class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl p-8 max-w-3xl mx-auto">
+<div x-data="{ formData: { scholarship_status: 'non-scholarship' }, updateProgress() {} }" class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl p-8 max-w-3xl mx-auto">
     <!-- Header -->
     <div class="mb-8">
         <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-2">{{ $title }}</h2>

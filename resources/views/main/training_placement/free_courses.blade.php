@@ -39,13 +39,13 @@
     </style>
 
     @section('page-hero')
-        <x-ui.hero title="Free Learning " highlightText="Courses"
+        <x-ui.hero title="Free Learning" highlightText="Courses"
             description="Explore a curated list of free courses from Udemy and other platforms, complete with pricing, discounts, and quick access links."
             badge="Free Courses" breadcrumbText="Free Courses" primaryBtnText="Explore Courses" primaryBtnUrl="#free-courses" />
     @endsection
 
     <!-- Free Courses Grid -->
-    <section class="py-12 bg-gray-50 dark:bg-slate-900">
+    <section id="free-courses" class="py-12 bg-gray-50 dark:bg-slate-900">
         <div x-data="{ selected: null, courses: {{ json_encode($freeCourses['data']['items'] ?? []) }} }" class="container mx-auto px-4">
             <h2 class="text-3xl font-extrabold mb-8 text-center text-gray-800 dark:text-gray-100 tracking-tight">
                 Free Learning Courses

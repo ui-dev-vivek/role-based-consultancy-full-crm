@@ -66,7 +66,7 @@
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Scholarship Availabile </h2>
+                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Scholarship Available</h2>
                 <p class="text-xl text-slate-600 dark:text-blue-500">Fill out the form below to apply for available
                     scholarships</p>
             </div>

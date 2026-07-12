@@ -4,19 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Primary Meta Tags -->
-    <meta name="title" content="{{ config('app.name', 'AdacNext') }}">
+    <meta name="title" content="{{ config('app.name', 'AcadNext') }}">
     <meta name="description"
         content="Expert guidance for college admissions, placements, internships, career counseling, skill development, research projects, patents, trademarks, and startup registration.">
     <meta name="keywords"
-        content="admissions, placements, internships, career counseling, research projects, patents, startup registration, AdacNext">
+        content="admissions, placements, internships, career counseling, research projects, patents, startup registration, AcadNext">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="{{ config('app.name', 'AdacNext') }}">
+    <meta property="og:title" content="{{ config('app.name', 'AcadNext') }}">
     <meta property="og:description"
         content="Expert guidance for college admissions, placements, internships, career counseling, skill development, research projects, patents, trademarks, and startup registration.">
     <meta property="og:image" content="{{ asset('assets/images/meta_image.png') }}">
@@ -24,7 +25,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ url()->current() }}">
-    <meta property="twitter:title" content="{{ config('app.name', 'AdacNext') }}">
+    <meta property="twitter:title" content="{{ config('app.name', 'AcadNext') }}">
     <meta property="twitter:description"
         content="Expert guidance for college admissions, placements, internships, career counseling, skill development, research projects, patents, trademarks, and startup registration.">
     <meta property="twitter:image" content="{{ asset('assets/images/meta_image.png') }}">
@@ -59,21 +60,26 @@
     <!-- Navbar -->
     @php
         $navItems = [
-            [
-                'title' => 'Services',
-                'icon' => 'fas fa-university',
-                'dropdown' => [
-                    ['title' => 'Admissions', 'url' => '/admissions'],
-                    ['title' => 'Training & Placements', 'url' => '/training-and-placements'],
-                    ['title' => 'Research Support', 'url' => '/research'],
-                    ['title' => 'IP & Legal Services', 'url' => '/intellectual-property'],
-                ],
+             [
+                'title' => 'Explore Us',
+                'icon' => 'fas fa-users',
+                 'dropdown' => [
+                    [
+                        'title' => 'Experts & Mentors',
+                        'url' => '/explore?r=expert',
+                    ],
+                    [
+                        'title' => 'Teachers & Educators',
+                        'url' => '/explore?r=teacher',
+                    ],
+                   
+                                ]
             ],
             [
                 'title' => 'Admissions',
                 'icon' => 'fas fa-university',
                 'url' => '/admissions',
-                'lable' => 'Choose the Right College & Career Path',
+                'label' => 'Choose the Right College & Career Path',
                 'text' =>
                     'Confused about courses, colleges, or entrance exams? Get expert guidance for Technical, Management, and Professional Courses/programs.',
                 'cta' => 'View More',
@@ -83,7 +89,7 @@
                 'title' => 'Training & Placements',
                 'icon' => 'fas fa-briefcase',
                 'url' => '/training-and-placements',
-                'lable' => 'Internships, Training & PPO Support',
+                'label' => 'Internships, Training & PPO Support',
                 'cta' => 'Explore Training',
                 'dropdown' => [['title' => 'Free Courses', 'url' => '/training-placement/free-courses']],
             ],
@@ -92,7 +98,7 @@
                 'title' => 'Research Support',
                 'icon' => 'fas fa-microscope',
                 'url' => '/research',
-                'lable' => 'Professional Support for Research & Publications',
+                'label' => 'Professional Support for Research & Publications',
                 'text' =>
                     'Guidance for thesis writing, dissertations, journal publications, research formatting, white papers, and academic documentation.',
                 'cta' => 'Explore Research',
@@ -103,32 +109,32 @@
                     ],
                     [
                         'title' => 'Journal Publication Guidance',
-                        'url' => '/research#journal-papers',
+                        'url' => '/research#journal-publication',
                     ],
                     [
                         'title' => 'Dissertation Assistance',
-                        'url' => '/research#dissertations',
+                        'url' => '/research#dissertation-support',
                     ],
                     [
                         'title' => 'Thesis Writing & Formatting',
-                        'url' => '/research#thesis',
+                        'url' => '/research#thesis-writing',
                     ],
                     [
                         'title' => 'Research Data Analysis',
                         'url' => '/research#data-analysis',
                     ],
                     [
-                        'title' => 'Others Academic Supports',
-                        'url' => '/research#academic',
+                        'title' => 'Literature Review Support',
+                        'url' => '/research#literature-review',
                     ],
                 ],
             ],
 
             [
-                'title' => 'IP & Legal',
+                'title' => 'IPR & Legal',
                 'icon' => 'fas fa-balance-scale',
                 'url' => '/intellectual-property',
-                'lable' => 'Protect Your Ideas, Brand & Innovation',
+                'label' => 'Protect Your Ideas, Brand & Innovation',
                 'text' =>
                     'Trademark registration, patents, copyrights, MSME registration, startup documentation, and legal consultancy services.',
                 'cta' => 'View Services',
@@ -141,17 +147,7 @@
                 ],
             ],
 
-            [
-                'title' => 'About Us',
-                'icon' => 'fas fa-info-circle',
-                'url' => '/about-us',
-            ],
-
-            [
-                'title' => 'Contact Us',
-                'icon' => 'fas fa-envelope',
-                'url' => '/contact-us',
-            ],
+          
         ];
     @endphp
     <nav x-data="{
@@ -169,24 +165,20 @@
             <div class="flex justify-between items-center transition-all duration-300"
                 :class="scrolled ? 'h-16' : 'h-20'">
                 <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 group ">
-                    <div
-                        class="flex items-center justify-center w-11 h-11 rounded-2xl bg-green-600 dark:bg-white text-white dark:text-slate-900 shadow-xl shadow-slate-200/50 dark:shadow-black/20 group-hover:rotate-6 ">
-                        <i class="fas fa-graduation-cap text-xl"></i>
-                    </div>
-                    <span class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-                        {{ config('app.name', 'Acad Next Solutions') }}
-                    </span>
+                <a href="/" class="flex items-center gap-3 group ">                    
+                  
+                     <img class="h-14 w-auto" src="{{asset('assets\logos\acadnext-logo.png')}}" alt="Logo">
+                   
                 </a>
 
                 <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center gap-2">
+                <div class="hidden lg:flex items-center gap-1">
                     @foreach ($navItems as $item)
-                        @if (isset($item['dropdown']) || !empty($item['lable']))
+                        @if (isset($item['dropdown']) || !empty($item['label']))
                             <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false"
                                 class="relative group py-2">
                                 <button
-                                    class="group/btn flex items-center gap-1.5 px-3 py-2 text-[15px] font-semibold text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 relative">
+                                    class="group/btn flex items-center gap-1 px-1 py-2 text-[14px] font-semibold text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 relative cursor-pointer">
                                     {{ $item['title'] }}
                                     <i class="fas fa-chevron-down text-[10px] text-slate-400 group-hover/btn:text-primary-500 transition-transform duration-300"
                                         :class="{ 'rotate-180': open }"></i>
@@ -199,9 +191,9 @@
                                     x-transition:leave="transition ease-in duration-150"
                                     x-transition:leave-start="opacity-100 translate-y-0"
                                     x-transition:leave-end="opacity-0 translate-y-2"
-                                    class="absolute top-full mt-2 {{ !empty($item['lable']) ? (isset($item['dropdown']) ? 'left-1/2 -translate-x-1/2 w-[650px] flex overflow-hidden rounded-3xl' : 'left-0 w-[320px] flex overflow-hidden rounded-3xl') : 'left-0 w-[260px] py-3 rounded-2xl' }} bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-2xl z-50 ring-1 ring-black/5 dark:ring-white/10">
+                                    class="absolute top-full mt-2 {{ !empty($item['label']) ? (isset($item['dropdown']) ? 'left-1/2 -translate-x-1/2 w-[650px] flex overflow-hidden rounded-3xl' : 'left-0 w-[320px] flex overflow-hidden rounded-3xl') : 'left-0 w-[260px] py-3 rounded-2xl' }} bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-2xl z-50 ring-1 ring-black/5 dark:ring-white/10">
 
-                                    @if (!empty($item['lable']))
+                                    @if (!empty($item['label']))
                                         <!-- Mega Menu Design -->
                                         <div
                                             class="{{ isset($item['dropdown']) ? 'w-5/12 border-r border-slate-100 dark:border-slate-800' : 'w-full' }} bg-slate-50 dark:bg-slate-800/50 p-6 flex flex-col justify-between">
@@ -211,7 +203,7 @@
                                                     <i class="{{ $item['icon'] ?? 'fas fa-star' }} text-lg"></i>
                                                 </div>
                                                 <h3 class="text-base font-bold text-slate-900 dark:text-white ">
-                                                    {{ $item['lable'] }}</h3>
+                                                    {{ $item['label'] }}</h3>
                                             </div>
                                             <div class="text-center">
                                                 <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
@@ -289,7 +281,7 @@
 
                         @auth
                             <!-- Notifications -->
-                            <x-ui.notification-bell :notifications="auth()->user()->notifications()->latest()->take(5)->get()" :unreadCount="auth()->user()->unreadNotifications()->count()" />
+                          
 
                             <!-- User Dropdown -->
                             <div class="relative ml-2">
@@ -312,7 +304,7 @@
                                         <p class="text-sm font-bold text-slate-900 dark:text-white truncate">
                                             {{ auth()->user()->email }}</p>
                                     </div>
-                                    <a href="/dashboard"
+                                    <a href="/portal"
                                         class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">
                                         <i class="fas fa-chart-pie w-4"></i> Dashboard
                                     </a>
@@ -320,7 +312,7 @@
                                         class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors">
                                         <i class="fas fa-user-cog w-4"></i> Profile Settings
                                     </a>
-                                    <form method="POST" action="{{ route('filament.admin.auth.logout') }}"
+                                    <form method="POST" action="{{ route('filament.portal.auth.logout') }}"
                                         class="mt-1">
                                         @csrf
                                         <button type="submit"
@@ -331,9 +323,9 @@
                                 </div>
                             </div>
                         @else
-                            <x-ui.button href="/admin" size="sm" variant="dark" icon="fas fa-sign-in-alt"
+                            <x-ui.button href="/portal" size="sm" variant="dark" icon="fas fa-sign-in-alt"
                                 className="rounded-xl shadow-lg shadow-slate-900/20">
-                                Sign In
+                                Login
                             </x-ui.button>
                         @endauth
                     </div>
@@ -342,7 +334,7 @@
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center gap-2">
                     @auth
-                        <x-ui.notification-bell :notifications="auth()->user()->notifications()->latest()->take(5)->get()" :unreadCount="auth()->user()->unreadNotifications()->count()" />
+                      
                     @endauth
                     <button @click="mobileMenuOpen = !mobileMenuOpen"
                         class="p-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl">
@@ -380,7 +372,7 @@
             <!-- Drawer Links -->
             <div class="px-4 py-6 space-y-2 flex-1 overflow-y-auto overscroll-contain">
                 @foreach ($navItems as $item)
-                    @if (isset($item['dropdown']) || !empty($item['lable']))
+                    @if (isset($item['dropdown']) || !empty($item['label']))
                         <div x-data="{ open: false }" class="space-y-1">
                             <button @click="open = !open"
                                 class="flex items-center justify-between w-full px-4 py-3.5 text-[15px] font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-2xl transition-colors">
@@ -399,11 +391,11 @@
                                 x-transition:enter-end="opacity-100 translate-y-0"
                                 class="px-4 space-y-1 pb-2 ml-4 pl-4 border-l-2 border-slate-100 dark:border-slate-800">
 
-                                @if (!empty($item['lable']))
+                                @if (!empty($item['label']))
                                     <div
                                         class="mb-4 mt-2 p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800">
                                         <h4 class="text-sm font-bold text-slate-900 dark:text-white mb-1">
-                                            {{ $item['lable'] }}</h4>
+                                            {{ $item['label'] }}</h4>
                                         <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">
                                             {{ $item['text'] ?? '' }}</p>
                                         @if (!empty($item['cta']))
@@ -448,7 +440,7 @@
             <div class="px-6 py-4 border-t border-slate-100 dark:border-slate-800">
                 @auth
                     <div class="grid grid-cols-2 gap-3">
-                        <x-ui.button :href="url('/dashboard')" variant="light" size="sm" className="w-full rounded-xl"
+                        <x-ui.button :href="url('/portal')" variant="light" size="sm" className="w-full rounded-xl"
                             icon="fas fa-chart-pie">
                             Dashboard
                         </x-ui.button>
@@ -508,7 +500,7 @@
 
                 <!-- Premium Grid Pattern Overlay -->
                 <div
-                    class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgwLDAsMCwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] dark:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)]">
+                    class="absolute inset-0 ">
                 </div>
             </div>
             @yield('page-hero')
@@ -521,13 +513,11 @@
         <div class="container mx-auto px-4 py-12">
             <div class="grid gap-10 lg:grid-cols-3">
                 <div class="space-y-4">
-                    <a href="/" class="inline-flex items-center gap-3">
-                        <div
-                            class="flex items-center justify-center w-11 h-11 rounded-2xl bg-primary-600 text-white shadow-lg">
-                            <i class="fas fa-ad text-lg"></i>
-                        </div>
-                        <span class="text-2xl font-extrabold tracking-tight">AdacNext</span>
-                    </a>
+                    <a href="/" class="flex items-center gap-3 group ">                    
+                  
+                     <img class="h-14 w-auto" src="{{asset('assets\logos\acadnext-logo.png')}}" alt="Logo">
+                   
+                </a>
                     <p class="max-w-md text-sm text-slate-400 leading-relaxed">
                         Empowering students, innovators, and startups with admissions guidance, research support,
                         internships, and intellectual property services.
@@ -539,9 +529,9 @@
                         </span>
                         <div>
                             <p class="text-sm text-slate-400">Need help now?</p>
-                            <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}?text=Hello%20AdacNext%2C%20I%20would%20like%20to%20chat%20about%20your%20services."
-                                target="_blank" rel="noopener"
-                                class="text-sm font-semibold text-white hover:text-primary-300">{{ config('app.wa_number', '0000000000') }}</a>
+                             <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}?text=Hello%20AcadNext%2C%20I%20would%20like%20to%20chat%20about%20your%20services."
+                                 target="_blank" rel="noopener"
+                                 class="text-sm font-semibold text-white hover:text-primary-300">{{ config('app.wa_number', '0000000000') }}</a>
                         </div>
                     </div>
                 </div>
@@ -577,7 +567,7 @@
                         </h3>
                         <p class="text-sm text-slate-400 mb-4">Get instant support on WhatsApp for admissions,
                             training, and IP services.</p>
-                        <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}?text=Hello%20AdacNext%2C%20I%20need%20help%20with%20your%20services"
+                        <a href="https://wa.me/{{ config('app.wa_number', '0000000000') }}?text=Hello%20AcadNext%2C%20I%20need%20help%20with%20your%20services"
                             target="_blank" rel="noopener"
                             class="inline-flex items-center justify-center gap-2 rounded-3xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#25D366]/30 transition-all hover:-translate-y-0.5 hover:bg-[#1ebd5a]">
                             <i class="fab fa-whatsapp text-lg"></i>
@@ -589,11 +579,11 @@
 
             <div
                 class="mt-10 border-t border-slate-800 pt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-slate-500">
-                <p>© {{ date('Y') }} AdacNext. All rights reserved.</p>
+                <p>© {{ date('Y') }} AcadNext. All rights reserved.</p>
                 <div class="flex flex-wrap items-center justify-center gap-4">
                     <a href="/privacy-policy" class="hover:text-white">Privacy Policy</a>
                     <a href="/terms-of-service" class="hover:text-white">Terms of Service</a>
-                    <a href="/contact" class="hover:text-white">Contact Us</a>
+                    <a href="/contact-us" class="hover:text-white">Contact Us</a>>
                 </div>
             </div>
         </div>

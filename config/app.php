@@ -15,7 +15,11 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
-    'wa_number' => env('WA_NUMBER', '0000000000'),  
+    'wa_number' => env('WA_NUMBER', '917619876249'),
+
+    'email' => env('APP_EMAIL', 'info@acadnext.com'),
+
+    'agent_name' => env('AGENT_NAME', 'Fateh Bahadur Kuwar'),
     /*
     |--------------------------------------------------------------------------
     | Application Environment

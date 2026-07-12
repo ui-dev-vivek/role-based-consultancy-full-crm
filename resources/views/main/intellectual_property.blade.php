@@ -361,7 +361,7 @@
                     <div class="flex-shrink-0">
                         <div
                             class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600">
-                            <i class="fas fa-rupiah-sign text-xl"></i>
+                            <i class="fas fa-indian-rupee-sign text-xl"></i>
                         </div>
                     </div>
                     <div>

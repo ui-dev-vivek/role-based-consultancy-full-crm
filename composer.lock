@@ -3563,6 +3563,76 @@
                 }
             ],
             "time": "2026-06-27T03:16:11+00:00"
+<<<<<<< HEAD
+=======
+        },
+        {
+            "name": "masterminds/html5",
+            "version": "2.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Masterminds/html5-php.git",
+                "reference": "fd5018f6815fff903946d0564977b44ce8010e29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/fd5018f6815fff903946d0564977b44ce8010e29",
+                "reference": "fd5018f6815fff903946d0564977b44ce8010e29",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7.21 || ^6 || ^7 || ^8 || ^9 || ^10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masterminds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Butcher",
+                    "email": "technosophos@gmail.com"
+                },
+                {
+                    "name": "Matt Farina",
+                    "email": "matt@mattfarina.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+                }
+            ],
+            "description": "An HTML5 parser and serializer.",
+            "homepage": "http://masterminds.github.io/html5-php",
+            "keywords": [
+                "HTML5",
+                "dom",
+                "html",
+                "parser",
+                "querypath",
+                "serializer",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/Masterminds/html5-php/issues",
+                "source": "https://github.com/Masterminds/html5-php/tree/2.10.1"
+            },
+            "time": "2026-06-23T18:43:15+00:00"
+>>>>>>> origin/12July
         },
         {
             "name": "monolog/monolog",
@@ -6671,6 +6741,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
+<<<<<<< HEAD
             "version": "v8.1.1",
             "source": {
                 "type": "git",
@@ -6681,6 +6752,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/abd6c11dc468725d1627302ad10f6cd486e9e3d0",
                 "reference": "abd6c11dc468725d1627302ad10f6cd486e9e3d0",
+=======
+            "version": "v7.4.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "51fe3d170227be8d1772214b82ae506e15ed78ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/51fe3d170227be8d1772214b82ae506e15ed78ff",
+                "reference": "51fe3d170227be8d1772214b82ae506e15ed78ff",
+>>>>>>> origin/12July
                 "shasum": ""
             },
             "require": {
@@ -6733,7 +6816,11 @@
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/event-dispatcher/tree/v8.1.1"
+=======
+                "source": "https://github.com/symfony/event-dispatcher/tree/v7.4.14"
+>>>>>>> origin/12July
             },
             "funding": [
                 {
@@ -6753,7 +6840,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2026-06-09T12:28:30+00:00"
+=======
+            "time": "2026-06-06T11:10:32+00:00"
+>>>>>>> origin/12July
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -6905,6 +6996,7 @@
         },
         {
             "name": "symfony/html-sanitizer",
+<<<<<<< HEAD
             "version": "v8.1.1",
             "source": {
                 "type": "git",
@@ -6915,6 +7007,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/09e1f2f9a3c8dcdca072587dc71999c1921c07cb",
                 "reference": "09e1f2f9a3c8dcdca072587dc71999c1921c07cb",
+=======
+            "version": "v7.4.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/html-sanitizer.git",
+                "reference": "c328df69f5b6f44a0d031d757903d955bebb23b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/c328df69f5b6f44a0d031d757903d955bebb23b3",
+                "reference": "c328df69f5b6f44a0d031d757903d955bebb23b3",
+>>>>>>> origin/12July
                 "shasum": ""
             },
             "require": {
@@ -6953,7 +7057,11 @@
                 "sanitizer"
             ],
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/html-sanitizer/tree/v8.1.1"
+=======
+                "source": "https://github.com/symfony/html-sanitizer/tree/v7.4.14"
+>>>>>>> origin/12July
             },
             "funding": [
                 {
@@ -6973,7 +7081,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2026-06-06T11:11:44+00:00"
+=======
+            "time": "2026-06-06T11:10:32+00:00"
+>>>>>>> origin/12July
         },
         {
             "name": "symfony/http-foundation",
@@ -8507,6 +8619,7 @@
         },
         {
             "name": "symfony/translation",
+<<<<<<< HEAD
             "version": "v8.1.1",
             "source": {
                 "type": "git",
@@ -8517,6 +8630,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/translation/zipball/342b4218630dc2cf284cedcb2080c80b13404014",
                 "reference": "342b4218630dc2cf284cedcb2080c80b13404014",
+=======
+            "version": "v7.4.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation.git",
+                "reference": "a1af4dacb24eb7ef4f1ca71b94da8ddbce572281"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/a1af4dacb24eb7ef4f1ca71b94da8ddbce572281",
+                "reference": "a1af4dacb24eb7ef4f1ca71b94da8ddbce572281",
+>>>>>>> origin/12July
                 "shasum": ""
             },
             "require": {
@@ -8576,7 +8701,11 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/translation/tree/v8.1.1"
+=======
+                "source": "https://github.com/symfony/translation/tree/v7.4.14"
+>>>>>>> origin/12July
             },
             "funding": [
                 {
@@ -8596,7 +8725,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2026-06-06T11:11:44+00:00"
+=======
+            "time": "2026-06-06T09:33:19+00:00"
+>>>>>>> origin/12July
         },
         {
             "name": "symfony/translation-contracts",
@@ -11363,6 +11496,7 @@
         },
         {
             "name": "symfony/yaml",
+<<<<<<< HEAD
             "version": "v8.1.1",
             "source": {
                 "type": "git",
@@ -11373,6 +11507,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/yaml/zipball/8e4cdd4311683516be06944f4b85244063cdb886",
                 "reference": "8e4cdd4311683516be06944f4b85244063cdb886",
+=======
+            "version": "v7.4.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "f8f328665ace2370d1e10645b807ba1646dc7dcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/f8f328665ace2370d1e10645b807ba1646dc7dcc",
+                "reference": "f8f328665ace2370d1e10645b807ba1646dc7dcc",
+>>>>>>> origin/12July
                 "shasum": ""
             },
             "require": {
@@ -11415,7 +11561,11 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/yaml/tree/v8.1.1"
+=======
+                "source": "https://github.com/symfony/yaml/tree/v7.4.14"
+>>>>>>> origin/12July
             },
             "funding": [
                 {
@@ -11435,7 +11585,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2026-06-09T11:06:24+00:00"
+=======
+            "time": "2026-06-08T20:24:16+00:00"
+>>>>>>> origin/12July
         },
         {
             "name": "theseer/tokenizer",
@@ -11497,5 +11651,5 @@
         "php": "^8.2"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
